@@ -6,44 +6,48 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo11AppDelegate", ""]
 provides-dynamic-lookup:
-- "persistentStoreCoordinator"
-- "managedObjectModel"
-- "applicationDidEnterBackground"
-- "application"
-- "applicationWillResignActive"
-- "saveContext"
-- "applicationDocumentsDirectory"
-- "applicationWillTerminate"
-- "applicationDidBecomeActive"
-- "managedObjectContext"
-- "window"
 - "applicationWillEnterForeground"
+- "displayOrder"
+- "window"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "applicationDocumentsDirectory"
+- "managedObjectModel"
+- "saveContext"
+- "managedObjectContext"
+- "application"
+- "itemText"
+- "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "persistentStoreCoordinator"
 depends-top-level:
-- "AnyObject"
-- "AppDelegate"
-- !private "NSLog"
-- "NSManagedObjectContext"
-- !private "NSUnderlyingErrorKey"
-- "UIWindow"
-- "NSManagedObjectModel"
-- "StringLiteralType"
-- !private "NSSQLiteStoreType"
-- !private "NSError"
-- !private "String"
-- "UIResponder"
 - !private "NSFileManager"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "-"
-- !private "BooleanLiteralType"
-- "NSPersistentStoreCoordinator"
-- "NSObject"
-- !private "abort"
-- "UIApplicationDelegate"
-- !private "NSBundle"
-- "NSURL"
+- !private "NSSQLiteStoreType"
+- "StringLiteralType"
+- !private "NSError"
+- "NSManagedObjectModel"
+- "UIApplication"
+- !private "NSLog"
+- !private "NSUnderlyingErrorKey"
 - "Bool"
 - !private "NSLocalizedDescriptionKey"
-- "UIApplication"
+- !private "NSBundle"
+- "UIResponder"
+- "NSObject"
+- "NSNumber"
+- "NSManagedObjectContext"
+- !private "-"
+- "AnyObject"
+- "UIApplicationDelegate"
+- "NSPersistentStoreCoordinator"
+- !private "BooleanLiteralType"
+- !private "NSLocalizedFailureReasonErrorKey"
+- !private "String"
+- "UIWindow"
+- !private "abort"
+- "NSString"
+- "NSURL"
+- "AppDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "AnyObject"]
 - !private ["Ps9AnyObject", "NSBundle"]
@@ -79,8 +83,10 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "defaultManager"]
 - !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "displayOrder"]
 - !private ["Ps9AnyObject", "hasChanges"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "itemText"]
 - !private ["Ps9AnyObject", "mainBundle"]
 - ["Ps9AnyObject", "managedObjectContext"]
 - ["Ps9AnyObject", "managedObjectContext.storage"]
@@ -103,9 +109,11 @@ depends-member:
 - !private ["C10SimpleTodo11AppDelegate", "NSLog"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectContext"]
 - ["C10SimpleTodo11AppDelegate", "NSManagedObjectModel"]
+- ["C10SimpleTodo11AppDelegate", "NSNumber"]
 - ["C10SimpleTodo11AppDelegate", "NSObject"]
 - ["C10SimpleTodo11AppDelegate", "NSPersistentStoreCoordinator"]
 - !private ["C10SimpleTodo11AppDelegate", "NSSQLiteStoreType"]
+- ["C10SimpleTodo11AppDelegate", "NSString"]
 - ["C10SimpleTodo11AppDelegate", "NSURL"]
 - !private ["C10SimpleTodo11AppDelegate", "NSUnderlyingErrorKey"]
 - !private ["C10SimpleTodo11AppDelegate", "String"]
@@ -127,7 +135,9 @@ depends-member:
 - ["C10SimpleTodo11AppDelegate", "applicationWillResignActive"]
 - ["C10SimpleTodo11AppDelegate", "applicationWillTerminate"]
 - ["C10SimpleTodo11AppDelegate", "deinit"]
+- ["C10SimpleTodo11AppDelegate", "displayOrder"]
 - ["C10SimpleTodo11AppDelegate", "init"]
+- ["C10SimpleTodo11AppDelegate", "itemText"]
 - ["C10SimpleTodo11AppDelegate", "managedObjectContext"]
 - !private ["C10SimpleTodo11AppDelegate", "managedObjectContext.storage"]
 - ["C10SimpleTodo11AppDelegate", "managedObjectModel"]
@@ -193,8 +203,10 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
 - !private ["Ps11CVarArgType", "defaultManager"]
+- ["Ps11CVarArgType", "displayOrder"]
 - !private ["Ps11CVarArgType", "hasChanges"]
 - ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "itemText"]
 - !private ["Ps11CVarArgType", "mainBundle"]
 - ["Ps11CVarArgType", "managedObjectContext"]
 - ["Ps11CVarArgType", "managedObjectContext.storage"]
@@ -255,8 +267,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultManager"]
+- ["Ps28CustomDebugStringConvertible", "displayOrder"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChanges"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "itemText"]
 - !private ["Ps28CustomDebugStringConvertible", "mainBundle"]
 - ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
 - ["Ps28CustomDebugStringConvertible", "managedObjectContext.storage"]
@@ -310,8 +324,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "defaultManager"]
+- ["Ps23CustomStringConvertible", "displayOrder"]
 - !private ["Ps23CustomStringConvertible", "hasChanges"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "itemText"]
 - !private ["Ps23CustomStringConvertible", "mainBundle"]
 - ["Ps23CustomStringConvertible", "managedObjectContext"]
 - ["Ps23CustomStringConvertible", "managedObjectContext.storage"]
@@ -369,8 +385,10 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "defaultManager"]
+- ["Ps9Equatable", "displayOrder"]
 - !private ["Ps9Equatable", "hasChanges"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "itemText"]
 - !private ["Ps9Equatable", "mainBundle"]
 - ["Ps9Equatable", "managedObjectContext"]
 - ["Ps9Equatable", "managedObjectContext.storage"]
@@ -428,8 +446,10 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "defaultManager"]
+- ["Ps8Hashable", "displayOrder"]
 - !private ["Ps8Hashable", "hasChanges"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "itemText"]
 - !private ["Ps8Hashable", "mainBundle"]
 - ["Ps8Hashable", "managedObjectContext"]
 - ["Ps8Hashable", "managedObjectContext.storage"]
@@ -519,9 +539,11 @@ depends-member:
 - !private ["CSo8NSObject", "NSLog"]
 - ["CSo8NSObject", "NSManagedObjectContext"]
 - ["CSo8NSObject", "NSManagedObjectModel"]
+- ["CSo8NSObject", "NSNumber"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "NSPersistentStoreCoordinator"]
 - !private ["CSo8NSObject", "NSSQLiteStoreType"]
+- ["CSo8NSObject", "NSString"]
 - ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSUnderlyingErrorKey"]
 - !private ["CSo8NSObject", "String"]
@@ -547,8 +569,10 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "defaultManager"]
+- ["CSo8NSObject", "displayOrder"]
 - !private ["CSo8NSObject", "hasChanges"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "itemText"]
 - !private ["CSo8NSObject", "mainBundle"]
 - ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "managedObjectContext.storage"]
@@ -593,8 +617,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
+- ["PSo16NSObjectProtocol", "displayOrder"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "itemText"]
 - !private ["PSo16NSObjectProtocol", "mainBundle"]
 - ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "managedObjectContext.storage"]
@@ -696,9 +722,11 @@ depends-member:
 - !private ["CSo11UIResponder", "NSLog"]
 - ["CSo11UIResponder", "NSManagedObjectContext"]
 - ["CSo11UIResponder", "NSManagedObjectModel"]
+- ["CSo11UIResponder", "NSNumber"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "NSPersistentStoreCoordinator"]
 - !private ["CSo11UIResponder", "NSSQLiteStoreType"]
+- ["CSo11UIResponder", "NSString"]
 - ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSUnderlyingErrorKey"]
 - !private ["CSo11UIResponder", "String"]
@@ -719,7 +747,9 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillEnterForeground"]
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "displayOrder"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "itemText"]
 - ["CSo11UIResponder", "managedObjectContext"]
 - ["CSo11UIResponder", "managedObjectContext.storage"]
 - ["CSo11UIResponder", "managedObjectModel"]
@@ -895,4 +925,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
-interface-hash: "c1db090a691afdaa28c482270a851966"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "c77917d3cb801da1640e6205cb88fd3c"

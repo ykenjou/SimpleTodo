@@ -22,16 +22,20 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        /*
+        
+        */
+        
+        let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
         kbToolBar.barStyle = UIBarStyle.Default
-        kbToolBar.sizeToFit()
+        //kbToolBar.sizeToFit()
         
         let cancelButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Stop, target: self, action: #selector(AddViewController.pushCancelButton))
         let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
         let saveButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: #selector(AddViewController.pushSaveButton))
         
         kbToolBar.items = [cancelButton,spacer,saveButton]
- 
+        
         textView.inputAccessoryView = kbToolBar
         
         textView.layer.borderWidth = 0.5
@@ -40,6 +44,7 @@ class AddViewController: UIViewController {
         
         textView.becomeFirstResponder()
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,9 +61,6 @@ class AddViewController: UIViewController {
         
         if text.containsString("\n") && swtichBool == true {
             let textArray = text.componentsSeparatedByString("\n")
-            //print(textArray[0])
-            //print(textArray[1])
-            //print(textArray[2])
             
             for i in 0..<textArray.count {
                 let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item

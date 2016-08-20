@@ -119,6 +119,8 @@ SWIFT_CLASS("_TtC10SimpleTodo17AddViewController")
 @end
 
 @class UIWindow;
+@class NSString;
+@class NSNumber;
 @class UIApplication;
 @class NSObject;
 @class NSURL;
@@ -129,6 +131,8 @@ SWIFT_CLASS("_TtC10SimpleTodo17AddViewController")
 SWIFT_CLASS("_TtC10SimpleTodo11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, strong) NSString * _Nullable itemText;
+@property (nonatomic, strong) NSNumber * _Nullable displayOrder;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -143,6 +147,19 @@ SWIFT_CLASS("_TtC10SimpleTodo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10SimpleTodo18EditViewController")
+@interface EditViewController : UIViewController
+@property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)pushCancelButton;
+- (void)pushSaveButton;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 
 SWIFT_CLASS("_TtC10SimpleTodo4Item")
@@ -150,7 +167,6 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSNumber;
 
 @interface Item (SWIFT_EXTENSION(SimpleTodo))
 @property (nonatomic, strong) NSNumber * _Nullable checked;
@@ -159,15 +175,18 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 @end
 
 @class NSFetchedResultsController;
+@class UIBarButtonItem;
+@class UILongPressGestureRecognizer;
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
 @class UITableViewRowAction;
-@class UIBarButtonItem;
+@class UIToolbar;
 
 SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
-@interface MainViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, NSFetchedResultsControllerDelegate, UITableViewDataSource>
+@interface MainViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, NSFetchedResultsControllerDelegate, UIGestureRecognizerDelegate, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolBar;
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
 - (void)viewDidLoad;
@@ -175,6 +194,8 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (void)didReceiveMemoryWarning;
 - (void)controllerDidChangeContent:(NSFetchedResultsController * _Nonnull)controller;
 - (NSInteger)setBadgeValue;
+- (IBAction)settingButton:(UIBarButtonItem * _Nonnull)sender;
+- (void)cellLongPressed:(UILongPressGestureRecognizer * _Nonnull)recognizer;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -183,9 +204,18 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (void)setCheckedValue:(NSNumber * _Nonnull)value indexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSArray<UITableViewRowAction *> * _Nullable)tableView:(UITableView * _Nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
-- (IBAction)trashButton:(UIBarButtonItem * _Nonnull)sender;
-- (IBAction)addButton:(UIBarButtonItem * _Nonnull)sender;
-- (IBAction)editButton:(UIBarButtonItem * _Nonnull)sender;
+- (void)pushTrashButton;
+- (void)pushAddButton;
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10SimpleTodo21SettingViewController")
+@interface SettingViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

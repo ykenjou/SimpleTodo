@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F222562D1D67F39F001E463B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222562C1D67F39F001E463B /* AudioToolbox.framework */; };
+		F222562F1D681BB8001E463B /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222562E1D681BB8001E463B /* EditViewController.swift */; };
+		F22256401D68BC0D001E463B /* setting_26.png in Resources */ = {isa = PBXBuildFile; fileRef = F222563D1D68BC0D001E463B /* setting_26.png */; };
+		F22256411D68BC0D001E463B /* setting_52@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F222563E1D68BC0D001E463B /* setting_52@2x.png */; };
+		F22256421D68BC0D001E463B /* setting_78@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F222563F1D68BC0D001E463B /* setting_78@3x.png */; };
+		F22256441D68CA1D001E463B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22256431D68CA1D001E463B /* SettingViewController.swift */; };
 		F297D4EC1D653E1B00093327 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */; };
 		F297D4ED1D653E1B00093327 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F297D4EB1D653E1B00093327 /* Item.swift */; };
 		F2FFBDB11D6498F900D73796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFBDB01D6498F900D73796 /* AppDelegate.swift */; };
@@ -38,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F222562C1D67F39F001E463B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F222562E1D681BB8001E463B /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		F222563D1D68BC0D001E463B /* setting_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_26.png; sourceTree = "<group>"; };
+		F222563E1D68BC0D001E463B /* setting_52@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_52@2x.png"; sourceTree = "<group>"; };
+		F222563F1D68BC0D001E463B /* setting_78@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_78@3x.png"; sourceTree = "<group>"; };
+		F22256431D68CA1D001E463B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F297D4EB1D653E1B00093327 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F2FFBDAD1D6498F900D73796 /* SimpleTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F222562D1D67F39F001E463B /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +95,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F22256301D68B04F001E463B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F222563D1D68BC0D001E463B /* setting_26.png */,
+				F222563E1D68BC0D001E463B /* setting_52@2x.png */,
+				F222563F1D68BC0D001E463B /* setting_78@3x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		F2FFBDA41D6498F800D73796 = {
 			isa = PBXGroup;
 			children = (
+				F222562C1D67F39F001E463B /* AudioToolbox.framework */,
 				F2FFBDAF1D6498F900D73796 /* SimpleTodo */,
 				F2FFBDC71D6498F900D73796 /* SimpleTodoTests */,
 				F2FFBDD21D6498F900D73796 /* SimpleTodoUITests */,
@@ -105,6 +129,7 @@
 		F2FFBDAF1D6498F900D73796 /* SimpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				F22256301D68B04F001E463B /* Image */,
 				F297D4EA1D653E1B00093327 /* Item+CoreDataProperties.swift */,
 				F297D4EB1D653E1B00093327 /* Item.swift */,
 				F2FFBDB01D6498F900D73796 /* AppDelegate.swift */,
@@ -115,6 +140,8 @@
 				F2FFBDB71D6498F900D73796 /* SimpleTodo.xcdatamodeld */,
 				F2FFBDE11D64997200D73796 /* MainViewController.swift */,
 				F2FFBDE31D64A3D800D73796 /* AddViewController.swift */,
+				F222562E1D681BB8001E463B /* EditViewController.swift */,
+				F22256431D68CA1D001E463B /* SettingViewController.swift */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -241,8 +268,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F22256421D68BC0D001E463B /* setting_78@3x.png in Resources */,
+				F22256401D68BC0D001E463B /* setting_26.png in Resources */,
 				F2FFBDBE1D6498F900D73796 /* LaunchScreen.storyboard in Resources */,
 				F2FFBDBB1D6498F900D73796 /* Assets.xcassets in Resources */,
+				F22256411D68BC0D001E463B /* setting_52@2x.png in Resources */,
 				F2FFBDB61D6498F900D73796 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +301,11 @@
 				F2FFBDE21D64997200D73796 /* MainViewController.swift in Sources */,
 				F2FFBDB11D6498F900D73796 /* AppDelegate.swift in Sources */,
 				F2FFBDE41D64A3D800D73796 /* AddViewController.swift in Sources */,
+				F22256441D68CA1D001E463B /* SettingViewController.swift in Sources */,
 				F2FFBDB91D6498F900D73796 /* SimpleTodo.xcdatamodeld in Sources */,
 				F297D4ED1D653E1B00093327 /* Item.swift in Sources */,
 				F297D4EC1D653E1B00093327 /* Item+CoreDataProperties.swift in Sources */,
+				F222562F1D681BB8001E463B /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

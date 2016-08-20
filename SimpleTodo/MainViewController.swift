@@ -8,10 +8,13 @@
 
 import UIKit
 import CoreData
+import AudioToolbox
 
-class MainViewController:  UIViewController , UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate{
-
+class MainViewController:  UIViewController , UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate , UIGestureRecognizerDelegate{
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var btmToolBar: UIToolbar!
     
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -29,11 +32,19 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
 
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 30;
+        tableView.estimatedRowHeight = 44;
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
+        
+        let trashButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Trash, target: self, action: #selector(MainViewController.pushTrashButton))
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
+        let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(MainViewController.pushAddButton))
+        let editButton = editButtonItem()
+
+        btmToolBar.items = [trashButton,spacer,addButton,spacer,editButton]
 
         // Do any additional setup after loading the view.
         do {
@@ -47,6 +58,19 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
         
+        /*
+        navigationBar.barTintColor = UIColor(red: 28 / 255, green: 67 / 255, blue: 155 / 255, alpha: 1.0)
+        navigationBar.tintColor = UIColor.whiteColor()
+        
+        btmToolBar.barTintColor = UIColor(red: 28 / 255, green: 67 / 255, blue: 155 / 255, alpha: 1.0)
+        btmToolBar.tintColor = UIColor.whiteColor()
+        */
+        
+        
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(MainViewController.cellLongPressed(_:)))
+        longPressRecognizer.delegate = self
+        tableView.addGestureRecognizer(longPressRecognizer)
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -59,7 +83,6 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func controllerDidChangeContent(controller: NSFetchedResultsController)
     {
@@ -85,6 +108,26 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
 
     }
     
+    @IBAction func settingButton(sender: UIBarButtonItem) {
+        
+    }
+    
+    func cellLongPressed(recognizer: UILongPressGestureRecognizer){
+        if tableView.editing == false {
+            let point = recognizer.locationInView(tableView)
+            let indexPath = tableView.indexPathForRowAtPoint(point)
+            if recognizer.state == UIGestureRecognizerState.Began{
+                let item = self.fetchedResultsController.objectAtIndexPath(indexPath!) as! Item
+                self.appDelegate.itemText = item.text
+                self.appDelegate.displayOrder = item.displayOrder
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let editViewController = storyboard.instantiateViewControllerWithIdentifier("EditViewController") as! EditViewController
+                
+                self.presentViewController(editViewController as UIViewController, animated: true, completion: nil)
+            }
+        }
+    }
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -144,10 +187,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         self.setCheckedValue(1, indexPath: indexPath)
         
-        /*
-        print(indexPath.row)
-        print(indexPath.section)
-        */
+        AudioServicesPlaySystemSound(1104)
+        
     }
     
     //選択解除
@@ -162,6 +203,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         label?.attributedText = attributeString
         
         setCheckedValue(0, indexPath: indexPath)
+        
+        AudioServicesPlaySystemSound(1104)
         
     }
     
@@ -182,7 +225,17 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     //スワイプアクション
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         let editAction = UITableViewRowAction(style: .Normal,title: "edit"){(action, indexPath) in
-            print("\(indexPath) edited")
+            
+            let item = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Item
+            self.appDelegate.itemText = item.text
+            self.appDelegate.displayOrder = item.displayOrder
+                        
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let editViewController = storyboard.instantiateViewControllerWithIdentifier("EditViewController") as! EditViewController
+            
+            self.presentViewController(editViewController as UIViewController, animated: true, completion: nil)
+            
+            
             
         }
         editAction.backgroundColor = UIColor.orangeColor()
@@ -248,19 +301,31 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
     }
 
-    //削除処理
-    @IBAction func trashButton(sender: UIBarButtonItem) {
+    
+    //編集ボタン
+    /*
+    @IBAction func editButton(sender: UIBarButtonItem) {
+        if editing {
+            super.setEditing(false, animated: true)
+            tableView.setEditing(false, animated: true)
+        } else {
+            super.setEditing(true, animated: true)
+            tableView.setEditing(true, animated: true)
+        }
+    }
+     */
+    
+    func pushTrashButton(){
         let list = tableView.indexPathsForSelectedRows
-        //print(list?.count)
         
         if list?.count != nil {
-        
-        
+            
+            
             //let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let fetchRequest = NSFetchRequest(entityName: "Item")
             let precidate = NSPredicate(format: "checked == %d", 1)
             fetchRequest.predicate = precidate
-        
+            
             do {
                 let items = try appDelegate.managedObjectContext.executeFetchRequest(fetchRequest) as! [Item]
                 for item in items {
@@ -269,10 +334,10 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             } catch let error as NSError {
                 print(error)
             }
-        
+            
             appDelegate.saveContext()
-        
-        
+            
+            
             //displayOrderの再設定
             let fetchRequestOrder = NSFetchRequest(entityName: "Item")
             let sortDescripter = NSSortDescriptor(key: "displayOrder", ascending: true)
@@ -286,29 +351,24 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             } catch let error as NSError {
                 print(error)
             }
-        
+            
             appDelegate.saveContext()
             
         }
-        
+
     }
     
-    
-    @IBAction func addButton(sender: UIBarButtonItem) {
+    func pushAddButton(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addViewController = storyboard.instantiateViewControllerWithIdentifier("AddViewController") as! AddViewController
         
         self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
     }
     
-    @IBAction func editButton(sender: UIBarButtonItem) {
-        if editing {
-            super.setEditing(false, animated: true)
-            tableView.setEditing(false, animated: true)
-        } else {
-            super.setEditing(true, animated: true)
-            tableView.setEditing(true, animated: true)
-        }
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        tableView.setEditing(editing, animated: true)
+        tableView.editing = editing
     }
     
     /*
