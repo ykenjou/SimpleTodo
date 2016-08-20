@@ -13,10 +13,15 @@ class AddViewController: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var returnSwitch: UISwitch!
+    
+    var swtichBool :Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         kbToolBar.barStyle = UIBarStyle.Default
         kbToolBar.sizeToFit()
@@ -26,6 +31,7 @@ class AddViewController: UIViewController {
         let saveButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: #selector(AddViewController.pushSaveButton))
         
         kbToolBar.items = [cancelButton,spacer,saveButton]
+ 
         textView.inputAccessoryView = kbToolBar
         
         textView.layer.borderWidth = 0.5
@@ -48,9 +54,11 @@ class AddViewController: UIViewController {
         
         
         
-        if text.containsString("\n"){
+        if text.containsString("\n") && swtichBool == true {
             let textArray = text.componentsSeparatedByString("\n")
-            print(textArray.count)
+            //print(textArray[0])
+            //print(textArray[1])
+            //print(textArray[2])
             
             for i in 0..<textArray.count {
                 let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
@@ -68,6 +76,13 @@ class AddViewController: UIViewController {
         appDelegate.saveContext()
     }
 
+    @IBAction func switchChange(sender: UISwitch) {
+        if sender.on {
+            swtichBool = true
+        } else {
+            swtichBool = false
+        }
+    }
     
     func pushCancelButton(){
         if textView.text != "" {
@@ -95,13 +110,12 @@ class AddViewController: UIViewController {
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         
-        
-        
     }
     
     func pushSaveButton(){
-        if (textView.text != ""){
-            setItemData(textView.text)
+        let textViewString = textView.text.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
+        if textViewString != "" {
+            setItemData(textViewString)
             textView.resignFirstResponder()
             self.dismissViewControllerAnimated(true, completion: nil)
         }

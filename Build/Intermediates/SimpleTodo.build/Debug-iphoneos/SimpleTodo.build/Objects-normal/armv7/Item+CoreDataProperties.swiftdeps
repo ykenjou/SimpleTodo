@@ -1,0 +1,76 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C10SimpleTodo4Item", ""]
+- ["C10SimpleTodo4Item", "checked"]
+- ["C10SimpleTodo4Item", "displayOrder"]
+- ["C10SimpleTodo4Item", "text"]
+provides-dynamic-lookup:
+- "text"
+- "checked"
+- "displayOrder"
+depends-top-level:
+- "Item"
+- "String"
+- "NSNumber"
+depends-member:
+- ["Ps9AnyObject", "checked"]
+- ["Ps9AnyObject", "displayOrder"]
+- ["Ps9AnyObject", "text"]
+- ["Ps11CVarArgType", "checked"]
+- ["Ps11CVarArgType", "displayOrder"]
+- ["Ps11CVarArgType", "text"]
+- ["Ps28CustomDebugStringConvertible", "checked"]
+- ["Ps28CustomDebugStringConvertible", "displayOrder"]
+- ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "checked"]
+- ["Ps23CustomStringConvertible", "displayOrder"]
+- ["Ps23CustomStringConvertible", "text"]
+- ["Ps9Equatable", "checked"]
+- ["Ps9Equatable", "displayOrder"]
+- ["Ps9Equatable", "text"]
+- ["Ps8Hashable", "checked"]
+- ["Ps8Hashable", "displayOrder"]
+- ["Ps8Hashable", "text"]
+- ["C10SimpleTodo4Item", "NSNumber"]
+- ["C10SimpleTodo4Item", "String"]
+- ["C10SimpleTodo4Item", "checked"]
+- ["C10SimpleTodo4Item", "displayOrder"]
+- ["C10SimpleTodo4Item", "text"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "checked"]
+- ["CSo15NSManagedObject", "displayOrder"]
+- ["CSo15NSManagedObject", "text"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "checked"]
+- ["CSo8NSObject", "displayOrder"]
+- ["CSo8NSObject", "text"]
+- ["PSo16NSObjectProtocol", "checked"]
+- ["PSo16NSObjectProtocol", "displayOrder"]
+- ["PSo16NSObjectProtocol", "text"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C10SimpleTodo4Item"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "570bed13ee7db6601f109fbe8d73978e"

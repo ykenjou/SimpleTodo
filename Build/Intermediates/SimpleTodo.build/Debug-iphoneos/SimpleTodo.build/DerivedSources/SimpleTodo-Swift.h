@@ -94,10 +94,12 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreData;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UISwitch;
 @class UITextView;
 @class NSBundle;
 @class NSCoder;
@@ -105,8 +107,11 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC10SimpleTodo17AddViewController")
 @interface AddViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified returnSwitch;
+@property (nonatomic) BOOL swtichBool;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)switchChange:(UISwitch * _Nonnull)sender;
 - (void)pushCancelButton;
 - (void)pushSaveButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -157,6 +162,7 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UITableViewRowAction;
 @class UIBarButtonItem;
 
 SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
@@ -168,12 +174,14 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)controllerDidChangeContent:(NSFetchedResultsController * _Nonnull)controller;
+- (NSInteger)setBadgeValue;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)setCheckedValue:(NSNumber * _Nonnull)value indexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSArray<UITableViewRowAction *> * _Nullable)tableView:(UITableView * _Nonnull)tableView editActionsForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
 - (IBAction)trashButton:(UIBarButtonItem * _Nonnull)sender;
 - (IBAction)addButton:(UIBarButtonItem * _Nonnull)sender;

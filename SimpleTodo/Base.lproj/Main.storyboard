@@ -19,28 +19,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0d-zb-3wB">
-                                <rect key="frame" x="20" y="40" width="560" height="250"/>
+                                <rect key="frame" x="20" y="40" width="560" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2g2-Lt-A3b">
+                                <rect key="frame" x="531" y="250" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChange:" destination="edf-gb-rQs" eventType="valueChanged" id="9M0-kr-3rb"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="改行で複数項目を登録" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNv-8q-nKe">
+                                <rect key="frame" x="58" y="255" width="456" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="J0d-zb-3wB" secondAttribute="bottom" constant="310" id="PZQ-6s-dhi"/>
-                            <constraint firstItem="J0d-zb-3wB" firstAttribute="leading" secondItem="TtE-4K-gS5" secondAttribute="leadingMargin" id="l5U-5M-7lr"/>
-                            <constraint firstItem="J0d-zb-3wB" firstAttribute="top" secondItem="SUA-pM-t3k" secondAttribute="bottom" constant="20" id="rc0-lY-Vkg"/>
-                            <constraint firstItem="J0d-zb-3wB" firstAttribute="trailing" secondItem="TtE-4K-gS5" secondAttribute="trailingMargin" id="wf2-NC-8ri"/>
+                            <constraint firstItem="J0d-zb-3wB" firstAttribute="top" secondItem="SUA-pM-t3k" secondAttribute="bottom" constant="20" id="6Hd-aG-YOB"/>
+                            <constraint firstItem="2g2-Lt-A3b" firstAttribute="leading" secondItem="eNv-8q-nKe" secondAttribute="trailing" constant="17" id="AFC-96-rmC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2g2-Lt-A3b" secondAttribute="trailing" id="YFH-15-vbr"/>
+                            <constraint firstItem="J0d-zb-3wB" firstAttribute="trailing" secondItem="TtE-4K-gS5" secondAttribute="trailingMargin" id="ZaD-7s-J2Z"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="J0d-zb-3wB" secondAttribute="bottom" constant="360" id="sJl-Qj-7wz"/>
+                            <constraint firstItem="2g2-Lt-A3b" firstAttribute="top" secondItem="J0d-zb-3wB" secondAttribute="bottom" constant="10" id="sPV-QJ-yeN"/>
+                            <constraint firstItem="eNv-8q-nKe" firstAttribute="leading" secondItem="TtE-4K-gS5" secondAttribute="leadingMargin" constant="38" id="x0u-WX-bFD"/>
+                            <constraint firstItem="J0d-zb-3wB" firstAttribute="leading" secondItem="TtE-4K-gS5" secondAttribute="leadingMargin" id="zG9-0L-rQO"/>
+                            <constraint firstItem="eNv-8q-nKe" firstAttribute="top" secondItem="J0d-zb-3wB" secondAttribute="bottom" constant="15" id="zg6-Lm-baL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="returnSwitch" destination="2g2-Lt-A3b" id="zut-YE-T7D"/>
                         <outlet property="textView" destination="J0d-zb-3wB" id="sxC-N0-p22"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ose-JN-vya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="-270"/>
+            <point key="canvasLocation" x="331" y="-328"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
