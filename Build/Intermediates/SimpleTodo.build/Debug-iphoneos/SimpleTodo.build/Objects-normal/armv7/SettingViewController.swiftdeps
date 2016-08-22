@@ -6,101 +6,697 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo21SettingViewController", ""]
 provides-dynamic-lookup:
+- "badgeSwitch"
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "viewWillAppear"
 - "didReceiveMemoryWarning"
+- "soundChange"
+- "badgeChange"
+- "soundSwitch"
+- "userDefaults"
 depends-top-level:
+- !private "=="
+- !private "StringLiteralType"
+- !private "UIApplication"
+- !private "UITableViewCellSelectionStyle"
+- "UITableViewController"
+- "UISwitch"
 - "SettingViewController"
-- "UIViewController"
+- "NSUserDefaults"
+- !private "UIView"
+- "UITableViewCell"
+- !private "NSURL"
+- "UITableView"
+- !private "MainViewController"
+- "Bool"
+- !private "BooleanLiteralType"
+- "NSIndexPath"
 depends-member:
+- !private ["Ps9AnyObject", "MainViewController"]
+- !private ["Ps9AnyObject", "NSIndexPath"]
+- !private ["Ps9AnyObject", "NSURL"]
+- ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UITableViewCellSelectionStyle"]
+- !private ["Ps9AnyObject", "UIView"]
+- !private ["Ps9AnyObject", "applicationIconBadgeNumber"]
+- ["Ps9AnyObject", "badgeChange"]
+- ["Ps9AnyObject", "badgeSwitch"]
+- !private ["Ps9AnyObject", "boolForKey"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "on"]
+- !private ["Ps9AnyObject", "openURL"]
+- !private ["Ps9AnyObject", "sectionHeaderHeight"]
+- !private ["Ps9AnyObject", "selectionStyle"]
+- !private ["Ps9AnyObject", "setBadgeValue"]
+- !private ["Ps9AnyObject", "setBool"]
+- !private ["Ps9AnyObject", "sharedApplication"]
+- ["Ps9AnyObject", "soundChange"]
+- ["Ps9AnyObject", "soundSwitch"]
+- ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "tableFooterView"]
+- ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "userDefaults"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "MainViewController"]
+- !private ["Ps11CVarArgType", "NSIndexPath"]
+- !private ["Ps11CVarArgType", "NSURL"]
+- ["Ps11CVarArgType", "NSUserDefaults"]
+- !private ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "UITableViewCellSelectionStyle"]
+- !private ["Ps11CVarArgType", "UIView"]
+- !private ["Ps11CVarArgType", "applicationIconBadgeNumber"]
+- ["Ps11CVarArgType", "badgeChange"]
+- ["Ps11CVarArgType", "badgeSwitch"]
+- !private ["Ps11CVarArgType", "boolForKey"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "on"]
+- !private ["Ps11CVarArgType", "openURL"]
+- !private ["Ps11CVarArgType", "sectionHeaderHeight"]
+- !private ["Ps11CVarArgType", "selectionStyle"]
+- !private ["Ps11CVarArgType", "setBadgeValue"]
+- !private ["Ps11CVarArgType", "setBool"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
+- ["Ps11CVarArgType", "soundChange"]
+- ["Ps11CVarArgType", "soundSwitch"]
+- ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "tableFooterView"]
+- ["Ps11CVarArgType", "tableView"]
+- ["Ps11CVarArgType", "userDefaults"]
 - ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", "viewWillAppear"]
 - ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "MainViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "NSIndexPath"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURL"]
+- ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UITableViewCellSelectionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
+- !private ["Ps28CustomDebugStringConvertible", "applicationIconBadgeNumber"]
+- ["Ps28CustomDebugStringConvertible", "badgeChange"]
+- ["Ps28CustomDebugStringConvertible", "badgeSwitch"]
+- !private ["Ps28CustomDebugStringConvertible", "boolForKey"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "on"]
+- !private ["Ps28CustomDebugStringConvertible", "openURL"]
+- !private ["Ps28CustomDebugStringConvertible", "sectionHeaderHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "selectionStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "setBadgeValue"]
+- !private ["Ps28CustomDebugStringConvertible", "setBool"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- ["Ps28CustomDebugStringConvertible", "soundChange"]
+- ["Ps28CustomDebugStringConvertible", "soundSwitch"]
+- ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "tableFooterView"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "userDefaults"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "MainViewController"]
+- !private ["Ps23CustomStringConvertible", "NSIndexPath"]
+- !private ["Ps23CustomStringConvertible", "NSURL"]
+- ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UITableViewCellSelectionStyle"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "applicationIconBadgeNumber"]
+- ["Ps23CustomStringConvertible", "badgeChange"]
+- ["Ps23CustomStringConvertible", "badgeSwitch"]
+- !private ["Ps23CustomStringConvertible", "boolForKey"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "on"]
+- !private ["Ps23CustomStringConvertible", "openURL"]
+- !private ["Ps23CustomStringConvertible", "sectionHeaderHeight"]
+- !private ["Ps23CustomStringConvertible", "selectionStyle"]
+- !private ["Ps23CustomStringConvertible", "setBadgeValue"]
+- !private ["Ps23CustomStringConvertible", "setBool"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
+- ["Ps23CustomStringConvertible", "soundChange"]
+- ["Ps23CustomStringConvertible", "soundSwitch"]
+- ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "tableFooterView"]
+- ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "userDefaults"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "MainViewController"]
+- !private ["Ps9Equatable", "NSIndexPath"]
+- !private ["Ps9Equatable", "NSURL"]
+- ["Ps9Equatable", "NSUserDefaults"]
+- !private ["Ps9Equatable", "None"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UITableViewCellSelectionStyle"]
+- !private ["Ps9Equatable", "UIView"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "applicationIconBadgeNumber"]
+- ["Ps9Equatable", "badgeChange"]
+- ["Ps9Equatable", "badgeSwitch"]
+- !private ["Ps9Equatable", "boolForKey"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "on"]
+- !private ["Ps9Equatable", "openURL"]
+- !private ["Ps9Equatable", "sectionHeaderHeight"]
+- !private ["Ps9Equatable", "selectionStyle"]
+- !private ["Ps9Equatable", "setBadgeValue"]
+- !private ["Ps9Equatable", "setBool"]
+- !private ["Ps9Equatable", "sharedApplication"]
+- ["Ps9Equatable", "soundChange"]
+- ["Ps9Equatable", "soundSwitch"]
+- ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "tableFooterView"]
+- ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "userDefaults"]
 - ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
+- !private ["PSo13GADAdDelegate", "init"]
+- !private ["PSo13GADAdDelegate", "setBadgeValue"]
+- !private ["PSo21GADBannerViewDelegate", "init"]
+- !private ["PSo21GADBannerViewDelegate", "setBadgeValue"]
+- !private ["Ps8Hashable", "MainViewController"]
+- !private ["Ps8Hashable", "NSIndexPath"]
+- !private ["Ps8Hashable", "NSURL"]
+- ["Ps8Hashable", "NSUserDefaults"]
+- !private ["Ps8Hashable", "None"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UITableViewCellSelectionStyle"]
+- !private ["Ps8Hashable", "UIView"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "applicationIconBadgeNumber"]
+- ["Ps8Hashable", "badgeChange"]
+- ["Ps8Hashable", "badgeSwitch"]
+- !private ["Ps8Hashable", "boolForKey"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "on"]
+- !private ["Ps8Hashable", "openURL"]
+- !private ["Ps8Hashable", "sectionHeaderHeight"]
+- !private ["Ps8Hashable", "selectionStyle"]
+- !private ["Ps8Hashable", "setBadgeValue"]
+- !private ["Ps8Hashable", "setBool"]
+- !private ["Ps8Hashable", "sharedApplication"]
+- ["Ps8Hashable", "soundChange"]
+- ["Ps8Hashable", "soundSwitch"]
+- ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "tableFooterView"]
+- ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "userDefaults"]
 - ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", ""]
+- !private ["C10SimpleTodo18MainViewController", "init"]
+- !private ["C10SimpleTodo18MainViewController", "setBadgeValue"]
+- !private ["PSo8NSCoding", "MainViewController"]
+- !private ["PSo8NSCoding", "NSIndexPath"]
+- !private ["PSo8NSCoding", "NSURL"]
+- ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "UIApplication"]
+- !private ["PSo8NSCoding", "UITableViewCellSelectionStyle"]
+- !private ["PSo8NSCoding", "UIView"]
+- ["PSo8NSCoding", "badgeChange"]
+- ["PSo8NSCoding", "badgeSwitch"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "on"]
+- !private ["PSo8NSCoding", "sectionHeaderHeight"]
+- !private ["PSo8NSCoding", "selectionStyle"]
+- !private ["PSo8NSCoding", "setBadgeValue"]
+- ["PSo8NSCoding", "soundChange"]
+- ["PSo8NSCoding", "soundSwitch"]
+- !private ["PSo8NSCoding", "tableFooterView"]
+- ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "userDefaults"]
 - ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "MainViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "NSIndexPath"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- !private ["PSo26NSExtensionRequestHandling", "UITableViewCellSelectionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIView"]
+- ["PSo26NSExtensionRequestHandling", "badgeChange"]
+- ["PSo26NSExtensionRequestHandling", "badgeSwitch"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "setBadgeValue"]
+- ["PSo26NSExtensionRequestHandling", "soundChange"]
+- ["PSo26NSExtensionRequestHandling", "soundSwitch"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "userDefaults"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "init"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "setBadgeValue"]
+- !private ["CSo11NSIndexPath", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "MainViewController"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UISwitch"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "UITableViewCellSelectionStyle"]
+- !private ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "applicationIconBadgeNumber"]
+- ["CSo8NSObject", "badgeChange"]
+- ["CSo8NSObject", "badgeSwitch"]
+- !private ["CSo8NSObject", "boolForKey"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "on"]
+- !private ["CSo8NSObject", "openURL"]
+- !private ["CSo8NSObject", "sectionHeaderHeight"]
+- !private ["CSo8NSObject", "selectionStyle"]
+- !private ["CSo8NSObject", "setBadgeValue"]
+- !private ["CSo8NSObject", "setBool"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- ["CSo8NSObject", "soundChange"]
+- ["CSo8NSObject", "soundSwitch"]
+- ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "tableFooterView"]
+- ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "userDefaults"]
 - ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "MainViewController"]
+- !private ["PSo16NSObjectProtocol", "NSIndexPath"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UITableViewCellSelectionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "applicationIconBadgeNumber"]
+- ["PSo16NSObjectProtocol", "badgeChange"]
+- ["PSo16NSObjectProtocol", "badgeSwitch"]
+- !private ["PSo16NSObjectProtocol", "boolForKey"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "on"]
+- !private ["PSo16NSObjectProtocol", "openURL"]
+- !private ["PSo16NSObjectProtocol", "sectionHeaderHeight"]
+- !private ["PSo16NSObjectProtocol", "selectionStyle"]
+- !private ["PSo16NSObjectProtocol", "setBadgeValue"]
+- !private ["PSo16NSObjectProtocol", "setBool"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- ["PSo16NSObjectProtocol", "soundChange"]
+- ["PSo16NSObjectProtocol", "soundSwitch"]
+- ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "tableFooterView"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "userDefaults"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo14NSUserDefaults", "boolForKey"]
+- !private ["CSo14NSUserDefaults", "setBool"]
+- ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["Ps16RawRepresentable", "None"]
+- ["C10SimpleTodo21SettingViewController", "Bool"]
+- !private ["C10SimpleTodo21SettingViewController", "MainViewController"]
+- ["C10SimpleTodo21SettingViewController", "NSIndexPath"]
+- !private ["C10SimpleTodo21SettingViewController", "NSURL"]
+- ["C10SimpleTodo21SettingViewController", "NSUserDefaults"]
+- !private ["C10SimpleTodo21SettingViewController", "UIApplication"]
+- ["C10SimpleTodo21SettingViewController", "UISwitch"]
+- ["C10SimpleTodo21SettingViewController", "UITableView"]
+- ["C10SimpleTodo21SettingViewController", "UITableViewCell"]
+- !private ["C10SimpleTodo21SettingViewController", "UITableViewCellSelectionStyle"]
+- !private ["C10SimpleTodo21SettingViewController", "UIView"]
+- ["C10SimpleTodo21SettingViewController", "badgeChange"]
+- ["C10SimpleTodo21SettingViewController", "badgeSwitch"]
 - ["C10SimpleTodo21SettingViewController", "deinit"]
 - ["C10SimpleTodo21SettingViewController", "didReceiveMemoryWarning"]
 - ["C10SimpleTodo21SettingViewController", "init"]
+- ["C10SimpleTodo21SettingViewController", "soundChange"]
+- ["C10SimpleTodo21SettingViewController", "soundSwitch"]
+- ["C10SimpleTodo21SettingViewController", "tableView"]
+- ["C10SimpleTodo21SettingViewController", "userDefaults"]
 - ["C10SimpleTodo21SettingViewController", "viewDidLoad"]
+- ["C10SimpleTodo21SettingViewController", "viewWillAppear"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "on"]
+- !private ["PSo29UIAccessibilityIdentification", "sectionHeaderHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "selectionStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "tableFooterView"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "on"]
+- !private ["PSo12UIAppearance", "sectionHeaderHeight"]
+- !private ["PSo12UIAppearance", "selectionStyle"]
+- !private ["PSo12UIAppearance", "tableFooterView"]
+- !private ["PSo21UIAppearanceContainer", "MainViewController"]
+- !private ["PSo21UIAppearanceContainer", "NSIndexPath"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- !private ["PSo21UIAppearanceContainer", "UITableViewCellSelectionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
+- ["PSo21UIAppearanceContainer", "badgeChange"]
+- ["PSo21UIAppearanceContainer", "badgeSwitch"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "on"]
+- !private ["PSo21UIAppearanceContainer", "sectionHeaderHeight"]
+- !private ["PSo21UIAppearanceContainer", "selectionStyle"]
+- !private ["PSo21UIAppearanceContainer", "setBadgeValue"]
+- ["PSo21UIAppearanceContainer", "soundChange"]
+- ["PSo21UIAppearanceContainer", "soundSwitch"]
+- !private ["PSo21UIAppearanceContainer", "tableFooterView"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "userDefaults"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo13UIApplication", "applicationIconBadgeNumber"]
+- !private ["CSo13UIApplication", "openURL"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo18UIContentContainer", "MainViewController"]
+- !private ["PSo18UIContentContainer", "NSIndexPath"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
+- !private ["PSo18UIContentContainer", "UITableViewCellSelectionStyle"]
+- !private ["PSo18UIContentContainer", "UIView"]
+- ["PSo18UIContentContainer", "badgeChange"]
+- ["PSo18UIContentContainer", "badgeSwitch"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "setBadgeValue"]
+- ["PSo18UIContentContainer", "soundChange"]
+- ["PSo18UIContentContainer", "soundSwitch"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "userDefaults"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "on"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "on"]
+- !private ["PSo17UICoordinateSpace", "sectionHeaderHeight"]
+- !private ["PSo17UICoordinateSpace", "selectionStyle"]
+- !private ["PSo17UICoordinateSpace", "tableFooterView"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "on"]
+- !private ["PSo13UIDynamicItem", "sectionHeaderHeight"]
+- !private ["PSo13UIDynamicItem", "selectionStyle"]
+- !private ["PSo13UIDynamicItem", "tableFooterView"]
+- !private ["PSo18UIFocusEnvironment", "MainViewController"]
+- !private ["PSo18UIFocusEnvironment", "NSIndexPath"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
+- !private ["PSo18UIFocusEnvironment", "UITableViewCellSelectionStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
+- ["PSo18UIFocusEnvironment", "badgeChange"]
+- ["PSo18UIFocusEnvironment", "badgeSwitch"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "on"]
+- !private ["PSo18UIFocusEnvironment", "sectionHeaderHeight"]
+- !private ["PSo18UIFocusEnvironment", "selectionStyle"]
+- !private ["PSo18UIFocusEnvironment", "setBadgeValue"]
+- ["PSo18UIFocusEnvironment", "soundChange"]
+- ["PSo18UIFocusEnvironment", "soundSwitch"]
+- !private ["PSo18UIFocusEnvironment", "tableFooterView"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "userDefaults"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "selectionStyle"]
+- !private ["PSo27UIGestureRecognizerDelegate", "setBadgeValue"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "MainViewController"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSURL"]
+- ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UISwitch"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "UITableViewCellSelectionStyle"]
+- !private ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "applicationIconBadgeNumber"]
+- ["CSo11UIResponder", "badgeChange"]
+- ["CSo11UIResponder", "badgeSwitch"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "on"]
+- !private ["CSo11UIResponder", "openURL"]
+- !private ["CSo11UIResponder", "sectionHeaderHeight"]
+- !private ["CSo11UIResponder", "selectionStyle"]
+- !private ["CSo11UIResponder", "setBadgeValue"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- ["CSo11UIResponder", "soundChange"]
+- ["CSo11UIResponder", "soundSwitch"]
+- !private ["CSo11UIResponder", "tableFooterView"]
+- ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "userDefaults"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["CSo12UIScrollView", "sectionHeaderHeight"]
+- !private ["CSo12UIScrollView", "tableFooterView"]
+- !private ["PSo20UIScrollViewDelegate", "MainViewController"]
+- !private ["PSo20UIScrollViewDelegate", "NSIndexPath"]
+- !private ["PSo20UIScrollViewDelegate", "NSURL"]
+- ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
+- !private ["PSo20UIScrollViewDelegate", "UIApplication"]
+- !private ["PSo20UIScrollViewDelegate", "UITableViewCellSelectionStyle"]
+- !private ["PSo20UIScrollViewDelegate", "UIView"]
+- ["PSo20UIScrollViewDelegate", "badgeChange"]
+- ["PSo20UIScrollViewDelegate", "badgeSwitch"]
+- ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "setBadgeValue"]
+- ["PSo20UIScrollViewDelegate", "soundChange"]
+- ["PSo20UIScrollViewDelegate", "soundSwitch"]
+- ["PSo20UIScrollViewDelegate", "tableView"]
+- ["PSo20UIScrollViewDelegate", "userDefaults"]
+- ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", "viewWillAppear"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "MainViewController"]
+- !private ["PSo16UIStateRestoring", "NSIndexPath"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
+- !private ["PSo16UIStateRestoring", "UITableViewCellSelectionStyle"]
+- !private ["PSo16UIStateRestoring", "UIView"]
+- ["PSo16UIStateRestoring", "badgeChange"]
+- ["PSo16UIStateRestoring", "badgeSwitch"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "setBadgeValue"]
+- ["PSo16UIStateRestoring", "soundChange"]
+- ["PSo16UIStateRestoring", "soundSwitch"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "userDefaults"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo8UISwitch", "on"]
+- !private ["CSo11UITableView", "sectionHeaderHeight"]
+- !private ["CSo11UITableView", "tableFooterView"]
+- !private ["CSo15UITableViewCell", "selectionStyle"]
+- !private ["OSC29UITableViewCellSelectionStyle", "None"]
+- ["CSo21UITableViewController", "Bool"]
+- !private ["CSo21UITableViewController", "MainViewController"]
+- ["CSo21UITableViewController", "NSIndexPath"]
+- !private ["CSo21UITableViewController", "NSURL"]
+- ["CSo21UITableViewController", "NSUserDefaults"]
+- !private ["CSo21UITableViewController", "UIApplication"]
+- ["CSo21UITableViewController", "UISwitch"]
+- ["CSo21UITableViewController", "UITableView"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- !private ["CSo21UITableViewController", "UITableViewCellSelectionStyle"]
+- !private ["CSo21UITableViewController", "UIView"]
+- ["CSo21UITableViewController", "badgeChange"]
+- ["CSo21UITableViewController", "badgeSwitch"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- ["CSo21UITableViewController", "soundChange"]
+- ["CSo21UITableViewController", "soundSwitch"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "userDefaults"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", "viewWillAppear"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "MainViewController"]
+- !private ["PSo21UITableViewDataSource", "NSIndexPath"]
+- !private ["PSo21UITableViewDataSource", "NSURL"]
+- ["PSo21UITableViewDataSource", "NSUserDefaults"]
+- !private ["PSo21UITableViewDataSource", "UIApplication"]
+- !private ["PSo21UITableViewDataSource", "UITableViewCellSelectionStyle"]
+- !private ["PSo21UITableViewDataSource", "UIView"]
+- ["PSo21UITableViewDataSource", "badgeChange"]
+- ["PSo21UITableViewDataSource", "badgeSwitch"]
+- ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "setBadgeValue"]
+- ["PSo21UITableViewDataSource", "soundChange"]
+- ["PSo21UITableViewDataSource", "soundSwitch"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", "userDefaults"]
+- ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", "viewWillAppear"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "MainViewController"]
+- !private ["PSo19UITableViewDelegate", "NSIndexPath"]
+- !private ["PSo19UITableViewDelegate", "NSURL"]
+- ["PSo19UITableViewDelegate", "NSUserDefaults"]
+- !private ["PSo19UITableViewDelegate", "UIApplication"]
+- !private ["PSo19UITableViewDelegate", "UITableViewCellSelectionStyle"]
+- !private ["PSo19UITableViewDelegate", "UIView"]
+- ["PSo19UITableViewDelegate", "badgeChange"]
+- ["PSo19UITableViewDelegate", "badgeSwitch"]
+- ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "setBadgeValue"]
+- ["PSo19UITableViewDelegate", "soundChange"]
+- ["PSo19UITableViewDelegate", "soundSwitch"]
+- ["PSo19UITableViewDelegate", "tableView"]
+- ["PSo19UITableViewDelegate", "userDefaults"]
+- ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", "viewWillAppear"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "MainViewController"]
+- !private ["PSo18UITraitEnvironment", "NSIndexPath"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
+- !private ["PSo18UITraitEnvironment", "UITableViewCellSelectionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
+- ["PSo18UITraitEnvironment", "badgeChange"]
+- ["PSo18UITraitEnvironment", "badgeSwitch"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "on"]
+- !private ["PSo18UITraitEnvironment", "sectionHeaderHeight"]
+- !private ["PSo18UITraitEnvironment", "selectionStyle"]
+- !private ["PSo18UITraitEnvironment", "setBadgeValue"]
+- ["PSo18UITraitEnvironment", "soundChange"]
+- ["PSo18UITraitEnvironment", "soundSwitch"]
+- !private ["PSo18UITraitEnvironment", "tableFooterView"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "userDefaults"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "on"]
+- !private ["CSo6UIView", "sectionHeaderHeight"]
+- !private ["CSo6UIView", "selectionStyle"]
+- !private ["CSo6UIView", "tableFooterView"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "MainViewController"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSURL"]
+- ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "UIApplication"]
+- ["CSo16UIViewController", "UISwitch"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- !private ["CSo16UIViewController", "UITableViewCellSelectionStyle"]
+- !private ["CSo16UIViewController", "UIView"]
+- ["CSo16UIViewController", "badgeChange"]
+- ["CSo16UIViewController", "badgeSwitch"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "setBadgeValue"]
+- ["CSo16UIViewController", "soundChange"]
+- ["CSo16UIViewController", "soundSwitch"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "userDefaults"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", ""]
+- ["CSo16UIViewController", "viewWillAppear"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "on"]
+- !private ["Ps12_Reflectable", "sectionHeaderHeight"]
+- !private ["Ps12_Reflectable", "selectionStyle"]
+- !private ["Ps12_Reflectable", "tableFooterView"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "PSo13GADAdDelegate"
+- !private "PSo21GADBannerViewDelegate"
 - "Ps8Hashable"
+- !private "C10SimpleTodo18MainViewController"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo34NSFetchedResultsControllerDelegate"
+- !private "CSo11NSIndexPath"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo5NSURL"
+- "CSo14NSUserDefaults"
+- !private "Ps16RawRepresentable"
 - "C10SimpleTodo21SettingViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- !private "CSo8UISwitch"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- !private "OSC29UITableViewCellSelectionStyle"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps32_FileReferenceLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
@@ -113,4 +709,67 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-interface-hash: "86594f1e1d8b0227ec37fe880b3f1c6b"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+interface-hash: "2fc067140df7552f9253809344a3e99d"

@@ -6,49 +6,48 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo17AddViewController", ""]
 provides-dynamic-lookup:
-- "textView"
-- "didReceiveMemoryWarning"
-- "pushSaveButton"
-- "viewDidAppear"
-- "switchChange"
 - "returnSwitch"
-- "pushCancelButton"
 - "swtichBool"
+- "switchChange"
+- "pushCancelButton"
+- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "textView"
+- "pushSaveButton"
 depends-top-level:
-- !private "NSCharacterSet"
-- !private "Item"
-- !private "UIBarStyle"
-- !private "UnicodeScalarType"
-- !private "UIAlertControllerStyle"
-- !private "String"
-- !private "StringLiteralType"
-- "Bool"
-- !private "AppDelegate"
-- !private "UIColor"
-- !private "=="
-- !private "UIAlertActionStyle"
-- "UISwitch"
-- !private "CGRect"
-- !private "UIApplication"
-- !private "NSEntityDescription"
-- !private "&&"
-- !private "UIAlertController"
-- !private "UIAlertAction"
-- !private "!="
-- "BooleanLiteralType"
-- !private "+"
-- !private "UIBarButtonSystemItem"
-- !private "NSFetchRequest"
 - !private "UIToolbar"
-- !private "Array"
-- !private "..<"
-- !private "NSError"
-- "AddViewController"
-- !private "UIBarButtonItem"
+- !private "NSFetchRequest"
+- !private "NSEntityDescription"
+- !private "!="
+- !private "AppDelegate"
+- !private "Item"
+- "BooleanLiteralType"
+- !private "UIAlertAction"
+- !private "UIApplication"
+- !private "CGRect"
 - "UITextView"
+- "Bool"
+- "AddViewController"
+- !private "&&"
+- !private "=="
+- !private "UIAlertController"
+- !private "UIBarButtonSystemItem"
+- !private "UIBarStyle"
+- !private "..<"
+- !private "Array"
+- !private "UIBarButtonItem"
+- !private "UIAlertActionStyle"
+- !private "NSCharacterSet"
+- "UISwitch"
 - !private "Void"
+- !private "UnicodeScalarType"
 - "UIViewController"
+- !private "UIAlertControllerStyle"
+- !private "+"
+- !private "String"
+- !private "UIColor"
+- !private "NSError"
+- !private "StringLiteralType"
 depends-member:
 - !private ["C10SimpleTodo17AddViewController", "AddViewController"]
 - !private ["C10SimpleTodo17AddViewController", "AppDelegate"]
@@ -86,7 +85,6 @@ depends-member:
 - ["C10SimpleTodo17AddViewController", "swtichBool"]
 - ["C10SimpleTodo17AddViewController", "textView"]
 - !private ["C10SimpleTodo17AddViewController", "view"]
-- ["C10SimpleTodo17AddViewController", "viewDidAppear"]
 - ["C10SimpleTodo17AddViewController", "viewDidLoad"]
 - !private ["Ps9AnyObject", "AddViewController"]
 - !private ["Ps9AnyObject", "CGColor"]
@@ -142,7 +140,6 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textView"]
 - !private ["Ps9AnyObject", "view"]
-- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["C10SimpleTodo11AppDelegate", "managedObjectContext"]
@@ -237,7 +234,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", "textView"]
 - !private ["Ps11CVarArgType", "view"]
-- ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
 - !private ["Ps14CollectionType", "Element"]
@@ -313,7 +309,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textView"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
-- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "AddViewController"]
@@ -380,7 +375,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textView"]
 - !private ["Ps23CustomStringConvertible", "view"]
-- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "ActionSheet"]
@@ -448,7 +442,6 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textView"]
 - !private ["Ps9Equatable", "view"]
-- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
@@ -525,7 +518,6 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textView"]
 - !private ["Ps8Hashable", "view"]
-- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -626,7 +618,6 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textView"]
 - !private ["PSo8NSCoding", "view"]
-- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "CGColor"]
@@ -666,7 +657,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "swtichBool"]
 - ["PSo26NSExtensionRequestHandling", "textView"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
-- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "insertNewObjectForEntityForName"]
@@ -744,7 +734,6 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textView"]
 - !private ["CSo8NSObject", "view"]
-- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "AddViewController"]
 - !private ["PSo16NSObjectProtocol", "CGColor"]
@@ -800,7 +789,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textView"]
 - !private ["PSo16NSObjectProtocol", "view"]
-- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo24NSPersistentStoreRequest", "init"]
@@ -929,7 +917,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textView"]
 - !private ["PSo21UIAppearanceContainer", "view"]
-- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "delegate"]
@@ -975,7 +962,6 @@ depends-member:
 - ["PSo18UIContentContainer", "swtichBool"]
 - ["PSo18UIContentContainer", "textView"]
 - !private ["PSo18UIContentContainer", "view"]
-- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "on"]
@@ -1036,7 +1022,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textView"]
 - !private ["PSo18UIFocusEnvironment", "view"]
-- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
@@ -1093,7 +1078,6 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textView"]
 - !private ["CSo11UIResponder", "view"]
-- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "becomeFirstResponder"]
 - !private ["CSo12UIScrollView", "inputAccessoryView"]
@@ -1128,7 +1112,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "swtichBool"]
 - ["PSo16UIStateRestoring", "textView"]
 - !private ["PSo16UIStateRestoring", "view"]
-- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo8UISwitch", "on"]
@@ -1187,7 +1170,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textView"]
 - !private ["PSo18UITraitEnvironment", "view"]
-- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "barStyle"]
@@ -1236,7 +1218,6 @@ depends-member:
 - ["CSo16UIViewController", "swtichBool"]
 - ["CSo16UIViewController", "textView"]
 - !private ["CSo16UIViewController", "view"]
-- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
@@ -1460,4 +1441,67 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
-interface-hash: "32910c18cdf7c6c26a828ba9338e6c25"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+interface-hash: "c0ae86ac957626b582e91a28c66a104e"

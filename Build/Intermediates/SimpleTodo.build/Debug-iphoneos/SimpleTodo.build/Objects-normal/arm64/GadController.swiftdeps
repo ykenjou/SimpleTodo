@@ -1,0 +1,629 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GadController"
+provides-nominal:
+- "C10SimpleTodo13GadController"
+provides-member:
+- ["C10SimpleTodo13GadController", ""]
+provides-dynamic-lookup:
+- "gadBannerInit"
+depends-top-level:
+- !private "-"
+- !private "Array"
+- "GadController"
+- !private "kGADAdSizeBanner"
+- "GADBannerViewDelegate"
+- !private "GADRequest"
+- !private "CGSizeMake"
+- "GADBannerView"
+- !private "StringLiteralType"
+- "UIViewController"
+- !private "CGPointMake"
+- "CGFloat"
+depends-member:
+- !private ["Ps9AnyObject", "CGPointMake"]
+- !private ["Ps9AnyObject", "CGSizeMake"]
+- !private ["Ps9AnyObject", "GADBannerView"]
+- !private ["Ps9AnyObject", "GADRequest"]
+- ["Ps9AnyObject", "ad"]
+- !private ["Ps9AnyObject", "adUnitID"]
+- ["Ps9AnyObject", "adView"]
+- ["Ps9AnyObject", "adViewDidDismissScreen"]
+- ["Ps9AnyObject", "adViewDidReceiveAd"]
+- ["Ps9AnyObject", "adViewWillDismissScreen"]
+- ["Ps9AnyObject", "adViewWillLeaveApplication"]
+- ["Ps9AnyObject", "adViewWillPresentScreen"]
+- !private ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "frame"]
+- ["Ps9AnyObject", "gadBannerInit"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "kGADAdSizeBanner"]
+- !private ["Ps9AnyObject", "loadRequest"]
+- !private ["Ps9AnyObject", "rootViewController"]
+- !private ["Ps9AnyObject", "testDevices"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
+- !private ["Ps11CVarArgType", "CGPointMake"]
+- !private ["Ps11CVarArgType", "CGSizeMake"]
+- !private ["Ps11CVarArgType", "GADBannerView"]
+- !private ["Ps11CVarArgType", "GADRequest"]
+- ["Ps11CVarArgType", "ad"]
+- !private ["Ps11CVarArgType", "adUnitID"]
+- ["Ps11CVarArgType", "adView"]
+- ["Ps11CVarArgType", "adViewDidDismissScreen"]
+- ["Ps11CVarArgType", "adViewDidReceiveAd"]
+- ["Ps11CVarArgType", "adViewWillDismissScreen"]
+- ["Ps11CVarArgType", "adViewWillLeaveApplication"]
+- ["Ps11CVarArgType", "adViewWillPresentScreen"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "frame"]
+- ["Ps11CVarArgType", "gadBannerInit"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "kGADAdSizeBanner"]
+- !private ["Ps11CVarArgType", "loadRequest"]
+- !private ["Ps11CVarArgType", "rootViewController"]
+- !private ["Ps11CVarArgType", "testDevices"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "CGPointMake"]
+- !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "GADBannerView"]
+- !private ["Ps28CustomDebugStringConvertible", "GADRequest"]
+- ["Ps28CustomDebugStringConvertible", "ad"]
+- !private ["Ps28CustomDebugStringConvertible", "adUnitID"]
+- ["Ps28CustomDebugStringConvertible", "adView"]
+- ["Ps28CustomDebugStringConvertible", "adViewDidDismissScreen"]
+- ["Ps28CustomDebugStringConvertible", "adViewDidReceiveAd"]
+- ["Ps28CustomDebugStringConvertible", "adViewWillDismissScreen"]
+- ["Ps28CustomDebugStringConvertible", "adViewWillLeaveApplication"]
+- ["Ps28CustomDebugStringConvertible", "adViewWillPresentScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
+- ["Ps28CustomDebugStringConvertible", "gadBannerInit"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "kGADAdSizeBanner"]
+- !private ["Ps28CustomDebugStringConvertible", "loadRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "testDevices"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "CGPointMake"]
+- !private ["Ps23CustomStringConvertible", "CGSizeMake"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "GADBannerView"]
+- !private ["Ps23CustomStringConvertible", "GADRequest"]
+- ["Ps23CustomStringConvertible", "ad"]
+- !private ["Ps23CustomStringConvertible", "adUnitID"]
+- ["Ps23CustomStringConvertible", "adView"]
+- ["Ps23CustomStringConvertible", "adViewDidDismissScreen"]
+- ["Ps23CustomStringConvertible", "adViewDidReceiveAd"]
+- ["Ps23CustomStringConvertible", "adViewWillDismissScreen"]
+- ["Ps23CustomStringConvertible", "adViewWillLeaveApplication"]
+- ["Ps23CustomStringConvertible", "adViewWillPresentScreen"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "frame"]
+- ["Ps23CustomStringConvertible", "gadBannerInit"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "kGADAdSizeBanner"]
+- !private ["Ps23CustomStringConvertible", "loadRequest"]
+- !private ["Ps23CustomStringConvertible", "rootViewController"]
+- !private ["Ps23CustomStringConvertible", "testDevices"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "CGPointMake"]
+- !private ["Ps9Equatable", "CGSizeMake"]
+- !private ["Ps9Equatable", "GADBannerView"]
+- !private ["Ps9Equatable", "GADRequest"]
+- ["Ps9Equatable", "ad"]
+- !private ["Ps9Equatable", "adUnitID"]
+- ["Ps9Equatable", "adView"]
+- ["Ps9Equatable", "adViewDidDismissScreen"]
+- ["Ps9Equatable", "adViewDidReceiveAd"]
+- ["Ps9Equatable", "adViewWillDismissScreen"]
+- ["Ps9Equatable", "adViewWillLeaveApplication"]
+- ["Ps9Equatable", "adViewWillPresentScreen"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "frame"]
+- ["Ps9Equatable", "gadBannerInit"]
+- !private ["Ps9Equatable", "height"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "kGADAdSizeBanner"]
+- !private ["Ps9Equatable", "loadRequest"]
+- !private ["Ps9Equatable", "origin"]
+- !private ["Ps9Equatable", "rootViewController"]
+- !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "testDevices"]
+- ["Ps9Equatable", ""]
+- !private ["PSo13GADAdDelegate", "CGPointMake"]
+- !private ["PSo13GADAdDelegate", "CGSizeMake"]
+- !private ["PSo13GADAdDelegate", "GADBannerView"]
+- !private ["PSo13GADAdDelegate", "GADRequest"]
+- ["PSo13GADAdDelegate", "ad"]
+- ["PSo13GADAdDelegate", "adView"]
+- ["PSo13GADAdDelegate", "adViewDidDismissScreen"]
+- ["PSo13GADAdDelegate", "adViewDidReceiveAd"]
+- ["PSo13GADAdDelegate", "adViewWillDismissScreen"]
+- ["PSo13GADAdDelegate", "adViewWillLeaveApplication"]
+- ["PSo13GADAdDelegate", "adViewWillPresentScreen"]
+- !private ["PSo13GADAdDelegate", "kGADAdSizeBanner"]
+- ["PSo13GADAdDelegate", ""]
+- ["CSo13GADBannerView", "CGFloat"]
+- !private ["CSo13GADBannerView", "CGPointMake"]
+- !private ["CSo13GADBannerView", "CGSizeMake"]
+- ["CSo13GADBannerView", "GADBannerView"]
+- !private ["CSo13GADBannerView", "GADRequest"]
+- ["CSo13GADBannerView", "UIViewController"]
+- ["CSo13GADBannerView", "ad"]
+- !private ["CSo13GADBannerView", "adUnitID"]
+- ["CSo13GADBannerView", "adView"]
+- ["CSo13GADBannerView", "adViewDidDismissScreen"]
+- ["CSo13GADBannerView", "adViewDidReceiveAd"]
+- ["CSo13GADBannerView", "adViewWillDismissScreen"]
+- ["CSo13GADBannerView", "adViewWillLeaveApplication"]
+- ["CSo13GADBannerView", "adViewWillPresentScreen"]
+- !private ["CSo13GADBannerView", "delegate"]
+- !private ["CSo13GADBannerView", "frame"]
+- ["CSo13GADBannerView", "gadBannerInit"]
+- ["CSo13GADBannerView", "init"]
+- !private ["CSo13GADBannerView", "kGADAdSizeBanner"]
+- !private ["CSo13GADBannerView", "loadRequest"]
+- !private ["CSo13GADBannerView", "rootViewController"]
+- ["CSo13GADBannerView", ""]
+- !private ["PSo21GADBannerViewDelegate", "CGPointMake"]
+- !private ["PSo21GADBannerViewDelegate", "CGSizeMake"]
+- !private ["PSo21GADBannerViewDelegate", "GADBannerView"]
+- !private ["PSo21GADBannerViewDelegate", "GADRequest"]
+- ["PSo21GADBannerViewDelegate", "ad"]
+- ["PSo21GADBannerViewDelegate", "adView"]
+- ["PSo21GADBannerViewDelegate", "adViewDidDismissScreen"]
+- ["PSo21GADBannerViewDelegate", "adViewDidReceiveAd"]
+- ["PSo21GADBannerViewDelegate", "adViewWillDismissScreen"]
+- ["PSo21GADBannerViewDelegate", "adViewWillLeaveApplication"]
+- ["PSo21GADBannerViewDelegate", "adViewWillPresentScreen"]
+- !private ["PSo21GADBannerViewDelegate", "kGADAdSizeBanner"]
+- ["PSo21GADBannerViewDelegate", ""]
+- !private ["CSo10GADRequest", "init"]
+- !private ["CSo10GADRequest", "testDevices"]
+- ["C10SimpleTodo13GadController", "CGFloat"]
+- !private ["C10SimpleTodo13GadController", "CGPointMake"]
+- !private ["C10SimpleTodo13GadController", "CGSizeMake"]
+- ["C10SimpleTodo13GadController", "GADBannerView"]
+- !private ["C10SimpleTodo13GadController", "GADRequest"]
+- ["C10SimpleTodo13GadController", "UIViewController"]
+- ["C10SimpleTodo13GadController", "ad"]
+- ["C10SimpleTodo13GadController", "adView"]
+- ["C10SimpleTodo13GadController", "adViewDidDismissScreen"]
+- ["C10SimpleTodo13GadController", "adViewDidReceiveAd"]
+- ["C10SimpleTodo13GadController", "adViewWillDismissScreen"]
+- ["C10SimpleTodo13GadController", "adViewWillLeaveApplication"]
+- ["C10SimpleTodo13GadController", "adViewWillPresentScreen"]
+- ["C10SimpleTodo13GadController", "deinit"]
+- ["C10SimpleTodo13GadController", "gadBannerInit"]
+- ["C10SimpleTodo13GadController", "init"]
+- !private ["C10SimpleTodo13GadController", "kGADAdSizeBanner"]
+- !private ["Ps8Hashable", "CGPointMake"]
+- !private ["Ps8Hashable", "CGSizeMake"]
+- !private ["Ps8Hashable", "GADBannerView"]
+- !private ["Ps8Hashable", "GADRequest"]
+- ["Ps8Hashable", "ad"]
+- !private ["Ps8Hashable", "adUnitID"]
+- ["Ps8Hashable", "adView"]
+- ["Ps8Hashable", "adViewDidDismissScreen"]
+- ["Ps8Hashable", "adViewDidReceiveAd"]
+- ["Ps8Hashable", "adViewWillDismissScreen"]
+- ["Ps8Hashable", "adViewWillLeaveApplication"]
+- ["Ps8Hashable", "adViewWillPresentScreen"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "frame"]
+- ["Ps8Hashable", "gadBannerInit"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "kGADAdSizeBanner"]
+- !private ["Ps8Hashable", "loadRequest"]
+- !private ["Ps8Hashable", "rootViewController"]
+- !private ["Ps8Hashable", "testDevices"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "CGPointMake"]
+- !private ["PSo8NSCoding", "CGSizeMake"]
+- !private ["PSo8NSCoding", "GADBannerView"]
+- !private ["PSo8NSCoding", "GADRequest"]
+- ["PSo8NSCoding", "ad"]
+- !private ["PSo8NSCoding", "adUnitID"]
+- ["PSo8NSCoding", "adView"]
+- ["PSo8NSCoding", "adViewDidDismissScreen"]
+- ["PSo8NSCoding", "adViewDidReceiveAd"]
+- ["PSo8NSCoding", "adViewWillDismissScreen"]
+- ["PSo8NSCoding", "adViewWillLeaveApplication"]
+- ["PSo8NSCoding", "adViewWillPresentScreen"]
+- !private ["PSo8NSCoding", "delegate"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "gadBannerInit"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "kGADAdSizeBanner"]
+- !private ["PSo8NSCoding", "loadRequest"]
+- !private ["PSo8NSCoding", "rootViewController"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "testDevices"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGPointMake"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- ["CSo8NSObject", "GADBannerView"]
+- !private ["CSo8NSObject", "GADRequest"]
+- ["CSo8NSObject", "UIViewController"]
+- ["CSo8NSObject", "ad"]
+- !private ["CSo8NSObject", "adUnitID"]
+- ["CSo8NSObject", "adView"]
+- ["CSo8NSObject", "adViewDidDismissScreen"]
+- ["CSo8NSObject", "adViewDidReceiveAd"]
+- ["CSo8NSObject", "adViewWillDismissScreen"]
+- ["CSo8NSObject", "adViewWillLeaveApplication"]
+- ["CSo8NSObject", "adViewWillPresentScreen"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "gadBannerInit"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "kGADAdSizeBanner"]
+- !private ["CSo8NSObject", "loadRequest"]
+- !private ["CSo8NSObject", "rootViewController"]
+- !private ["CSo8NSObject", "testDevices"]
+- !private ["PSo16NSObjectProtocol", "CGPointMake"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "GADBannerView"]
+- !private ["PSo16NSObjectProtocol", "GADRequest"]
+- ["PSo16NSObjectProtocol", "ad"]
+- !private ["PSo16NSObjectProtocol", "adUnitID"]
+- ["PSo16NSObjectProtocol", "adView"]
+- ["PSo16NSObjectProtocol", "adViewDidDismissScreen"]
+- ["PSo16NSObjectProtocol", "adViewDidReceiveAd"]
+- ["PSo16NSObjectProtocol", "adViewWillDismissScreen"]
+- ["PSo16NSObjectProtocol", "adViewWillLeaveApplication"]
+- ["PSo16NSObjectProtocol", "adViewWillPresentScreen"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "gadBannerInit"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "kGADAdSizeBanner"]
+- !private ["PSo16NSObjectProtocol", "loadRequest"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
+- !private ["PSo16NSObjectProtocol", "testDevices"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["SS", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "CGPointMake"]
+- !private ["PSo29UIAccessibilityIdentification", "CGSizeMake"]
+- !private ["PSo29UIAccessibilityIdentification", "GADBannerView"]
+- !private ["PSo29UIAccessibilityIdentification", "GADRequest"]
+- ["PSo29UIAccessibilityIdentification", "ad"]
+- !private ["PSo29UIAccessibilityIdentification", "adUnitID"]
+- ["PSo29UIAccessibilityIdentification", "adView"]
+- ["PSo29UIAccessibilityIdentification", "adViewDidDismissScreen"]
+- ["PSo29UIAccessibilityIdentification", "adViewDidReceiveAd"]
+- ["PSo29UIAccessibilityIdentification", "adViewWillDismissScreen"]
+- ["PSo29UIAccessibilityIdentification", "adViewWillLeaveApplication"]
+- ["PSo29UIAccessibilityIdentification", "adViewWillPresentScreen"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- ["PSo29UIAccessibilityIdentification", "gadBannerInit"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "kGADAdSizeBanner"]
+- !private ["PSo29UIAccessibilityIdentification", "loadRequest"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGPointMake"]
+- !private ["PSo12UIAppearance", "CGSizeMake"]
+- !private ["PSo12UIAppearance", "GADBannerView"]
+- !private ["PSo12UIAppearance", "GADRequest"]
+- ["PSo12UIAppearance", "ad"]
+- !private ["PSo12UIAppearance", "adUnitID"]
+- ["PSo12UIAppearance", "adView"]
+- ["PSo12UIAppearance", "adViewDidDismissScreen"]
+- ["PSo12UIAppearance", "adViewDidReceiveAd"]
+- ["PSo12UIAppearance", "adViewWillDismissScreen"]
+- ["PSo12UIAppearance", "adViewWillLeaveApplication"]
+- ["PSo12UIAppearance", "adViewWillPresentScreen"]
+- !private ["PSo12UIAppearance", "delegate"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo12UIAppearance", "gadBannerInit"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "kGADAdSizeBanner"]
+- !private ["PSo12UIAppearance", "loadRequest"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGPointMake"]
+- !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
+- !private ["PSo21UIAppearanceContainer", "GADBannerView"]
+- !private ["PSo21UIAppearanceContainer", "GADRequest"]
+- ["PSo21UIAppearanceContainer", "ad"]
+- !private ["PSo21UIAppearanceContainer", "adUnitID"]
+- ["PSo21UIAppearanceContainer", "adView"]
+- ["PSo21UIAppearanceContainer", "adViewDidDismissScreen"]
+- ["PSo21UIAppearanceContainer", "adViewDidReceiveAd"]
+- ["PSo21UIAppearanceContainer", "adViewWillDismissScreen"]
+- ["PSo21UIAppearanceContainer", "adViewWillLeaveApplication"]
+- ["PSo21UIAppearanceContainer", "adViewWillPresentScreen"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "gadBannerInit"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "kGADAdSizeBanner"]
+- !private ["PSo21UIAppearanceContainer", "loadRequest"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "CGPointMake"]
+- !private ["PSo17UICoordinateSpace", "CGSizeMake"]
+- !private ["PSo17UICoordinateSpace", "GADBannerView"]
+- !private ["PSo17UICoordinateSpace", "GADRequest"]
+- ["PSo17UICoordinateSpace", "ad"]
+- !private ["PSo17UICoordinateSpace", "adUnitID"]
+- ["PSo17UICoordinateSpace", "adView"]
+- ["PSo17UICoordinateSpace", "adViewDidDismissScreen"]
+- ["PSo17UICoordinateSpace", "adViewDidReceiveAd"]
+- ["PSo17UICoordinateSpace", "adViewWillDismissScreen"]
+- ["PSo17UICoordinateSpace", "adViewWillLeaveApplication"]
+- ["PSo17UICoordinateSpace", "adViewWillPresentScreen"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- ["PSo17UICoordinateSpace", "gadBannerInit"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "kGADAdSizeBanner"]
+- !private ["PSo17UICoordinateSpace", "loadRequest"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGPointMake"]
+- !private ["PSo13UIDynamicItem", "CGSizeMake"]
+- !private ["PSo13UIDynamicItem", "GADBannerView"]
+- !private ["PSo13UIDynamicItem", "GADRequest"]
+- ["PSo13UIDynamicItem", "ad"]
+- !private ["PSo13UIDynamicItem", "adUnitID"]
+- ["PSo13UIDynamicItem", "adView"]
+- ["PSo13UIDynamicItem", "adViewDidDismissScreen"]
+- ["PSo13UIDynamicItem", "adViewDidReceiveAd"]
+- ["PSo13UIDynamicItem", "adViewWillDismissScreen"]
+- ["PSo13UIDynamicItem", "adViewWillLeaveApplication"]
+- ["PSo13UIDynamicItem", "adViewWillPresentScreen"]
+- !private ["PSo13UIDynamicItem", "delegate"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo13UIDynamicItem", "gadBannerInit"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "kGADAdSizeBanner"]
+- !private ["PSo13UIDynamicItem", "loadRequest"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGPointMake"]
+- !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
+- !private ["PSo18UIFocusEnvironment", "GADBannerView"]
+- !private ["PSo18UIFocusEnvironment", "GADRequest"]
+- ["PSo18UIFocusEnvironment", "ad"]
+- !private ["PSo18UIFocusEnvironment", "adUnitID"]
+- ["PSo18UIFocusEnvironment", "adView"]
+- ["PSo18UIFocusEnvironment", "adViewDidDismissScreen"]
+- ["PSo18UIFocusEnvironment", "adViewDidReceiveAd"]
+- ["PSo18UIFocusEnvironment", "adViewWillDismissScreen"]
+- ["PSo18UIFocusEnvironment", "adViewWillLeaveApplication"]
+- ["PSo18UIFocusEnvironment", "adViewWillPresentScreen"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "gadBannerInit"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "kGADAdSizeBanner"]
+- !private ["PSo18UIFocusEnvironment", "loadRequest"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CGPointMake"]
+- !private ["CSo11UIResponder", "CGSizeMake"]
+- ["CSo11UIResponder", "GADBannerView"]
+- !private ["CSo11UIResponder", "GADRequest"]
+- ["CSo11UIResponder", "UIViewController"]
+- ["CSo11UIResponder", "ad"]
+- !private ["CSo11UIResponder", "adUnitID"]
+- ["CSo11UIResponder", "adView"]
+- ["CSo11UIResponder", "adViewDidDismissScreen"]
+- ["CSo11UIResponder", "adViewDidReceiveAd"]
+- ["CSo11UIResponder", "adViewWillDismissScreen"]
+- ["CSo11UIResponder", "adViewWillLeaveApplication"]
+- ["CSo11UIResponder", "adViewWillPresentScreen"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "gadBannerInit"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kGADAdSizeBanner"]
+- !private ["CSo11UIResponder", "loadRequest"]
+- !private ["CSo11UIResponder", "rootViewController"]
+- !private ["PSo18UITraitEnvironment", "CGPointMake"]
+- !private ["PSo18UITraitEnvironment", "CGSizeMake"]
+- !private ["PSo18UITraitEnvironment", "GADBannerView"]
+- !private ["PSo18UITraitEnvironment", "GADRequest"]
+- ["PSo18UITraitEnvironment", "ad"]
+- !private ["PSo18UITraitEnvironment", "adUnitID"]
+- ["PSo18UITraitEnvironment", "adView"]
+- ["PSo18UITraitEnvironment", "adViewDidDismissScreen"]
+- ["PSo18UITraitEnvironment", "adViewDidReceiveAd"]
+- ["PSo18UITraitEnvironment", "adViewWillDismissScreen"]
+- ["PSo18UITraitEnvironment", "adViewWillLeaveApplication"]
+- ["PSo18UITraitEnvironment", "adViewWillPresentScreen"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "gadBannerInit"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "kGADAdSizeBanner"]
+- !private ["PSo18UITraitEnvironment", "loadRequest"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CGFloat"]
+- !private ["CSo6UIView", "CGPointMake"]
+- !private ["CSo6UIView", "CGSizeMake"]
+- ["CSo6UIView", "GADBannerView"]
+- !private ["CSo6UIView", "GADRequest"]
+- ["CSo6UIView", "UIViewController"]
+- ["CSo6UIView", "ad"]
+- !private ["CSo6UIView", "adUnitID"]
+- ["CSo6UIView", "adView"]
+- ["CSo6UIView", "adViewDidDismissScreen"]
+- ["CSo6UIView", "adViewDidReceiveAd"]
+- ["CSo6UIView", "adViewWillDismissScreen"]
+- ["CSo6UIView", "adViewWillLeaveApplication"]
+- ["CSo6UIView", "adViewWillPresentScreen"]
+- !private ["CSo6UIView", "delegate"]
+- !private ["CSo6UIView", "frame"]
+- ["CSo6UIView", "gadBannerInit"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "kGADAdSizeBanner"]
+- !private ["CSo6UIView", "loadRequest"]
+- !private ["CSo6UIView", "rootViewController"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps12_Reflectable", "CGPointMake"]
+- !private ["Ps12_Reflectable", "CGSizeMake"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "GADBannerView"]
+- !private ["Ps12_Reflectable", "GADRequest"]
+- ["Ps12_Reflectable", "ad"]
+- !private ["Ps12_Reflectable", "adUnitID"]
+- ["Ps12_Reflectable", "adView"]
+- ["Ps12_Reflectable", "adViewDidDismissScreen"]
+- ["Ps12_Reflectable", "adViewDidReceiveAd"]
+- ["Ps12_Reflectable", "adViewWillDismissScreen"]
+- ["Ps12_Reflectable", "adViewWillLeaveApplication"]
+- ["Ps12_Reflectable", "adViewWillPresentScreen"]
+- !private ["Ps12_Reflectable", "delegate"]
+- !private ["Ps12_Reflectable", "frame"]
+- ["Ps12_Reflectable", "gadBannerInit"]
+- !private ["Ps12_Reflectable", "height"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "kGADAdSizeBanner"]
+- !private ["Ps12_Reflectable", "loadRequest"]
+- !private ["Ps12_Reflectable", "origin"]
+- !private ["Ps12_Reflectable", "rootViewController"]
+- !private ["Ps12_Reflectable", "size"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "PSo13GADAdDelegate"
+- "CSo13GADBannerView"
+- "PSo21GADBannerViewDelegate"
+- !private "CSo10GADRequest"
+- "C10SimpleTodo13GadController"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps12SequenceType"
+- !private "SS"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Ps10_ArrayType"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+interface-hash: "f9f6c58eecd51480f25beaf6ae8eef39"

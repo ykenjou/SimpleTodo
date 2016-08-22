@@ -9,14 +9,19 @@
 import UIKit
 import CoreData
 import AudioToolbox
+import GoogleMobileAds
 
-class MainViewController:  UIViewController , UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate , UIGestureRecognizerDelegate{
+class MainViewController:  UIViewController , UITableViewDataSource , UITableViewDelegate , NSFetchedResultsControllerDelegate , UIGestureRecognizerDelegate ,UINavigationControllerDelegate , GADBannerViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var btmToolBar: UIToolbar!
     
+    @IBOutlet weak var popMessageView: UIView!
+    
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    let userDefaults = NSUserDefaults.standardUserDefaults()
     
     lazy var fetchedResultsController: NSFetchedResultsController = {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -53,10 +58,15 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             print("An error occurred")
         }
         
+        //通知設定
         let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge, categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
-        UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
+        if userDefaults.boolForKey("badge") {
+            UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
+        } else {
+            UIApplication.sharedApplication().applicationIconBadgeNumber = -1
+        }
         
         /*
         navigationBar.barTintColor = UIColor(red: 28 / 255, green: 67 / 255, blue: 155 / 255, alpha: 1.0)
@@ -66,10 +76,29 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         btmToolBar.tintColor = UIColor.whiteColor()
         */
         
-        
+        //セル長押し設定
         let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(MainViewController.cellLongPressed(_:)))
         longPressRecognizer.delegate = self
         tableView.addGestureRecognizer(longPressRecognizer)
+        
+        //self.view.frame.size.height
+        
+        
+        //self.navigationController?.navigationBar.sizeThatFits(CGSizeMake(UIScreen.mainScreen().bounds.width, 94))
+        
+        let gadController = GadController()
+        let bannerView : GADBannerView = gadController.gadBannerInit(self.view.frame.width, frameHeight: 50, viewController: self)
+        
+        if userDefaults.boolForKey("showAd") {
+            self.navigationController?.navigationBar.addSubview(bannerView)
+        } else {
+            bannerView.removeFromSuperview()
+        }
+        
+        popMessageView.layer.cornerRadius = 10
+        
+        self.navigationController?.navigationBar.sizeThatFits(CGSizeMake(UIScreen.mainScreen().bounds.width, 94))
+
         
     }
     
@@ -77,6 +106,7 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         super.viewWillAppear(animated)
         
         tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,10 +117,15 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     func controllerDidChangeContent(controller: NSFetchedResultsController)
     {
         tableView.reloadData()
-        UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
+        
+        if userDefaults.boolForKey("badge") {
+            UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
+        } else {
+            UIApplication.sharedApplication().applicationIconBadgeNumber = -1
+        }
     }
     
-    func setBadgeValue() -> NSInteger{
+    internal func setBadgeValue() -> NSInteger{
         let fetchRequest = NSFetchRequest(entityName: "Item")
         let precidate = NSPredicate(format: "checked == %d", 0)
         fetchRequest.predicate = precidate
@@ -105,7 +140,6 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         }
         
         return (items?.count)!
-
     }
     
     @IBAction func settingButton(sender: UIBarButtonItem) {
@@ -127,6 +161,15 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
                 self.presentViewController(editViewController as UIViewController, animated: true, completion: nil)
             }
         }
+    }
+    
+    func showPopMessageView(){
+        popMessageView.fadeIn(.Normal)
+        let delay = 1 * Double(NSEC_PER_SEC)
+        let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            self.popMessageView.fadeOut(.Normal)
+        })
     }
     
     
@@ -160,6 +203,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         let label : UILabel? = cell.contentView.viewWithTag(1) as? UILabel
 
         label?.text = item.text
+        let fontSize :CGFloat = CGFloat(userDefaults.floatForKey("fontSize"))
+        label?.font = UIFont.systemFontOfSize(fontSize)
         
         if item.checked == 1 {
             tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: UITableViewScrollPosition.None)
@@ -187,7 +232,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         self.setCheckedValue(1, indexPath: indexPath)
         
-        AudioServicesPlaySystemSound(1104)
+        if userDefaults.boolForKey("sound") {
+            AudioServicesPlaySystemSound(1104)
+        }
         
     }
     
@@ -204,7 +251,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         setCheckedValue(0, indexPath: indexPath)
         
-        AudioServicesPlaySystemSound(1104)
+        if userDefaults.boolForKey("sound") {
+            AudioServicesPlaySystemSound(1104)
+        }
         
     }
     
@@ -233,9 +282,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let editViewController = storyboard.instantiateViewControllerWithIdentifier("EditViewController") as! EditViewController
             
-            self.presentViewController(editViewController as UIViewController, animated: true, completion: nil)
-            
-            
+            dispatch_async(dispatch_get_main_queue(), {
+                self.presentViewController(editViewController as UIViewController, animated: true, completion: nil)
+            })
             
         }
         editAction.backgroundColor = UIColor.orangeColor()
@@ -246,6 +295,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             
             let board = UIPasteboard.generalPasteboard()
             board.setValue((label?.text)!, forPasteboardType: "public.text")
+            
+            self.showPopMessageView()
         }
         copyAction.backgroundColor = UIColor.grayColor()
         
@@ -362,7 +413,22 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let addViewController = storyboard.instantiateViewControllerWithIdentifier("AddViewController") as! AddViewController
         
-        self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
+        /*
+        let delay = 0 * Double(NSEC_PER_SEC)
+        let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue(), {
+            self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
+        })
+        */
+ 
+        
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
+        }
+        
+        
+        
     }
     
     override func setEditing(editing: Bool, animated: Bool) {
@@ -380,5 +446,65 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }
+
+enum FadeType: NSTimeInterval {
+    case
+    Normal = 0.2,
+    Slow = 1.0
+}
+
+extension UIView {
+    func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil) {
+        fadeIn(type.rawValue, completed: completed)
+    }
+    
+    /** For typical purpose, use "public func fadeIn(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
+    func fadeIn(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
+        alpha = 0
+        hidden = false
+        UIView.animateWithDuration(duration,
+                                   animations: {
+                                    self.alpha = 0.95
+        }) { finished in
+            completed?()
+        }
+    }
+    func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil) {
+        fadeOut(type.rawValue, completed: completed)
+    }
+    /** For typical purpose, use "public func fadeOut(type: FadeType = .Normal, completed: (() -> ())? = nil)" instead of this */
+    func fadeOut(duration: NSTimeInterval = FadeType.Slow.rawValue, completed: (() -> ())? = nil) {
+        UIView.animateWithDuration(duration
+            , animations: {
+                self.alpha = 0
+        }) { [weak self] finished in
+            self?.hidden = true
+            self?.alpha = 0.95
+            completed?()
+        }
+    }
+}
+
+
+/*
+extension UINavigationBar{
+    
+    override public func sizeThatFits(size: CGSize) -> CGSize {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let newSize: CGSize?
+        if userDefaults.boolForKey("showAd"){
+            newSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 94)
+        } else {
+            newSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 44)
+        }
+        
+        return newSize!
+    }
+}
+ */
+
+

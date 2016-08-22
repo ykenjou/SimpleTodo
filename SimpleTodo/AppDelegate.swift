@@ -15,10 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var itemText: NSString?
     var displayOrder :NSNumber?
+    let userDefaults = NSUserDefaults.standardUserDefaults()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let defaultsValues : NSDictionary = [
+            "firstLaunch" : true,
+            "sound" : true,
+            "badge" : true,
+            "showAd": true,
+            "fontSize": 20
+        ]
+        userDefaults.registerDefaults(defaultsValues as! [String : AnyObject])
+        
         return true
     }
 
