@@ -47,8 +47,30 @@ class EditViewController: UIViewController {
     }
     
     func pushCancelButton(){
-        self.textView.resignFirstResponder()
-        self.dismissViewControllerAnimated(true, completion: nil)
+        if self.appDelegate.itemText != textView.text {
+            let actionSheet : UIAlertController = UIAlertController(title: "変更破棄", message: "変更したテキストを破棄してもいいですか?", preferredStyle: UIAlertControllerStyle.ActionSheet)
+            
+            let okAction : UIAlertAction = UIAlertAction(title: "破棄する", style: UIAlertActionStyle.Default, handler:{
+                (action: UIAlertAction!) -> Void in
+                self.textView.resignFirstResponder()
+                self.dismissViewControllerAnimated(true, completion: nil)
+                }
+            )
+            
+            let cancelAction : UIAlertAction = UIAlertAction(title: "破棄しない", style: UIAlertActionStyle.Cancel, handler:{
+                (action: UIAlertAction!) -> Void in
+                
+                }
+            )
+            
+            actionSheet.addAction(okAction)
+            actionSheet.addAction(cancelAction)
+            
+            presentViewController(actionSheet, animated: true, completion: nil)
+        } else {
+            self.textView.resignFirstResponder()
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     func pushSaveButton(){

@@ -14,18 +14,15 @@ provides-member:
 - ["CSo6UIView", "fadeOut"]
 - ["CSo6UIView", "fadeOut"]
 provides-dynamic-lookup:
-- "pushTrashButton"
-- "popMessageView"
-- "fadeIn"
-- "didReceiveMemoryWarning"
-- "controllerDidChangeContent"
 - "setBadgeValue"
+- "fadeIn"
+- "fadeOut"
+- "didReceiveMemoryWarning"
+- "firstView"
 - "viewDidLoad"
-- "appDelegate"
-- "numberOfSectionsInTableView"
-- "pushAddButton"
-- "setEditing"
-- "fetchedResultsController"
+- "cellLongPressed"
+- "popMessageView"
+- "pushTrashButton"
 - "settingButton"
 - "tableView"
 - "tableView"
@@ -34,98 +31,101 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "tableView"
-- "btmToolBar"
-- "viewWillAppear"
+- "tableView"
+- "tableView"
+- "appDelegate"
 - "showPopMessageView"
-- "cellLongPressed"
-- "setCheckedValue"
+- "numberOfSectionsInTableView"
 - "userDefaults"
-- "fadeOut"
+- "fetchedResultsController"
+- "setCheckedValue"
+- "pushAddButton"
+- "controllerDidChangeContent"
+- "viewWillAppear"
+- "btmToolBar"
+- "setEditing"
 depends-top-level:
-- !private "dispatch_time"
-- !private "NSArray"
-- !private "dispatch_get_main_queue"
-- !private "Item"
-- !private "UITableViewScrollPosition"
-- "UILongPressGestureRecognizer"
-- !private "GADBannerView"
-- "UIBarButtonItem"
-- "StringLiteralType"
-- !private "NSForegroundColorAttributeName"
-- !private "UITableViewCellSelectionStyle"
-- !private "!="
-- !private "UIColor"
-- !private "UIFont"
-- !private "NSManagedObject"
-- "UIToolbar"
-- !private "UIBarButtonSystemItem"
-- !private "CGFloat"
-- !private "UIStoryboard"
-- !private "dispatch_after"
 - "NSInteger"
-- "UIView"
-- !private "NSFetchRequest"
-- "UITableViewRowAction"
-- "NSIndexPath"
-- !private "-"
-- "NSNumber"
-- !private "CGSizeMake"
-- "NSTimeInterval"
-- !private "NSMakeRange"
-- !private "dispatch_async"
-- "FadeType"
-- "AppDelegate"
-- "UINavigationControllerDelegate"
-- "GADBannerViewDelegate"
+- !private "dispatch_time"
+- !private "UIUserNotificationSettings"
 - !private "NSPredicate"
-- !private "UIPasteboard"
+- !private "UIBarButtonSystemItem"
+- !private "DISPATCH_TIME_NOW"
+- "UITableView"
+- !private "NSSortDescriptor"
+- !private "Int64"
+- !private "NSArray"
+- "GADBannerViewDelegate"
+- "UINavigationControllerDelegate"
+- "CGFloat"
+- "UIApplication"
+- !private "UILabel"
+- !private "UITableViewScrollPosition"
+- !private "dispatch_async"
+- !private "NSForegroundColorAttributeName"
+- !private "GadController"
+- !private "!="
+- "AppDelegate"
+- !private "UIUserNotificationType"
+- !private "NSError"
+- !private "UITableViewCellSelectionStyle"
+- "=="
+- !private "Double"
+- !private "GADBannerView"
+- "NSTimeInterval"
+- "Bool"
+- !private "NSEC_PER_SEC"
+- "UITableViewCell"
+- !private "UITableViewAutomaticDimension"
+- !private "NSFetchRequest"
+- !private "UIGestureRecognizerState"
+- !private "~="
+- !private "NSManagedObject"
+- "FadeType"
+- "UIGestureRecognizerDelegate"
+- "UIToolbar"
+- "NSFetchedResultsControllerDelegate"
+- "NSNumber"
 - "UITableViewDelegate"
+- "UIBarButtonItem"
 - "Array"
 - "UITableViewDataSource"
-- "UIApplication"
-- !private "UITableViewAutomaticDimension"
-- "Int"
-- "UIGestureRecognizerDelegate"
-- !private "UIScreen"
-- !private "AudioServicesPlaySystemSound"
-- "NSFetchedResultsControllerDelegate"
-- "UIViewController"
-- !private "UIUserNotificationSettings"
-- "NSUserDefaults"
-- "=="
-- !private "NSError"
-- !private "NSSortDescriptor"
-- !private "print"
-- !private "NSStrikethroughStyleAttributeName"
-- !private "EditViewController"
-- !private "NSEC_PER_SEC"
-- !private "*"
-- !private "UILabel"
-- !private "Double"
 - !private "AddViewController"
-- "BooleanLiteralType"
-- !private "~="
-- !private "+"
-- !private "NSMutableAttributedString"
+- !private "NSMakeRange"
+- !private "UIFont"
+- "UITableViewRowAction"
+- !private "NSStrikethroughStyleAttributeName"
 - !private "<"
-- !private "Int64"
-- !private "..<"
-- "UITableViewCell"
-- "MainViewController"
-- "Bool"
+- !private "AudioServicesPlaySystemSound"
+- "NSIndexPath"
+- "UILongPressGestureRecognizer"
+- !private "Item"
+- "NSUserDefaults"
 - "NSFetchedResultsController"
-- "UITableView"
-- !private "UIGestureRecognizerState"
-- !private "DISPATCH_TIME_NOW"
-- !private "GadController"
-- !private "UIUserNotificationType"
+- "MainViewController"
+- !private "UIColor"
+- "UIViewController"
+- "BooleanLiteralType"
+- !private "UIStoryboard"
+- !private "*"
+- !private "dispatch_after"
+- !private "dispatch_get_main_queue"
+- !private "+"
+- !private "print"
+- !private "EditViewController"
+- !private "UIPasteboard"
+- !private "..<"
+- "UIView"
+- "Int"
+- !private "NSMutableAttributedString"
+- !private "-"
+- "StringLiteralType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Normal"]
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C10SimpleTodo17AddViewController", "deinit"]
 - !private ["Ps9AnyObject", "AudioServicesPlaySystemSound"]
 - !private ["Ps9AnyObject", "CGFloat"]
-- !private ["Ps9AnyObject", "CGSizeMake"]
 - !private ["Ps9AnyObject", "DISPATCH_TIME_NOW"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "FadeType"]
@@ -151,7 +151,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIGestureRecognizerState"]
 - !private ["Ps9AnyObject", "UILongPressGestureRecognizer"]
 - !private ["Ps9AnyObject", "UIPasteboard"]
-- !private ["Ps9AnyObject", "UIScreen"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - !private ["Ps9AnyObject", "UITableViewAutomaticDimension"]
 - !private ["Ps9AnyObject", "UITableViewCellSelectionStyle"]
@@ -169,7 +168,6 @@ depends-member:
 - ["Ps9AnyObject", "adViewWillPresentScreen"]
 - !private ["Ps9AnyObject", "addAttribute"]
 - !private ["Ps9AnyObject", "addGestureRecognizer"]
-- !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
 - ["Ps9AnyObject", "appDelegate"]
@@ -178,7 +176,6 @@ depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "blackColor"]
 - !private ["Ps9AnyObject", "boolForKey"]
-- !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "btmToolBar"]
 - !private ["Ps9AnyObject", "cellForRowAtIndexPath"]
 - ["Ps9AnyObject", "cellLongPressed"]
@@ -207,6 +204,7 @@ depends-member:
 - ["Ps9AnyObject", "fadeOut"]
 - ["Ps9AnyObject", "fetchedResultsController"]
 - ["Ps9AnyObject", "fetchedResultsController.storage"]
+- ["Ps9AnyObject", "firstView"]
 - !private ["Ps9AnyObject", "floatForKey"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "frame"]
@@ -226,9 +224,7 @@ depends-member:
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "length"]
 - !private ["Ps9AnyObject", "locationInView"]
-- !private ["Ps9AnyObject", "mainScreen"]
 - !private ["Ps9AnyObject", "managedObjectContext"]
-- !private ["Ps9AnyObject", "navigationBar"]
 - ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -244,7 +240,6 @@ depends-member:
 - ["Ps9AnyObject", "pushTrashButton"]
 - !private ["Ps9AnyObject", "registerUserNotificationSettings"]
 - !private ["Ps9AnyObject", "reloadData"]
-- !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "row"]
 - !private ["Ps9AnyObject", "rowHeight"]
 - !private ["Ps9AnyObject", "save"]
@@ -272,7 +267,6 @@ depends-member:
 - ["Ps9AnyObject", "settingButton"]
 - ["Ps9AnyObject", "sharedApplication"]
 - ["Ps9AnyObject", "showPopMessageView"]
-- !private ["Ps9AnyObject", "sizeThatFits"]
 - !private ["Ps9AnyObject", "sortDescriptors"]
 - ["Ps9AnyObject", "standardUserDefaults"]
 - !private ["Ps9AnyObject", "state"]
@@ -331,7 +325,6 @@ depends-member:
 - !private ["VSC6CGRect", "width"]
 - !private ["Ps11CVarArgType", "AudioServicesPlaySystemSound"]
 - !private ["Ps11CVarArgType", "CGFloat"]
-- !private ["Ps11CVarArgType", "CGSizeMake"]
 - !private ["Ps11CVarArgType", "DISPATCH_TIME_NOW"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "Double"]
@@ -361,7 +354,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIGestureRecognizerState"]
 - !private ["Ps11CVarArgType", "UILongPressGestureRecognizer"]
 - !private ["Ps11CVarArgType", "UIPasteboard"]
-- !private ["Ps11CVarArgType", "UIScreen"]
 - !private ["Ps11CVarArgType", "UIStoryboard"]
 - !private ["Ps11CVarArgType", "UITableViewAutomaticDimension"]
 - !private ["Ps11CVarArgType", "UITableViewCellSelectionStyle"]
@@ -380,7 +372,6 @@ depends-member:
 - ["Ps11CVarArgType", "adViewWillPresentScreen"]
 - !private ["Ps11CVarArgType", "addAttribute"]
 - !private ["Ps11CVarArgType", "addGestureRecognizer"]
-- !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
 - ["Ps11CVarArgType", "appDelegate"]
@@ -389,7 +380,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "blackColor"]
 - !private ["Ps11CVarArgType", "boolForKey"]
-- !private ["Ps11CVarArgType", "bounds"]
 - ["Ps11CVarArgType", "btmToolBar"]
 - !private ["Ps11CVarArgType", "cellForRowAtIndexPath"]
 - ["Ps11CVarArgType", "cellLongPressed"]
@@ -418,6 +408,7 @@ depends-member:
 - ["Ps11CVarArgType", "fadeOut"]
 - ["Ps11CVarArgType", "fetchedResultsController"]
 - ["Ps11CVarArgType", "fetchedResultsController.storage"]
+- ["Ps11CVarArgType", "firstView"]
 - !private ["Ps11CVarArgType", "floatForKey"]
 - !private ["Ps11CVarArgType", "font"]
 - !private ["Ps11CVarArgType", "frame"]
@@ -438,9 +429,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "layer"]
 - !private ["Ps11CVarArgType", "length"]
 - !private ["Ps11CVarArgType", "locationInView"]
-- !private ["Ps11CVarArgType", "mainScreen"]
 - !private ["Ps11CVarArgType", "managedObjectContext"]
-- !private ["Ps11CVarArgType", "navigationBar"]
 - ["Ps11CVarArgType", "navigationController"]
 - ["Ps11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
@@ -456,7 +445,6 @@ depends-member:
 - ["Ps11CVarArgType", "pushTrashButton"]
 - !private ["Ps11CVarArgType", "registerUserNotificationSettings"]
 - !private ["Ps11CVarArgType", "reloadData"]
-- !private ["Ps11CVarArgType", "removeFromSuperview"]
 - !private ["Ps11CVarArgType", "row"]
 - !private ["Ps11CVarArgType", "rowHeight"]
 - !private ["Ps11CVarArgType", "save"]
@@ -484,7 +472,6 @@ depends-member:
 - ["Ps11CVarArgType", "settingButton"]
 - ["Ps11CVarArgType", "sharedApplication"]
 - ["Ps11CVarArgType", "showPopMessageView"]
-- !private ["Ps11CVarArgType", "sizeThatFits"]
 - !private ["Ps11CVarArgType", "sortDescriptors"]
 - ["Ps11CVarArgType", "standardUserDefaults"]
 - !private ["Ps11CVarArgType", "state"]
@@ -515,7 +502,6 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "AudioServicesPlaySystemSound"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
 - !private ["Ps28CustomDebugStringConvertible", "DISPATCH_TIME_NOW"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
@@ -547,7 +533,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIGestureRecognizerState"]
 - !private ["Ps28CustomDebugStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UIPasteboard"]
-- !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewAutomaticDimension"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCellSelectionStyle"]
@@ -566,7 +551,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "adViewWillPresentScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "addAttribute"]
 - !private ["Ps28CustomDebugStringConvertible", "addGestureRecognizer"]
-- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
 - ["Ps28CustomDebugStringConvertible", "appDelegate"]
@@ -575,7 +559,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blackColor"]
 - !private ["Ps28CustomDebugStringConvertible", "boolForKey"]
-- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - ["Ps28CustomDebugStringConvertible", "btmToolBar"]
 - !private ["Ps28CustomDebugStringConvertible", "cellForRowAtIndexPath"]
 - ["Ps28CustomDebugStringConvertible", "cellLongPressed"]
@@ -603,6 +586,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "fadeOut"]
 - ["Ps28CustomDebugStringConvertible", "fetchedResultsController"]
 - ["Ps28CustomDebugStringConvertible", "fetchedResultsController.storage"]
+- ["Ps28CustomDebugStringConvertible", "firstView"]
 - !private ["Ps28CustomDebugStringConvertible", "floatForKey"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
@@ -622,9 +606,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "length"]
 - !private ["Ps28CustomDebugStringConvertible", "locationInView"]
-- !private ["Ps28CustomDebugStringConvertible", "mainScreen"]
 - !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
-- !private ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps28CustomDebugStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -640,7 +622,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "pushTrashButton"]
 - !private ["Ps28CustomDebugStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
-- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "rowHeight"]
 - !private ["Ps28CustomDebugStringConvertible", "save"]
@@ -668,7 +649,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "settingButton"]
 - ["Ps28CustomDebugStringConvertible", "sharedApplication"]
 - ["Ps28CustomDebugStringConvertible", "showPopMessageView"]
-- !private ["Ps28CustomDebugStringConvertible", "sizeThatFits"]
 - !private ["Ps28CustomDebugStringConvertible", "sortDescriptors"]
 - ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
 - !private ["Ps28CustomDebugStringConvertible", "state"]
@@ -686,7 +666,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "AudioServicesPlaySystemSound"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
-- !private ["Ps23CustomStringConvertible", "CGSizeMake"]
 - !private ["Ps23CustomStringConvertible", "DISPATCH_TIME_NOW"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Double"]
@@ -720,7 +699,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIGestureRecognizerState"]
 - !private ["Ps23CustomStringConvertible", "UILongPressGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UIPasteboard"]
-- !private ["Ps23CustomStringConvertible", "UIScreen"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "UITableViewAutomaticDimension"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCellSelectionStyle"]
@@ -741,7 +719,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "adViewWillPresentScreen"]
 - !private ["Ps23CustomStringConvertible", "addAttribute"]
 - !private ["Ps23CustomStringConvertible", "addGestureRecognizer"]
-- !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
 - ["Ps23CustomStringConvertible", "appDelegate"]
@@ -750,7 +727,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "blackColor"]
 - !private ["Ps23CustomStringConvertible", "boolForKey"]
-- !private ["Ps23CustomStringConvertible", "bounds"]
 - ["Ps23CustomStringConvertible", "btmToolBar"]
 - !private ["Ps23CustomStringConvertible", "cellForRowAtIndexPath"]
 - ["Ps23CustomStringConvertible", "cellLongPressed"]
@@ -778,6 +754,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "fadeOut"]
 - ["Ps23CustomStringConvertible", "fetchedResultsController"]
 - ["Ps23CustomStringConvertible", "fetchedResultsController.storage"]
+- ["Ps23CustomStringConvertible", "firstView"]
 - !private ["Ps23CustomStringConvertible", "floatForKey"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "frame"]
@@ -798,9 +775,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "length"]
 - !private ["Ps23CustomStringConvertible", "locationInView"]
-- !private ["Ps23CustomStringConvertible", "mainScreen"]
 - !private ["Ps23CustomStringConvertible", "managedObjectContext"]
-- !private ["Ps23CustomStringConvertible", "navigationBar"]
 - ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -816,7 +791,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "pushTrashButton"]
 - !private ["Ps23CustomStringConvertible", "registerUserNotificationSettings"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
-- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "rowHeight"]
 - !private ["Ps23CustomStringConvertible", "save"]
@@ -844,7 +818,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "settingButton"]
 - ["Ps23CustomStringConvertible", "sharedApplication"]
 - ["Ps23CustomStringConvertible", "showPopMessageView"]
-- !private ["Ps23CustomStringConvertible", "sizeThatFits"]
 - !private ["Ps23CustomStringConvertible", "sortDescriptors"]
 - ["Ps23CustomStringConvertible", "standardUserDefaults"]
 - !private ["Ps23CustomStringConvertible", "state"]
@@ -869,7 +842,6 @@ depends-member:
 - !private ["Ps9Equatable", "Badge"]
 - !private ["Ps9Equatable", "Began"]
 - !private ["Ps9Equatable", "CGFloat"]
-- !private ["Ps9Equatable", "CGSizeMake"]
 - !private ["Ps9Equatable", "DISPATCH_TIME_NOW"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "Double"]
@@ -905,7 +877,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIGestureRecognizerState"]
 - !private ["Ps9Equatable", "UILongPressGestureRecognizer"]
 - !private ["Ps9Equatable", "UIPasteboard"]
-- !private ["Ps9Equatable", "UIScreen"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "UITableViewAutomaticDimension"]
 - !private ["Ps9Equatable", "UITableViewCellSelectionStyle"]
@@ -925,7 +896,6 @@ depends-member:
 - ["Ps9Equatable", "adViewWillPresentScreen"]
 - !private ["Ps9Equatable", "addAttribute"]
 - !private ["Ps9Equatable", "addGestureRecognizer"]
-- !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "animateWithDuration"]
 - ["Ps9Equatable", "appDelegate"]
@@ -934,7 +904,6 @@ depends-member:
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "blackColor"]
 - !private ["Ps9Equatable", "boolForKey"]
-- !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "btmToolBar"]
 - !private ["Ps9Equatable", "cellForRowAtIndexPath"]
 - ["Ps9Equatable", "cellLongPressed"]
@@ -962,6 +931,7 @@ depends-member:
 - ["Ps9Equatable", "fadeOut"]
 - ["Ps9Equatable", "fetchedResultsController"]
 - ["Ps9Equatable", "fetchedResultsController.storage"]
+- ["Ps9Equatable", "firstView"]
 - !private ["Ps9Equatable", "floatForKey"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "frame"]
@@ -982,9 +952,7 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "length"]
 - !private ["Ps9Equatable", "locationInView"]
-- !private ["Ps9Equatable", "mainScreen"]
 - !private ["Ps9Equatable", "managedObjectContext"]
-- !private ["Ps9Equatable", "navigationBar"]
 - ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps9Equatable", "navigationControllerSupportedInterfaceOrientations"]
@@ -1001,7 +969,6 @@ depends-member:
 - ["Ps9Equatable", "rawValue"]
 - !private ["Ps9Equatable", "registerUserNotificationSettings"]
 - !private ["Ps9Equatable", "reloadData"]
-- !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "rowHeight"]
 - !private ["Ps9Equatable", "save"]
@@ -1029,7 +996,6 @@ depends-member:
 - ["Ps9Equatable", "settingButton"]
 - ["Ps9Equatable", "sharedApplication"]
 - ["Ps9Equatable", "showPopMessageView"]
-- !private ["Ps9Equatable", "sizeThatFits"]
 - !private ["Ps9Equatable", "sortDescriptors"]
 - ["Ps9Equatable", "standardUserDefaults"]
 - !private ["Ps9Equatable", "state"]
@@ -1064,7 +1030,6 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "init"]
 - !private ["PSo13GADAdDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo13GADAdDelegate", "CGFloat"]
-- !private ["PSo13GADAdDelegate", "CGSizeMake"]
 - !private ["PSo13GADAdDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo13GADAdDelegate", "Double"]
 - !private ["PSo13GADAdDelegate", "GadController"]
@@ -1089,7 +1054,6 @@ depends-member:
 - !private ["PSo13GADAdDelegate", "UIGestureRecognizerState"]
 - !private ["PSo13GADAdDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo13GADAdDelegate", "UIPasteboard"]
-- !private ["PSo13GADAdDelegate", "UIScreen"]
 - !private ["PSo13GADAdDelegate", "UIStoryboard"]
 - !private ["PSo13GADAdDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo13GADAdDelegate", "UITableViewCellSelectionStyle"]
@@ -1117,6 +1081,7 @@ depends-member:
 - !private ["PSo13GADAdDelegate", "dispatch_time"]
 - !private ["PSo13GADAdDelegate", "editButtonItem"]
 - !private ["PSo13GADAdDelegate", "fetchedResultsController"]
+- !private ["PSo13GADAdDelegate", "firstView"]
 - !private ["PSo13GADAdDelegate", "gadBannerInit"]
 - ["PSo13GADAdDelegate", "gestureRecognizer"]
 - ["PSo13GADAdDelegate", "gestureRecognizerShouldBegin"]
@@ -1154,10 +1119,8 @@ depends-member:
 - ["PSo13GADAdDelegate", ""]
 - !private ["CSo13GADBannerView", "gadBannerInit"]
 - !private ["CSo13GADBannerView", "init"]
-- !private ["CSo13GADBannerView", "removeFromSuperview"]
 - !private ["PSo21GADBannerViewDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo21GADBannerViewDelegate", "CGFloat"]
-- !private ["PSo21GADBannerViewDelegate", "CGSizeMake"]
 - !private ["PSo21GADBannerViewDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo21GADBannerViewDelegate", "Double"]
 - !private ["PSo21GADBannerViewDelegate", "GadController"]
@@ -1182,7 +1145,6 @@ depends-member:
 - !private ["PSo21GADBannerViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo21GADBannerViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo21GADBannerViewDelegate", "UIPasteboard"]
-- !private ["PSo21GADBannerViewDelegate", "UIScreen"]
 - !private ["PSo21GADBannerViewDelegate", "UIStoryboard"]
 - !private ["PSo21GADBannerViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo21GADBannerViewDelegate", "UITableViewCellSelectionStyle"]
@@ -1210,6 +1172,7 @@ depends-member:
 - !private ["PSo21GADBannerViewDelegate", "dispatch_time"]
 - !private ["PSo21GADBannerViewDelegate", "editButtonItem"]
 - !private ["PSo21GADBannerViewDelegate", "fetchedResultsController"]
+- !private ["PSo21GADBannerViewDelegate", "firstView"]
 - !private ["PSo21GADBannerViewDelegate", "gadBannerInit"]
 - ["PSo21GADBannerViewDelegate", "gestureRecognizer"]
 - ["PSo21GADBannerViewDelegate", "gestureRecognizerShouldBegin"]
@@ -1254,7 +1217,6 @@ depends-member:
 - !private ["Ps8Hashable", "AudioServicesPlaySystemSound"]
 - !private ["Ps8Hashable", "Began"]
 - !private ["Ps8Hashable", "CGFloat"]
-- !private ["Ps8Hashable", "CGSizeMake"]
 - !private ["Ps8Hashable", "DISPATCH_TIME_NOW"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "Double"]
@@ -1289,7 +1251,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIGestureRecognizerState"]
 - !private ["Ps8Hashable", "UILongPressGestureRecognizer"]
 - !private ["Ps8Hashable", "UIPasteboard"]
-- !private ["Ps8Hashable", "UIScreen"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "UITableViewAutomaticDimension"]
 - !private ["Ps8Hashable", "UITableViewCellSelectionStyle"]
@@ -1309,7 +1270,6 @@ depends-member:
 - ["Ps8Hashable", "adViewWillPresentScreen"]
 - !private ["Ps8Hashable", "addAttribute"]
 - !private ["Ps8Hashable", "addGestureRecognizer"]
-- !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "animateWithDuration"]
 - ["Ps8Hashable", "appDelegate"]
@@ -1318,7 +1278,6 @@ depends-member:
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "blackColor"]
 - !private ["Ps8Hashable", "boolForKey"]
-- !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "btmToolBar"]
 - !private ["Ps8Hashable", "cellForRowAtIndexPath"]
 - ["Ps8Hashable", "cellLongPressed"]
@@ -1346,6 +1305,7 @@ depends-member:
 - ["Ps8Hashable", "fadeOut"]
 - ["Ps8Hashable", "fetchedResultsController"]
 - ["Ps8Hashable", "fetchedResultsController.storage"]
+- ["Ps8Hashable", "firstView"]
 - !private ["Ps8Hashable", "floatForKey"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "frame"]
@@ -1366,9 +1326,7 @@ depends-member:
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "length"]
 - !private ["Ps8Hashable", "locationInView"]
-- !private ["Ps8Hashable", "mainScreen"]
 - !private ["Ps8Hashable", "managedObjectContext"]
-- !private ["Ps8Hashable", "navigationBar"]
 - ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["Ps8Hashable", "navigationControllerSupportedInterfaceOrientations"]
@@ -1385,7 +1343,6 @@ depends-member:
 - ["Ps8Hashable", "rawValue"]
 - !private ["Ps8Hashable", "registerUserNotificationSettings"]
 - !private ["Ps8Hashable", "reloadData"]
-- !private ["Ps8Hashable", "removeFromSuperview"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "rowHeight"]
 - !private ["Ps8Hashable", "save"]
@@ -1413,7 +1370,6 @@ depends-member:
 - ["Ps8Hashable", "settingButton"]
 - ["Ps8Hashable", "sharedApplication"]
 - ["Ps8Hashable", "showPopMessageView"]
-- !private ["Ps8Hashable", "sizeThatFits"]
 - !private ["Ps8Hashable", "sortDescriptors"]
 - ["Ps8Hashable", "standardUserDefaults"]
 - !private ["Ps8Hashable", "state"]
@@ -1471,8 +1427,7 @@ depends-member:
 - ["C10SimpleTodo18MainViewController", "AppDelegate"]
 - !private ["C10SimpleTodo18MainViewController", "AudioServicesPlaySystemSound"]
 - ["C10SimpleTodo18MainViewController", "Bool"]
-- !private ["C10SimpleTodo18MainViewController", "CGFloat"]
-- !private ["C10SimpleTodo18MainViewController", "CGSizeMake"]
+- ["C10SimpleTodo18MainViewController", "CGFloat"]
 - !private ["C10SimpleTodo18MainViewController", "DISPATCH_TIME_NOW"]
 - !private ["C10SimpleTodo18MainViewController", "Double"]
 - !private ["C10SimpleTodo18MainViewController", "EditViewController"]
@@ -1507,7 +1462,6 @@ depends-member:
 - !private ["C10SimpleTodo18MainViewController", "UILabel"]
 - ["C10SimpleTodo18MainViewController", "UILongPressGestureRecognizer"]
 - !private ["C10SimpleTodo18MainViewController", "UIPasteboard"]
-- !private ["C10SimpleTodo18MainViewController", "UIScreen"]
 - !private ["C10SimpleTodo18MainViewController", "UIStoryboard"]
 - ["C10SimpleTodo18MainViewController", "UITableView"]
 - !private ["C10SimpleTodo18MainViewController", "UITableViewAutomaticDimension"]
@@ -1542,6 +1496,7 @@ depends-member:
 - !private ["C10SimpleTodo18MainViewController", "editButtonItem"]
 - ["C10SimpleTodo18MainViewController", "fetchedResultsController"]
 - !private ["C10SimpleTodo18MainViewController", "fetchedResultsController.storage"]
+- ["C10SimpleTodo18MainViewController", "firstView"]
 - ["C10SimpleTodo18MainViewController", "gestureRecognizer"]
 - ["C10SimpleTodo18MainViewController", "gestureRecognizerShouldBegin"]
 - ["C10SimpleTodo18MainViewController", "indexPathForPreferredFocusedViewInTableView"]
@@ -1612,7 +1567,6 @@ depends-member:
 - !private ["CSo18NSAttributedString", "length"]
 - !private ["PSo8NSCoding", "AudioServicesPlaySystemSound"]
 - !private ["PSo8NSCoding", "CGFloat"]
-- !private ["PSo8NSCoding", "CGSizeMake"]
 - !private ["PSo8NSCoding", "DISPATCH_TIME_NOW"]
 - !private ["PSo8NSCoding", "Double"]
 - !private ["PSo8NSCoding", "FadeType"]
@@ -1638,7 +1592,6 @@ depends-member:
 - !private ["PSo8NSCoding", "UIGestureRecognizerState"]
 - !private ["PSo8NSCoding", "UILongPressGestureRecognizer"]
 - !private ["PSo8NSCoding", "UIPasteboard"]
-- !private ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "UITableViewAutomaticDimension"]
 - !private ["PSo8NSCoding", "UITableViewCellSelectionStyle"]
@@ -1656,7 +1609,6 @@ depends-member:
 - ["PSo8NSCoding", "adViewWillPresentScreen"]
 - !private ["PSo8NSCoding", "addAttribute"]
 - !private ["PSo8NSCoding", "addGestureRecognizer"]
-- !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
 - ["PSo8NSCoding", "appDelegate"]
@@ -1686,6 +1638,7 @@ depends-member:
 - !private ["PSo8NSCoding", "fadeOut"]
 - ["PSo8NSCoding", "fetchedResultsController"]
 - ["PSo8NSCoding", "fetchedResultsController.storage"]
+- ["PSo8NSCoding", "firstView"]
 - !private ["PSo8NSCoding", "font"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "gadBannerInit"]
@@ -1700,7 +1653,6 @@ depends-member:
 - !private ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "length"]
-- !private ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
@@ -1713,7 +1665,6 @@ depends-member:
 - ["PSo8NSCoding", "pushAddButton"]
 - ["PSo8NSCoding", "pushTrashButton"]
 - !private ["PSo8NSCoding", "reloadData"]
-- !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo8NSCoding", "row"]
 - !private ["PSo8NSCoding", "rowHeight"]
 - !private ["PSo8NSCoding", "save"]
@@ -1737,7 +1688,6 @@ depends-member:
 - ["PSo8NSCoding", "setEditing"]
 - ["PSo8NSCoding", "settingButton"]
 - ["PSo8NSCoding", "showPopMessageView"]
-- !private ["PSo8NSCoding", "sizeThatFits"]
 - !private ["PSo8NSCoding", "sortDescriptors"]
 - !private ["PSo8NSCoding", "tableFooterView"]
 - ["PSo8NSCoding", "tableView"]
@@ -1763,7 +1713,6 @@ depends-member:
 - !private ["PSo9NSCopying", "systemFontOfSize"]
 - !private ["PSo26NSExtensionRequestHandling", "AudioServicesPlaySystemSound"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
-- !private ["PSo26NSExtensionRequestHandling", "CGSizeMake"]
 - !private ["PSo26NSExtensionRequestHandling", "DISPATCH_TIME_NOW"]
 - !private ["PSo26NSExtensionRequestHandling", "Double"]
 - !private ["PSo26NSExtensionRequestHandling", "GadController"]
@@ -1788,7 +1737,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIGestureRecognizerState"]
 - !private ["PSo26NSExtensionRequestHandling", "UILongPressGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "UIPasteboard"]
-- !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewAutomaticDimension"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewCellSelectionStyle"]
@@ -1818,11 +1766,11 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "editButtonItem"]
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController"]
 - ["PSo26NSExtensionRequestHandling", "fetchedResultsController.storage"]
+- ["PSo26NSExtensionRequestHandling", "firstView"]
 - ["PSo26NSExtensionRequestHandling", "gestureRecognizer"]
 - ["PSo26NSExtensionRequestHandling", "gestureRecognizerShouldBegin"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
@@ -1868,7 +1816,6 @@ depends-member:
 - !private ["CSo26NSFetchedResultsController", "sections"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "CGFloat"]
-- !private ["PSo34NSFetchedResultsControllerDelegate", "CGSizeMake"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "Double"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "GadController"]
@@ -1893,7 +1840,6 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIPasteboard"]
-- !private ["PSo34NSFetchedResultsControllerDelegate", "UIScreen"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UIStoryboard"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "UITableViewCellSelectionStyle"]
@@ -1921,6 +1867,7 @@ depends-member:
 - !private ["PSo34NSFetchedResultsControllerDelegate", "dispatch_time"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "editButtonItem"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "fetchedResultsController"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "firstView"]
 - ["PSo34NSFetchedResultsControllerDelegate", "gestureRecognizer"]
 - ["PSo34NSFetchedResultsControllerDelegate", "gestureRecognizerShouldBegin"]
 - ["PSo34NSFetchedResultsControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1979,8 +1926,7 @@ depends-member:
 - ["CSo8NSObject", "AppDelegate"]
 - !private ["CSo8NSObject", "AudioServicesPlaySystemSound"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "CGFloat"]
-- !private ["CSo8NSObject", "CGSizeMake"]
+- ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "DISPATCH_TIME_NOW"]
 - !private ["CSo8NSObject", "Double"]
 - !private ["CSo8NSObject", "EditViewController"]
@@ -2017,7 +1963,6 @@ depends-member:
 - !private ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UILongPressGestureRecognizer"]
 - !private ["CSo8NSObject", "UIPasteboard"]
-- !private ["CSo8NSObject", "UIScreen"]
 - !private ["CSo8NSObject", "UIStoryboard"]
 - ["CSo8NSObject", "UITableView"]
 - !private ["CSo8NSObject", "UITableViewAutomaticDimension"]
@@ -2039,7 +1984,6 @@ depends-member:
 - ["CSo8NSObject", "adViewWillPresentScreen"]
 - !private ["CSo8NSObject", "addAttribute"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
-- !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animateWithDuration"]
 - ["CSo8NSObject", "appDelegate"]
@@ -2048,7 +1992,6 @@ depends-member:
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "boolForKey"]
-- !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "btmToolBar"]
 - !private ["CSo8NSObject", "cellForRowAtIndexPath"]
 - ["CSo8NSObject", "cellLongPressed"]
@@ -2077,6 +2020,7 @@ depends-member:
 - ["CSo8NSObject", "fadeOut"]
 - ["CSo8NSObject", "fetchedResultsController"]
 - ["CSo8NSObject", "fetchedResultsController.storage"]
+- ["CSo8NSObject", "firstView"]
 - !private ["CSo8NSObject", "floatForKey"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
@@ -2096,9 +2040,7 @@ depends-member:
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "length"]
 - !private ["CSo8NSObject", "locationInView"]
-- !private ["CSo8NSObject", "mainScreen"]
 - !private ["CSo8NSObject", "managedObjectContext"]
-- !private ["CSo8NSObject", "navigationBar"]
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -2114,7 +2056,6 @@ depends-member:
 - ["CSo8NSObject", "pushTrashButton"]
 - !private ["CSo8NSObject", "registerUserNotificationSettings"]
 - !private ["CSo8NSObject", "reloadData"]
-- !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "row"]
 - !private ["CSo8NSObject", "rowHeight"]
 - !private ["CSo8NSObject", "save"]
@@ -2142,7 +2083,6 @@ depends-member:
 - ["CSo8NSObject", "settingButton"]
 - ["CSo8NSObject", "sharedApplication"]
 - ["CSo8NSObject", "showPopMessageView"]
-- !private ["CSo8NSObject", "sizeThatFits"]
 - !private ["CSo8NSObject", "sortDescriptors"]
 - ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "state"]
@@ -2158,7 +2098,6 @@ depends-member:
 - !private ["CSo8NSObject", "viewWithTag"]
 - !private ["PSo16NSObjectProtocol", "AudioServicesPlaySystemSound"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
-- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
 - !private ["PSo16NSObjectProtocol", "DISPATCH_TIME_NOW"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "FadeType"]
@@ -2184,7 +2123,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIGestureRecognizerState"]
 - !private ["PSo16NSObjectProtocol", "UILongPressGestureRecognizer"]
 - !private ["PSo16NSObjectProtocol", "UIPasteboard"]
-- !private ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - !private ["PSo16NSObjectProtocol", "UITableViewAutomaticDimension"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCellSelectionStyle"]
@@ -2202,7 +2140,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "adViewWillPresentScreen"]
 - !private ["PSo16NSObjectProtocol", "addAttribute"]
 - !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
-- !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
 - ["PSo16NSObjectProtocol", "appDelegate"]
@@ -2211,7 +2148,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "boolForKey"]
-- !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "btmToolBar"]
 - !private ["PSo16NSObjectProtocol", "cellForRowAtIndexPath"]
 - ["PSo16NSObjectProtocol", "cellLongPressed"]
@@ -2239,6 +2175,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "fadeOut"]
 - ["PSo16NSObjectProtocol", "fetchedResultsController"]
 - ["PSo16NSObjectProtocol", "fetchedResultsController.storage"]
+- ["PSo16NSObjectProtocol", "firstView"]
 - !private ["PSo16NSObjectProtocol", "floatForKey"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -2258,9 +2195,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "length"]
 - !private ["PSo16NSObjectProtocol", "locationInView"]
-- !private ["PSo16NSObjectProtocol", "mainScreen"]
 - !private ["PSo16NSObjectProtocol", "managedObjectContext"]
-- !private ["PSo16NSObjectProtocol", "navigationBar"]
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
@@ -2276,7 +2211,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pushTrashButton"]
 - !private ["PSo16NSObjectProtocol", "registerUserNotificationSettings"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
-- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - !private ["PSo16NSObjectProtocol", "rowHeight"]
 - !private ["PSo16NSObjectProtocol", "save"]
@@ -2304,7 +2238,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "settingButton"]
 - ["PSo16NSObjectProtocol", "sharedApplication"]
 - ["PSo16NSObjectProtocol", "showPopMessageView"]
-- !private ["PSo16NSObjectProtocol", "sizeThatFits"]
 - !private ["PSo16NSObjectProtocol", "sortDescriptors"]
 - ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "state"]
@@ -2405,7 +2338,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "FadeType"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
-- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "attributedText"]
@@ -2426,19 +2358,16 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "items"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
-- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "selectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "selectionStyle"]
 - !private ["PSo29UIAccessibilityIdentification", "setEditing"]
-- !private ["PSo29UIAccessibilityIdentification", "sizeThatFits"]
 - !private ["PSo29UIAccessibilityIdentification", "tableFooterView"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "viewWithTag"]
 - !private ["PSo12UIAppearance", "FadeType"]
 - !private ["PSo12UIAppearance", "UIView"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
-- !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "attributedText"]
@@ -2459,18 +2388,15 @@ depends-member:
 - !private ["PSo12UIAppearance", "items"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "reloadData"]
-- !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "rowHeight"]
 - !private ["PSo12UIAppearance", "selectRowAtIndexPath"]
 - !private ["PSo12UIAppearance", "selectionStyle"]
 - !private ["PSo12UIAppearance", "setEditing"]
-- !private ["PSo12UIAppearance", "sizeThatFits"]
 - !private ["PSo12UIAppearance", "tableFooterView"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "viewWithTag"]
 - !private ["PSo21UIAppearanceContainer", "AudioServicesPlaySystemSound"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
-- !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
 - !private ["PSo21UIAppearanceContainer", "DISPATCH_TIME_NOW"]
 - !private ["PSo21UIAppearanceContainer", "Double"]
 - !private ["PSo21UIAppearanceContainer", "FadeType"]
@@ -2496,7 +2422,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIGestureRecognizerState"]
 - !private ["PSo21UIAppearanceContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo21UIAppearanceContainer", "UIPasteboard"]
-- !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewCellSelectionStyle"]
@@ -2513,7 +2438,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "adViewWillLeaveApplication"]
 - ["PSo21UIAppearanceContainer", "adViewWillPresentScreen"]
 - !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
-- !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
 - ["PSo21UIAppearanceContainer", "appDelegate"]
@@ -2538,6 +2462,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "fadeOut"]
 - ["PSo21UIAppearanceContainer", "fetchedResultsController"]
 - ["PSo21UIAppearanceContainer", "fetchedResultsController.storage"]
+- ["PSo21UIAppearanceContainer", "firstView"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "gadBannerInit"]
@@ -2550,7 +2475,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
-- !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -2561,7 +2485,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pushAddButton"]
 - ["PSo21UIAppearanceContainer", "pushTrashButton"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
-- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "rowHeight"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
@@ -2583,7 +2506,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "setEditing"]
 - ["PSo21UIAppearanceContainer", "settingButton"]
 - ["PSo21UIAppearanceContainer", "showPopMessageView"]
-- !private ["PSo21UIAppearanceContainer", "sizeThatFits"]
 - !private ["PSo21UIAppearanceContainer", "tableFooterView"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
@@ -2607,15 +2529,12 @@ depends-member:
 - !private ["OSC21UIBarButtonSystemItem", "FlexibleSpace"]
 - !private ["OSC21UIBarButtonSystemItem", "Trash"]
 - !private ["CSo9UIBarItem", "init"]
-- !private ["PSo16UIBarPositioning", "addSubview"]
 - !private ["PSo16UIBarPositioning", "items"]
-- !private ["PSo16UIBarPositioning", "sizeThatFits"]
 - !private ["CSo7UIColor", "blackColor"]
 - !private ["CSo7UIColor", "grayColor"]
 - !private ["CSo7UIColor", "orangeColor"]
 - !private ["PSo18UIContentContainer", "AudioServicesPlaySystemSound"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
-- !private ["PSo18UIContentContainer", "CGSizeMake"]
 - !private ["PSo18UIContentContainer", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UIContentContainer", "Double"]
 - !private ["PSo18UIContentContainer", "GadController"]
@@ -2640,7 +2559,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIGestureRecognizerState"]
 - !private ["PSo18UIContentContainer", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIContentContainer", "UIPasteboard"]
-- !private ["PSo18UIContentContainer", "UIScreen"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIContentContainer", "UITableViewCellSelectionStyle"]
@@ -2670,11 +2588,11 @@ depends-member:
 - !private ["PSo18UIContentContainer", "editButtonItem"]
 - ["PSo18UIContentContainer", "fetchedResultsController"]
 - ["PSo18UIContentContainer", "fetchedResultsController.storage"]
+- ["PSo18UIContentContainer", "firstView"]
 - ["PSo18UIContentContainer", "gestureRecognizer"]
 - ["PSo18UIContentContainer", "gestureRecognizerShouldBegin"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "navigationBar"]
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -2712,7 +2630,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "FadeType"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
-- !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "attributedText"]
@@ -2733,19 +2650,16 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "items"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
-- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
 - !private ["PSo17UICoordinateSpace", "selectRowAtIndexPath"]
 - !private ["PSo17UICoordinateSpace", "selectionStyle"]
 - !private ["PSo17UICoordinateSpace", "setEditing"]
-- !private ["PSo17UICoordinateSpace", "sizeThatFits"]
 - !private ["PSo17UICoordinateSpace", "tableFooterView"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "viewWithTag"]
 - !private ["PSo13UIDynamicItem", "FadeType"]
 - !private ["PSo13UIDynamicItem", "UIView"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
-- !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "attributedText"]
@@ -2766,18 +2680,15 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "items"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
-- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
 - !private ["PSo13UIDynamicItem", "selectRowAtIndexPath"]
 - !private ["PSo13UIDynamicItem", "selectionStyle"]
 - !private ["PSo13UIDynamicItem", "setEditing"]
-- !private ["PSo13UIDynamicItem", "sizeThatFits"]
 - !private ["PSo13UIDynamicItem", "tableFooterView"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "viewWithTag"]
 - !private ["PSo18UIFocusEnvironment", "AudioServicesPlaySystemSound"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
-- !private ["PSo18UIFocusEnvironment", "CGSizeMake"]
 - !private ["PSo18UIFocusEnvironment", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UIFocusEnvironment", "Double"]
 - !private ["PSo18UIFocusEnvironment", "FadeType"]
@@ -2803,7 +2714,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIGestureRecognizerState"]
 - !private ["PSo18UIFocusEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UIFocusEnvironment", "UIPasteboard"]
-- !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewCellSelectionStyle"]
@@ -2820,7 +2730,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "adViewWillLeaveApplication"]
 - ["PSo18UIFocusEnvironment", "adViewWillPresentScreen"]
 - !private ["PSo18UIFocusEnvironment", "addGestureRecognizer"]
-- !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
 - ["PSo18UIFocusEnvironment", "appDelegate"]
@@ -2845,6 +2754,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "fadeOut"]
 - ["PSo18UIFocusEnvironment", "fetchedResultsController"]
 - ["PSo18UIFocusEnvironment", "fetchedResultsController.storage"]
+- ["PSo18UIFocusEnvironment", "firstView"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "gadBannerInit"]
@@ -2857,7 +2767,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
-- !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2868,7 +2777,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pushAddButton"]
 - ["PSo18UIFocusEnvironment", "pushTrashButton"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
-- !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "rowHeight"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
@@ -2890,7 +2798,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "setEditing"]
 - ["PSo18UIFocusEnvironment", "settingButton"]
 - ["PSo18UIFocusEnvironment", "showPopMessageView"]
-- !private ["PSo18UIFocusEnvironment", "sizeThatFits"]
 - !private ["PSo18UIFocusEnvironment", "tableFooterView"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
@@ -2908,7 +2815,6 @@ depends-member:
 - !private ["CSo19UIGestureRecognizer", "state"]
 - !private ["PSo27UIGestureRecognizerDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGFloat"]
-- !private ["PSo27UIGestureRecognizerDelegate", "CGSizeMake"]
 - !private ["PSo27UIGestureRecognizerDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo27UIGestureRecognizerDelegate", "Double"]
 - !private ["PSo27UIGestureRecognizerDelegate", "GadController"]
@@ -2933,7 +2839,6 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIPasteboard"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIScreen"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIStoryboard"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UITableViewCellSelectionStyle"]
@@ -2962,6 +2867,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "dispatch_time"]
 - !private ["PSo27UIGestureRecognizerDelegate", "editButtonItem"]
 - !private ["PSo27UIGestureRecognizerDelegate", "fetchedResultsController"]
+- !private ["PSo27UIGestureRecognizerDelegate", "firstView"]
 - ["PSo27UIGestureRecognizerDelegate", "gestureRecognizer"]
 - ["PSo27UIGestureRecognizerDelegate", "gestureRecognizerShouldBegin"]
 - ["PSo27UIGestureRecognizerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -3006,12 +2912,8 @@ depends-member:
 - !private ["CSo28UILongPressGestureRecognizer", "init"]
 - !private ["CSo28UILongPressGestureRecognizer", "locationInView"]
 - !private ["CSo28UILongPressGestureRecognizer", "state"]
-- !private ["CSo15UINavigationBar", "addSubview"]
-- !private ["CSo15UINavigationBar", "sizeThatFits"]
-- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["PSo30UINavigationControllerDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo30UINavigationControllerDelegate", "CGFloat"]
-- !private ["PSo30UINavigationControllerDelegate", "CGSizeMake"]
 - !private ["PSo30UINavigationControllerDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo30UINavigationControllerDelegate", "Double"]
 - !private ["PSo30UINavigationControllerDelegate", "GadController"]
@@ -3036,7 +2938,6 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "UIGestureRecognizerState"]
 - !private ["PSo30UINavigationControllerDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo30UINavigationControllerDelegate", "UIPasteboard"]
-- !private ["PSo30UINavigationControllerDelegate", "UIScreen"]
 - !private ["PSo30UINavigationControllerDelegate", "UIStoryboard"]
 - !private ["PSo30UINavigationControllerDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo30UINavigationControllerDelegate", "UITableViewCellSelectionStyle"]
@@ -3064,6 +2965,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_time"]
 - !private ["PSo30UINavigationControllerDelegate", "editButtonItem"]
 - !private ["PSo30UINavigationControllerDelegate", "fetchedResultsController"]
+- !private ["PSo30UINavigationControllerDelegate", "firstView"]
 - ["PSo30UINavigationControllerDelegate", "gestureRecognizer"]
 - ["PSo30UINavigationControllerDelegate", "gestureRecognizerShouldBegin"]
 - ["PSo30UINavigationControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -3103,8 +3005,7 @@ depends-member:
 - ["CSo11UIResponder", "AppDelegate"]
 - !private ["CSo11UIResponder", "AudioServicesPlaySystemSound"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "CGFloat"]
-- !private ["CSo11UIResponder", "CGSizeMake"]
+- ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "DISPATCH_TIME_NOW"]
 - !private ["CSo11UIResponder", "Double"]
 - !private ["CSo11UIResponder", "EditViewController"]
@@ -3141,7 +3042,6 @@ depends-member:
 - !private ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UILongPressGestureRecognizer"]
 - !private ["CSo11UIResponder", "UIPasteboard"]
-- !private ["CSo11UIResponder", "UIScreen"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
 - ["CSo11UIResponder", "UITableView"]
 - !private ["CSo11UIResponder", "UITableViewAutomaticDimension"]
@@ -3162,7 +3062,6 @@ depends-member:
 - ["CSo11UIResponder", "adViewWillLeaveApplication"]
 - ["CSo11UIResponder", "adViewWillPresentScreen"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
-- !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
 - ["CSo11UIResponder", "appDelegate"]
@@ -3190,6 +3089,7 @@ depends-member:
 - ["CSo11UIResponder", "fadeOut"]
 - ["CSo11UIResponder", "fetchedResultsController"]
 - ["CSo11UIResponder", "fetchedResultsController.storage"]
+- ["CSo11UIResponder", "firstView"]
 - !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "gadBannerInit"]
@@ -3204,7 +3104,6 @@ depends-member:
 - !private ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "managedObjectContext"]
-- !private ["CSo11UIResponder", "navigationBar"]
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
@@ -3216,7 +3115,6 @@ depends-member:
 - ["CSo11UIResponder", "pushTrashButton"]
 - !private ["CSo11UIResponder", "registerUserNotificationSettings"]
 - !private ["CSo11UIResponder", "reloadData"]
-- !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "rowHeight"]
 - !private ["CSo11UIResponder", "saveContext"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -3240,7 +3138,6 @@ depends-member:
 - ["CSo11UIResponder", "settingButton"]
 - ["CSo11UIResponder", "sharedApplication"]
 - ["CSo11UIResponder", "showPopMessageView"]
-- !private ["CSo11UIResponder", "sizeThatFits"]
 - !private ["CSo11UIResponder", "tableFooterView"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
@@ -3250,8 +3147,6 @@ depends-member:
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - !private ["CSo11UIResponder", "viewWithTag"]
-- !private ["CSo8UIScreen", "bounds"]
-- !private ["CSo8UIScreen", "mainScreen"]
 - !private ["CSo12UIScrollView", "addGestureRecognizer"]
 - !private ["CSo12UIScrollView", "cellForRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -3266,7 +3161,6 @@ depends-member:
 - !private ["CSo12UIScrollView", "tableFooterView"]
 - !private ["PSo20UIScrollViewDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
-- !private ["PSo20UIScrollViewDelegate", "CGSizeMake"]
 - !private ["PSo20UIScrollViewDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo20UIScrollViewDelegate", "Double"]
 - !private ["PSo20UIScrollViewDelegate", "GadController"]
@@ -3291,7 +3185,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo20UIScrollViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo20UIScrollViewDelegate", "UIPasteboard"]
-- !private ["PSo20UIScrollViewDelegate", "UIScreen"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewCellSelectionStyle"]
@@ -3319,6 +3212,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dispatch_time"]
 - !private ["PSo20UIScrollViewDelegate", "editButtonItem"]
 - !private ["PSo20UIScrollViewDelegate", "fetchedResultsController"]
+- !private ["PSo20UIScrollViewDelegate", "firstView"]
 - ["PSo20UIScrollViewDelegate", "gestureRecognizer"]
 - ["PSo20UIScrollViewDelegate", "gestureRecognizerShouldBegin"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -3354,7 +3248,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "AudioServicesPlaySystemSound"]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
-- !private ["PSo16UIStateRestoring", "CGSizeMake"]
 - !private ["PSo16UIStateRestoring", "DISPATCH_TIME_NOW"]
 - !private ["PSo16UIStateRestoring", "Double"]
 - !private ["PSo16UIStateRestoring", "GadController"]
@@ -3379,7 +3272,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIGestureRecognizerState"]
 - !private ["PSo16UIStateRestoring", "UILongPressGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "UIPasteboard"]
-- !private ["PSo16UIStateRestoring", "UIScreen"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "UITableViewAutomaticDimension"]
 - !private ["PSo16UIStateRestoring", "UITableViewCellSelectionStyle"]
@@ -3409,11 +3301,11 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "editButtonItem"]
 - ["PSo16UIStateRestoring", "fetchedResultsController"]
 - ["PSo16UIStateRestoring", "fetchedResultsController.storage"]
+- ["PSo16UIStateRestoring", "firstView"]
 - ["PSo16UIStateRestoring", "gestureRecognizer"]
 - ["PSo16UIStateRestoring", "gestureRecognizerShouldBegin"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "navigationBar"]
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
@@ -3467,7 +3359,6 @@ depends-member:
 - !private ["OSC29UITableViewCellSelectionStyle", "None"]
 - !private ["PSo21UITableViewDataSource", "AudioServicesPlaySystemSound"]
 - !private ["PSo21UITableViewDataSource", "CGFloat"]
-- !private ["PSo21UITableViewDataSource", "CGSizeMake"]
 - !private ["PSo21UITableViewDataSource", "DISPATCH_TIME_NOW"]
 - !private ["PSo21UITableViewDataSource", "Double"]
 - !private ["PSo21UITableViewDataSource", "GadController"]
@@ -3492,7 +3383,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIGestureRecognizerState"]
 - !private ["PSo21UITableViewDataSource", "UILongPressGestureRecognizer"]
 - !private ["PSo21UITableViewDataSource", "UIPasteboard"]
-- !private ["PSo21UITableViewDataSource", "UIScreen"]
 - !private ["PSo21UITableViewDataSource", "UIStoryboard"]
 - !private ["PSo21UITableViewDataSource", "UITableViewAutomaticDimension"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCellSelectionStyle"]
@@ -3520,6 +3410,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "dispatch_time"]
 - !private ["PSo21UITableViewDataSource", "editButtonItem"]
 - !private ["PSo21UITableViewDataSource", "fetchedResultsController"]
+- !private ["PSo21UITableViewDataSource", "firstView"]
 - ["PSo21UITableViewDataSource", "gestureRecognizer"]
 - ["PSo21UITableViewDataSource", "gestureRecognizerShouldBegin"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -3555,7 +3446,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "AudioServicesPlaySystemSound"]
 - !private ["PSo19UITableViewDelegate", "CGFloat"]
-- !private ["PSo19UITableViewDelegate", "CGSizeMake"]
 - !private ["PSo19UITableViewDelegate", "DISPATCH_TIME_NOW"]
 - !private ["PSo19UITableViewDelegate", "Double"]
 - !private ["PSo19UITableViewDelegate", "GadController"]
@@ -3580,7 +3470,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIGestureRecognizerState"]
 - !private ["PSo19UITableViewDelegate", "UILongPressGestureRecognizer"]
 - !private ["PSo19UITableViewDelegate", "UIPasteboard"]
-- !private ["PSo19UITableViewDelegate", "UIScreen"]
 - !private ["PSo19UITableViewDelegate", "UIStoryboard"]
 - !private ["PSo19UITableViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo19UITableViewDelegate", "UITableViewCellSelectionStyle"]
@@ -3608,6 +3497,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "dispatch_time"]
 - !private ["PSo19UITableViewDelegate", "editButtonItem"]
 - !private ["PSo19UITableViewDelegate", "fetchedResultsController"]
+- !private ["PSo19UITableViewDelegate", "firstView"]
 - ["PSo19UITableViewDelegate", "gestureRecognizer"]
 - ["PSo19UITableViewDelegate", "gestureRecognizerShouldBegin"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -3648,7 +3538,6 @@ depends-member:
 - !private ["CSo9UIToolbar", "items"]
 - !private ["PSo18UITraitEnvironment", "AudioServicesPlaySystemSound"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
-- !private ["PSo18UITraitEnvironment", "CGSizeMake"]
 - !private ["PSo18UITraitEnvironment", "DISPATCH_TIME_NOW"]
 - !private ["PSo18UITraitEnvironment", "Double"]
 - !private ["PSo18UITraitEnvironment", "FadeType"]
@@ -3674,7 +3563,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIGestureRecognizerState"]
 - !private ["PSo18UITraitEnvironment", "UILongPressGestureRecognizer"]
 - !private ["PSo18UITraitEnvironment", "UIPasteboard"]
-- !private ["PSo18UITraitEnvironment", "UIScreen"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UITraitEnvironment", "UITableViewCellSelectionStyle"]
@@ -3691,12 +3579,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "adViewWillLeaveApplication"]
 - ["PSo18UITraitEnvironment", "adViewWillPresentScreen"]
 - !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
-- !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
 - ["PSo18UITraitEnvironment", "appDelegate"]
 - !private ["PSo18UITraitEnvironment", "attributedText"]
-- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "btmToolBar"]
 - !private ["PSo18UITraitEnvironment", "cellForRowAtIndexPath"]
 - ["PSo18UITraitEnvironment", "cellLongPressed"]
@@ -3717,6 +3603,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "fadeOut"]
 - ["PSo18UITraitEnvironment", "fetchedResultsController"]
 - ["PSo18UITraitEnvironment", "fetchedResultsController.storage"]
+- ["PSo18UITraitEnvironment", "firstView"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "gadBannerInit"]
@@ -3729,8 +3616,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "layer"]
-- !private ["PSo18UITraitEnvironment", "mainScreen"]
-- !private ["PSo18UITraitEnvironment", "navigationBar"]
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -3741,7 +3626,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pushAddButton"]
 - ["PSo18UITraitEnvironment", "pushTrashButton"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
-- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "rowHeight"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
@@ -3763,7 +3647,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "setEditing"]
 - ["PSo18UITraitEnvironment", "settingButton"]
 - ["PSo18UITraitEnvironment", "showPopMessageView"]
-- !private ["PSo18UITraitEnvironment", "sizeThatFits"]
 - !private ["PSo18UITraitEnvironment", "tableFooterView"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
@@ -3780,7 +3663,6 @@ depends-member:
 - ["CSo6UIView", "NSTimeInterval"]
 - !private ["CSo6UIView", "UIView"]
 - !private ["CSo6UIView", "addGestureRecognizer"]
-- !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "attributedText"]
@@ -3801,12 +3683,10 @@ depends-member:
 - !private ["CSo6UIView", "items"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "reloadData"]
-- !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "rowHeight"]
 - !private ["CSo6UIView", "selectRowAtIndexPath"]
 - !private ["CSo6UIView", "selectionStyle"]
 - !private ["CSo6UIView", "setEditing"]
-- !private ["CSo6UIView", "sizeThatFits"]
 - !private ["CSo6UIView", "tableFooterView"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "viewWithTag"]
@@ -3814,8 +3694,7 @@ depends-member:
 - ["CSo16UIViewController", "AppDelegate"]
 - !private ["CSo16UIViewController", "AudioServicesPlaySystemSound"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "CGFloat"]
-- !private ["CSo16UIViewController", "CGSizeMake"]
+- ["CSo16UIViewController", "CGFloat"]
 - !private ["CSo16UIViewController", "DISPATCH_TIME_NOW"]
 - !private ["CSo16UIViewController", "Double"]
 - !private ["CSo16UIViewController", "EditViewController"]
@@ -3850,7 +3729,6 @@ depends-member:
 - !private ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UILongPressGestureRecognizer"]
 - !private ["CSo16UIViewController", "UIPasteboard"]
-- !private ["CSo16UIViewController", "UIScreen"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
 - ["CSo16UIViewController", "UITableView"]
 - !private ["CSo16UIViewController", "UITableViewAutomaticDimension"]
@@ -3885,11 +3763,11 @@ depends-member:
 - !private ["CSo16UIViewController", "editButtonItem"]
 - ["CSo16UIViewController", "fetchedResultsController"]
 - ["CSo16UIViewController", "fetchedResultsController.storage"]
+- ["CSo16UIViewController", "firstView"]
 - ["CSo16UIViewController", "gestureRecognizer"]
 - ["CSo16UIViewController", "gestureRecognizerShouldBegin"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "navigationBar"]
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
@@ -4012,7 +3890,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addGestureRecognizer"]
-- !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "attributedText"]
@@ -4035,12 +3912,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "items"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "reloadData"]
-- !private ["Ps12_Reflectable", "removeFromSuperview"]
 - !private ["Ps12_Reflectable", "rowHeight"]
 - !private ["Ps12_Reflectable", "selectRowAtIndexPath"]
 - !private ["Ps12_Reflectable", "selectionStyle"]
 - !private ["Ps12_Reflectable", "setEditing"]
-- !private ["Ps12_Reflectable", "sizeThatFits"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "tableFooterView"]
 - !private ["Ps12_Reflectable", "text"]
@@ -4163,12 +4038,9 @@ depends-nominal:
 - !private "OSC24UIGestureRecognizerState"
 - !private "CSo7UILabel"
 - !private "CSo28UILongPressGestureRecognizer"
-- !private "CSo15UINavigationBar"
-- !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
 - !private "CSo12UIPasteboard"
 - "CSo11UIResponder"
-- !private "CSo8UIScreen"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
@@ -4210,6 +4082,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -4280,4 +4153,18 @@ depends-external:
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "./GoogleMobileAds.framework/Modules/module.modulemap"
-interface-hash: "75538788fa652c3a45f150ede6ef020c"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "d1f9317ae6d3b1b733424a53f5aaada4"

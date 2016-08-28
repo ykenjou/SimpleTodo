@@ -213,15 +213,16 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UIView;
 @class UITableViewRowAction;
 @class UIToolbar;
-@class UIView;
 
 SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 @interface MainViewController : UIViewController <GADAdDelegate, NSFetchedResultsControllerDelegate, GADBannerViewDelegate, UINavigationControllerDelegate, UITableViewDataSource, UIScrollViewDelegate, UITableViewDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolBar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified popMessageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified firstView;
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
@@ -236,6 +237,8 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)setCheckedValue:(NSNumber * _Nonnull)value indexPath:(NSIndexPath * _Nonnull)indexPath;

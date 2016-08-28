@@ -6,43 +6,43 @@ provides-nominal:
 provides-member:
 - ["C10SimpleTodo21SettingViewController", ""]
 provides-dynamic-lookup:
-- "badgeSwitch"
-- "userDefaults"
-- "soundChange"
-- "tableView"
-- "tableView"
-- "fontSizeSubLabel"
 - "badgeChange"
-- "adChange"
 - "viewWillAppear"
-- "soundSwitch"
 - "settingStoryboard"
-- "didReceiveMemoryWarning"
+- "adChange"
+- "soundChange"
 - "adSwitch"
-- "viewDidLoad"
+- "userDefaults"
+- "fontSizeSubLabel"
+- "soundSwitch"
+- "badgeSwitch"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
 - "mainViewController"
+- "viewDidLoad"
 depends-top-level:
-- !private "MainViewController"
-- "UIStoryboard"
-- !private "=="
-- "UITableViewController"
-- "UILabel"
-- "UISwitch"
-- !private "UIView"
-- !private "StringLiteralType"
-- "UITableView"
-- "UIViewController"
-- !private "NSURL"
-- !private "String"
-- "NSIndexPath"
-- !private "+"
-- !private "UITableViewCellSelectionStyle"
-- !private "UIApplication"
-- "NSUserDefaults"
-- !private "BooleanLiteralType"
-- "UITableViewCell"
-- "Bool"
 - "SettingViewController"
+- "UIViewController"
+- !private "UIApplication"
+- !private "NSURL"
+- "Bool"
+- "NSIndexPath"
+- !private "UIView"
+- "UISwitch"
+- "UITableViewCell"
+- !private "BooleanLiteralType"
+- "UITableViewController"
+- "NSUserDefaults"
+- "UIStoryboard"
+- "UILabel"
+- !private "String"
+- !private "=="
+- !private "StringLiteralType"
+- !private "UITableViewCellSelectionStyle"
+- !private "+"
+- !private "MainViewController"
+- "UITableView"
 depends-member:
 - !private ["Ps9AnyObject", "MainViewController"]
 - !private ["Ps9AnyObject", "NSIndexPath"]
@@ -64,7 +64,6 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps9AnyObject", "integerForKey"]
-- !private ["Ps9AnyObject", "loadView"]
 - ["Ps9AnyObject", "mainViewController"]
 - !private ["Ps9AnyObject", "on"]
 - !private ["Ps9AnyObject", "openURL"]
@@ -112,7 +111,6 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps11CVarArgType", "integerForKey"]
-- !private ["Ps11CVarArgType", "loadView"]
 - ["Ps11CVarArgType", "mainViewController"]
 - !private ["Ps11CVarArgType", "on"]
 - !private ["Ps11CVarArgType", "openURL"]
@@ -155,7 +153,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "integerForKey"]
-- !private ["Ps28CustomDebugStringConvertible", "loadView"]
 - ["Ps28CustomDebugStringConvertible", "mainViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "on"]
 - !private ["Ps28CustomDebugStringConvertible", "openURL"]
@@ -198,7 +195,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "integerForKey"]
-- !private ["Ps23CustomStringConvertible", "loadView"]
 - ["Ps23CustomStringConvertible", "mainViewController"]
 - !private ["Ps23CustomStringConvertible", "on"]
 - !private ["Ps23CustomStringConvertible", "openURL"]
@@ -242,7 +238,6 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps9Equatable", "integerForKey"]
-- !private ["Ps9Equatable", "loadView"]
 - ["Ps9Equatable", "mainViewController"]
 - !private ["Ps9Equatable", "on"]
 - !private ["Ps9Equatable", "openURL"]
@@ -292,7 +287,6 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewControllerWithIdentifier"]
 - !private ["Ps8Hashable", "integerForKey"]
-- !private ["Ps8Hashable", "loadView"]
 - ["Ps8Hashable", "mainViewController"]
 - !private ["Ps8Hashable", "on"]
 - !private ["Ps8Hashable", "openURL"]
@@ -338,7 +332,6 @@ depends-member:
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "fontSizeSubLabel"]
 - ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "loadView"]
 - ["PSo8NSCoding", "mainViewController"]
 - !private ["PSo8NSCoding", "on"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -372,7 +365,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "fontSizeSubLabel"]
 - ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "loadView"]
 - ["PSo26NSExtensionRequestHandling", "mainViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "setBadgeValue"]
 - ["PSo26NSExtensionRequestHandling", "settingStoryboard"]
@@ -412,7 +404,6 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewControllerWithIdentifier"]
 - !private ["CSo8NSObject", "integerForKey"]
-- !private ["CSo8NSObject", "loadView"]
 - ["CSo8NSObject", "mainViewController"]
 - !private ["CSo8NSObject", "on"]
 - !private ["CSo8NSObject", "openURL"]
@@ -452,7 +443,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewControllerWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "integerForKey"]
-- !private ["PSo16NSObjectProtocol", "loadView"]
 - ["PSo16NSObjectProtocol", "mainViewController"]
 - !private ["PSo16NSObjectProtocol", "on"]
 - !private ["PSo16NSObjectProtocol", "openURL"]
@@ -505,7 +495,6 @@ depends-member:
 - ["C10SimpleTodo21SettingViewController", "didReceiveMemoryWarning"]
 - ["C10SimpleTodo21SettingViewController", "fontSizeSubLabel"]
 - ["C10SimpleTodo21SettingViewController", "init"]
-- !private ["C10SimpleTodo21SettingViewController", "loadView"]
 - ["C10SimpleTodo21SettingViewController", "mainViewController"]
 - ["C10SimpleTodo21SettingViewController", "settingStoryboard"]
 - ["C10SimpleTodo21SettingViewController", "soundChange"]
@@ -551,7 +540,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "fontSizeSubLabel"]
 - ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "loadView"]
 - ["PSo21UIAppearanceContainer", "mainViewController"]
 - !private ["PSo21UIAppearanceContainer", "on"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -587,7 +575,6 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "fontSizeSubLabel"]
 - ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "loadView"]
 - ["PSo18UIContentContainer", "mainViewController"]
 - !private ["PSo18UIContentContainer", "setBadgeValue"]
 - ["PSo18UIContentContainer", "settingStoryboard"]
@@ -629,7 +616,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "fontSizeSubLabel"]
 - ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "loadView"]
 - ["PSo18UIFocusEnvironment", "mainViewController"]
 - !private ["PSo18UIFocusEnvironment", "on"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -675,7 +661,6 @@ depends-member:
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "fontSizeSubLabel"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "loadView"]
 - ["CSo11UIResponder", "mainViewController"]
 - !private ["CSo11UIResponder", "on"]
 - !private ["CSo11UIResponder", "openURL"]
@@ -712,7 +697,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo20UIScrollViewDelegate", "fontSizeSubLabel"]
 - ["PSo20UIScrollViewDelegate", "init"]
-- !private ["PSo20UIScrollViewDelegate", "loadView"]
 - ["PSo20UIScrollViewDelegate", "mainViewController"]
 - !private ["PSo20UIScrollViewDelegate", "setBadgeValue"]
 - ["PSo20UIScrollViewDelegate", "settingStoryboard"]
@@ -739,7 +723,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "fontSizeSubLabel"]
 - ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "loadView"]
 - ["PSo16UIStateRestoring", "mainViewController"]
 - !private ["PSo16UIStateRestoring", "setBadgeValue"]
 - ["PSo16UIStateRestoring", "settingStoryboard"]
@@ -780,7 +763,6 @@ depends-member:
 - ["CSo21UITableViewController", "didReceiveMemoryWarning"]
 - ["CSo21UITableViewController", "fontSizeSubLabel"]
 - ["CSo21UITableViewController", "init"]
-- !private ["CSo21UITableViewController", "loadView"]
 - ["CSo21UITableViewController", "mainViewController"]
 - ["CSo21UITableViewController", "settingStoryboard"]
 - ["CSo21UITableViewController", "soundChange"]
@@ -806,7 +788,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
 - ["PSo21UITableViewDataSource", "fontSizeSubLabel"]
 - ["PSo21UITableViewDataSource", "init"]
-- !private ["PSo21UITableViewDataSource", "loadView"]
 - ["PSo21UITableViewDataSource", "mainViewController"]
 - !private ["PSo21UITableViewDataSource", "setBadgeValue"]
 - ["PSo21UITableViewDataSource", "settingStoryboard"]
@@ -833,7 +814,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
 - ["PSo19UITableViewDelegate", "fontSizeSubLabel"]
 - ["PSo19UITableViewDelegate", "init"]
-- !private ["PSo19UITableViewDelegate", "loadView"]
 - ["PSo19UITableViewDelegate", "mainViewController"]
 - !private ["PSo19UITableViewDelegate", "setBadgeValue"]
 - ["PSo19UITableViewDelegate", "settingStoryboard"]
@@ -860,7 +840,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "fontSizeSubLabel"]
 - ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "loadView"]
 - ["PSo18UITraitEnvironment", "mainViewController"]
 - !private ["PSo18UITraitEnvironment", "on"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -907,7 +886,6 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "fontSizeSubLabel"]
 - ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "loadView"]
 - ["CSo16UIViewController", "mainViewController"]
 - !private ["CSo16UIViewController", "setBadgeValue"]
 - ["CSo16UIViewController", "settingStoryboard"]
@@ -1034,6 +1012,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -1104,4 +1083,18 @@ depends-external:
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
 interface-hash: "d7c536b94a9bc4e3bf398a3798ebfef6"

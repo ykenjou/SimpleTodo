@@ -8,52 +8,54 @@ provides-member:
 provides-dynamic-lookup:
 - "persistentStoreCoordinator"
 - "applicationDidEnterBackground"
-- "displayOrder"
-- "managedObjectModel"
-- "userDefaults"
+- "itemText"
 - "saveContext"
-- "applicationWillEnterForeground"
-- "managedObjectContext"
+- "displayOrder"
 - "window"
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "managedObjectContext"
+- "managedObjectModel"
 - "application"
 - "applicationDidBecomeActive"
-- "applicationWillResignActive"
-- "itemText"
+- "userDefaults"
 - "applicationDocumentsDirectory"
-- "applicationWillTerminate"
+- "applicationWillResignActive"
 depends-top-level:
-- "NSObject"
-- "NSManagedObjectModel"
-- "UIResponder"
-- !private "NSLocalizedDescriptionKey"
-- !private "NSBundle"
-- "NSManagedObjectContext"
-- !private "Dictionary"
-- "StringLiteralType"
-- "NSString"
-- "NSUserDefaults"
-- !private "NSLog"
-- !private "NSError"
-- !private "String"
-- !private "BooleanLiteralType"
-- "NSURL"
-- "UIApplication"
-- !private "abort"
-- "NSNumber"
-- !private "-"
-- "NSPersistentStoreCoordinator"
-- "UIApplicationDelegate"
-- "Bool"
 - !private "NSLocalizedFailureReasonErrorKey"
-- !private "NSFileManager"
-- !private "NSUnderlyingErrorKey"
+- "UIApplicationDelegate"
+- !private "FIRApp"
 - "AnyObject"
+- "NSManagedObjectModel"
 - !private "NSSQLiteStoreType"
-- "AppDelegate"
+- "Bool"
+- "NSUserDefaults"
+- "NSManagedObjectContext"
 - "UIWindow"
+- !private "abort"
+- "NSPersistentStoreCoordinator"
+- "NSString"
+- "NSObject"
+- !private "String"
+- "AppDelegate"
+- !private "BooleanLiteralType"
+- !private "NSLog"
 - !private "NSDictionary"
+- !private "NSError"
+- !private "NSFileManager"
+- !private "NSBundle"
+- "StringLiteralType"
+- "UIResponder"
+- !private "Dictionary"
+- !private "-"
+- "NSNumber"
+- "NSURL"
+- !private "NSLocalizedDescriptionKey"
+- "UIApplication"
+- !private "NSUnderlyingErrorKey"
 depends-member:
 - !private ["Ps9AnyObject", "AnyObject"]
+- !private ["Ps9AnyObject", "FIRApp"]
 - !private ["Ps9AnyObject", "Key"]
 - !private ["Ps9AnyObject", "NSBundle"]
 - !private ["Ps9AnyObject", "NSError"]
@@ -88,6 +90,7 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
+- !private ["Ps9AnyObject", "configure"]
 - !private ["Ps9AnyObject", "defaultManager"]
 - !private ["Ps9AnyObject", "deinit"]
 - ["Ps9AnyObject", "displayOrder"]
@@ -111,6 +114,7 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - ["C10SimpleTodo11AppDelegate", "AnyObject"]
 - ["C10SimpleTodo11AppDelegate", "Bool"]
+- !private ["C10SimpleTodo11AppDelegate", "FIRApp"]
 - !private ["C10SimpleTodo11AppDelegate", "NSBundle"]
 - !private ["C10SimpleTodo11AppDelegate", "NSDictionary"]
 - !private ["C10SimpleTodo11AppDelegate", "NSError"]
@@ -183,6 +187,7 @@ depends-member:
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["Ps11CVarArgType", "AnyObject"]
 - !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "FIRApp"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "Key"]
 - !private ["Ps11CVarArgType", "NSBundle"]
@@ -218,6 +223,7 @@ depends-member:
 - ["Ps11CVarArgType", "applicationWillEnterForeground"]
 - ["Ps11CVarArgType", "applicationWillResignActive"]
 - ["Ps11CVarArgType", "applicationWillTerminate"]
+- !private ["Ps11CVarArgType", "configure"]
 - !private ["Ps11CVarArgType", "defaultManager"]
 - ["Ps11CVarArgType", "displayOrder"]
 - !private ["Ps11CVarArgType", "hasChanges"]
@@ -250,6 +256,7 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "AnyObject"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -287,6 +294,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
+- !private ["Ps28CustomDebugStringConvertible", "configure"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "defaultManager"]
 - ["Ps28CustomDebugStringConvertible", "displayOrder"]
@@ -311,6 +319,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "AnyObject"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "FIRApp"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
@@ -350,6 +359,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["Ps23CustomStringConvertible", "configure"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "defaultManager"]
 - ["Ps23CustomStringConvertible", "displayOrder"]
@@ -382,6 +392,7 @@ depends-member:
 - !private ["Ps9Equatable", "AnyObject"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "DocumentDirectory"]
+- !private ["Ps9Equatable", "FIRApp"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Key"]
 - !private ["Ps9Equatable", "MainQueueConcurrencyType"]
@@ -420,6 +431,7 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
+- !private ["Ps9Equatable", "configure"]
 - !private ["Ps9Equatable", "defaultManager"]
 - ["Ps9Equatable", "displayOrder"]
 - !private ["Ps9Equatable", "hasChanges"]
@@ -443,6 +455,7 @@ depends-member:
 - !private ["Ps9ErrorType", "init"]
 - !private ["Ps9ErrorType", "userInfo"]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo6FIRApp", "configure"]
 - !private ["Sf", "deinit"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
@@ -450,6 +463,7 @@ depends-member:
 - !private ["Ps8Hashable", "AnyObject"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "DocumentDirectory"]
+- !private ["Ps8Hashable", "FIRApp"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Key"]
 - !private ["Ps8Hashable", "MainQueueConcurrencyType"]
@@ -487,6 +501,7 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
+- !private ["Ps8Hashable", "configure"]
 - !private ["Ps8Hashable", "defaultManager"]
 - ["Ps8Hashable", "displayOrder"]
 - !private ["Ps8Hashable", "hasChanges"]
@@ -588,6 +603,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FIRApp"]
 - !private ["CSo8NSObject", "Key"]
 - !private ["CSo8NSObject", "NSBundle"]
 - !private ["CSo8NSObject", "NSDictionary"]
@@ -629,6 +645,7 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "configure"]
 - !private ["CSo8NSObject", "defaultManager"]
 - ["CSo8NSObject", "displayOrder"]
 - !private ["CSo8NSObject", "hasChanges"]
@@ -649,6 +666,7 @@ depends-member:
 - !private ["CSo8NSObject", "userInfo"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "AnyObject"]
+- !private ["PSo16NSObjectProtocol", "FIRApp"]
 - !private ["PSo16NSObjectProtocol", "Key"]
 - !private ["PSo16NSObjectProtocol", "NSBundle"]
 - !private ["PSo16NSObjectProtocol", "NSError"]
@@ -683,6 +701,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "configure"]
 - !private ["PSo16NSObjectProtocol", "defaultManager"]
 - ["PSo16NSObjectProtocol", "displayOrder"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
@@ -756,6 +775,7 @@ depends-member:
 - !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo21UIApplicationDelegate", "AnyObject"]
+- !private ["PSo21UIApplicationDelegate", "FIRApp"]
 - !private ["PSo21UIApplicationDelegate", "NSBundle"]
 - !private ["PSo21UIApplicationDelegate", "NSError"]
 - !private ["PSo21UIApplicationDelegate", "NSFileManager"]
@@ -792,6 +812,7 @@ depends-member:
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FIRApp"]
 - !private ["CSo11UIResponder", "NSBundle"]
 - !private ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSError"]
@@ -919,6 +940,7 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "Ps9ErrorType"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo6FIRApp"
 - !private "Sf"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
@@ -1004,6 +1026,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
@@ -1074,4 +1097,18 @@ depends-external:
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "./GoogleMobileAds.framework/Modules/module.modulemap"
-interface-hash: "806ed9139399f4d48860254fef827760"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "026b66236b7fcf6e74c11db2c45a415b"

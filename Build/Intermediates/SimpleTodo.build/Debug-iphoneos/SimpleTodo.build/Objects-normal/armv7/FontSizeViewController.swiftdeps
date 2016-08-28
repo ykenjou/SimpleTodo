@@ -1,0 +1,568 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FontSizeViewController"
+provides-nominal:
+- "C10SimpleTodo22FontSizeViewController"
+provides-member:
+- ["C10SimpleTodo22FontSizeViewController", ""]
+provides-dynamic-lookup:
+- "userDefaults"
+- "sizeArray"
+- "numberOfComponentsInPickerView"
+- "fontPickerView"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- !private "BooleanLiteralType"
+- "Int"
+- "Array"
+- "UIPickerView"
+- !private "StringLiteralType"
+- !private "NSInteger"
+- "UIPickerViewDataSource"
+- "UIPickerViewDelegate"
+- !private "NSNumber"
+- "String"
+- !private "-"
+- "UIViewController"
+- "NSArray"
+- !private "Float"
+- "NSUserDefaults"
+- "FontSizeViewController"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- ["Ps9AnyObject", "Element"]
+- !private ["Ps9AnyObject", "Float"]
+- ["Ps9AnyObject", "NSUserDefaults"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "count"]
+- ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "fontPickerView"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "integerForKey"]
+- ["Ps9AnyObject", "numberOfComponentsInPickerView"]
+- ["Ps9AnyObject", "pickerView"]
+- !private ["Ps9AnyObject", "selectRow"]
+- !private ["Ps9AnyObject", "setFloat"]
+- ["Ps9AnyObject", "sizeArray"]
+- ["Ps9AnyObject", "standardUserDefaults"]
+- !private ["Ps9AnyObject", "subscript"]
+- ["Ps9AnyObject", "userDefaults"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "count"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- ["Ps11CVarArgType", "Element"]
+- !private ["Ps11CVarArgType", "Float"]
+- ["Ps11CVarArgType", "NSUserDefaults"]
+- !private ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "count"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "fontPickerView"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "integerForKey"]
+- ["Ps11CVarArgType", "numberOfComponentsInPickerView"]
+- ["Ps11CVarArgType", "pickerView"]
+- !private ["Ps11CVarArgType", "selectRow"]
+- !private ["Ps11CVarArgType", "setFloat"]
+- ["Ps11CVarArgType", "sizeArray"]
+- ["Ps11CVarArgType", "standardUserDefaults"]
+- !private ["Ps11CVarArgType", "subscript"]
+- ["Ps11CVarArgType", "userDefaults"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Float"]
+- ["Ps28CustomDebugStringConvertible", "NSUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "fontPickerView"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "integerForKey"]
+- ["Ps28CustomDebugStringConvertible", "numberOfComponentsInPickerView"]
+- ["Ps28CustomDebugStringConvertible", "pickerView"]
+- !private ["Ps28CustomDebugStringConvertible", "selectRow"]
+- !private ["Ps28CustomDebugStringConvertible", "setFloat"]
+- ["Ps28CustomDebugStringConvertible", "sizeArray"]
+- ["Ps28CustomDebugStringConvertible", "standardUserDefaults"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "userDefaults"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Float"]
+- ["Ps23CustomStringConvertible", "NSUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "fontPickerView"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "integerForKey"]
+- ["Ps23CustomStringConvertible", "numberOfComponentsInPickerView"]
+- ["Ps23CustomStringConvertible", "pickerView"]
+- !private ["Ps23CustomStringConvertible", "selectRow"]
+- !private ["Ps23CustomStringConvertible", "setFloat"]
+- ["Ps23CustomStringConvertible", "sizeArray"]
+- ["Ps23CustomStringConvertible", "standardUserDefaults"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "userDefaults"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "Element"]
+- !private ["Ps9Equatable", "Float"]
+- ["Ps9Equatable", "NSUserDefaults"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "count"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "fontPickerView"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "integerForKey"]
+- ["Ps9Equatable", "numberOfComponentsInPickerView"]
+- ["Ps9Equatable", "pickerView"]
+- !private ["Ps9Equatable", "selectRow"]
+- !private ["Ps9Equatable", "setFloat"]
+- ["Ps9Equatable", "sizeArray"]
+- ["Ps9Equatable", "standardUserDefaults"]
+- !private ["Ps9Equatable", "subscript"]
+- ["Ps9Equatable", "userDefaults"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "init"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["C10SimpleTodo22FontSizeViewController", "Float"]
+- ["C10SimpleTodo22FontSizeViewController", "Int"]
+- ["C10SimpleTodo22FontSizeViewController", "NSArray"]
+- !private ["C10SimpleTodo22FontSizeViewController", "NSInteger"]
+- !private ["C10SimpleTodo22FontSizeViewController", "NSNumber"]
+- ["C10SimpleTodo22FontSizeViewController", "NSUserDefaults"]
+- ["C10SimpleTodo22FontSizeViewController", "String"]
+- ["C10SimpleTodo22FontSizeViewController", "UIPickerView"]
+- ["C10SimpleTodo22FontSizeViewController", "deinit"]
+- ["C10SimpleTodo22FontSizeViewController", "didReceiveMemoryWarning"]
+- ["C10SimpleTodo22FontSizeViewController", "fontPickerView"]
+- ["C10SimpleTodo22FontSizeViewController", "init"]
+- ["C10SimpleTodo22FontSizeViewController", "numberOfComponentsInPickerView"]
+- ["C10SimpleTodo22FontSizeViewController", "pickerView"]
+- ["C10SimpleTodo22FontSizeViewController", "sizeArray"]
+- ["C10SimpleTodo22FontSizeViewController", "userDefaults"]
+- ["C10SimpleTodo22FontSizeViewController", "viewDidLoad"]
+- ["Ps8Hashable", "Element"]
+- !private ["Ps8Hashable", "Float"]
+- ["Ps8Hashable", "NSUserDefaults"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "count"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "fontPickerView"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "integerForKey"]
+- ["Ps8Hashable", "numberOfComponentsInPickerView"]
+- ["Ps8Hashable", "pickerView"]
+- !private ["Ps8Hashable", "selectRow"]
+- !private ["Ps8Hashable", "setFloat"]
+- ["Ps8Hashable", "sizeArray"]
+- ["Ps8Hashable", "standardUserDefaults"]
+- !private ["Ps8Hashable", "subscript"]
+- ["Ps8Hashable", "userDefaults"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["Si", "deinit"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["Ps14MirrorPathType", "init"]
+- ["CSo7NSArray", "Element"]
+- !private ["CSo7NSArray", "count"]
+- !private ["CSo7NSArray", "subscript"]
+- ["PSo8NSCoding", "Element"]
+- !private ["PSo8NSCoding", "Float"]
+- ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "count"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "fontPickerView"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfComponentsInPickerView"]
+- ["PSo8NSCoding", "pickerView"]
+- !private ["PSo8NSCoding", "selectRow"]
+- ["PSo8NSCoding", "sizeArray"]
+- !private ["PSo8NSCoding", "subscript"]
+- ["PSo8NSCoding", "userDefaults"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "Element"]
+- !private ["PSo9NSCopying", "count"]
+- !private ["PSo9NSCopying", "subscript"]
+- !private ["PSo26NSExtensionRequestHandling", "Float"]
+- ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "fontPickerView"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfComponentsInPickerView"]
+- ["PSo26NSExtensionRequestHandling", "pickerView"]
+- ["PSo26NSExtensionRequestHandling", "sizeArray"]
+- ["PSo26NSExtensionRequestHandling", "userDefaults"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["PSo17NSFastEnumeration", "Element"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- ["PSo16NSMutableCopying", "Element"]
+- !private ["PSo16NSMutableCopying", "count"]
+- !private ["PSo16NSMutableCopying", "subscript"]
+- ["CSo8NSObject", "Element"]
+- !private ["CSo8NSObject", "Float"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSArray"]
+- !private ["CSo8NSObject", "NSInteger"]
+- !private ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "NSUserDefaults"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIPickerView"]
+- !private ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "fontPickerView"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "integerForKey"]
+- ["CSo8NSObject", "numberOfComponentsInPickerView"]
+- ["CSo8NSObject", "pickerView"]
+- !private ["CSo8NSObject", "selectRow"]
+- !private ["CSo8NSObject", "setFloat"]
+- ["CSo8NSObject", "sizeArray"]
+- ["CSo8NSObject", "standardUserDefaults"]
+- !private ["CSo8NSObject", "subscript"]
+- ["CSo8NSObject", "userDefaults"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Element"]
+- !private ["PSo16NSObjectProtocol", "Float"]
+- ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "fontPickerView"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "integerForKey"]
+- ["PSo16NSObjectProtocol", "numberOfComponentsInPickerView"]
+- ["PSo16NSObjectProtocol", "pickerView"]
+- !private ["PSo16NSObjectProtocol", "selectRow"]
+- !private ["PSo16NSObjectProtocol", "setFloat"]
+- ["PSo16NSObjectProtocol", "sizeArray"]
+- ["PSo16NSObjectProtocol", "standardUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- ["PSo16NSObjectProtocol", "userDefaults"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "Element"]
+- !private ["PSo14NSSecureCoding", "count"]
+- !private ["PSo14NSSecureCoding", "subscript"]
+- !private ["CSo14NSUserDefaults", "integerForKey"]
+- !private ["CSo14NSUserDefaults", "setFloat"]
+- ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["Ps16OutputStreamType", "init"]
+- ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "count"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Streamable", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "selectRow"]
+- !private ["PSo12UIAppearance", "selectRow"]
+- !private ["PSo21UIAppearanceContainer", "Float"]
+- ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "fontPickerView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfComponentsInPickerView"]
+- ["PSo21UIAppearanceContainer", "pickerView"]
+- !private ["PSo21UIAppearanceContainer", "selectRow"]
+- ["PSo21UIAppearanceContainer", "sizeArray"]
+- ["PSo21UIAppearanceContainer", "userDefaults"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Float"]
+- ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "String"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "fontPickerView"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfComponentsInPickerView"]
+- ["PSo18UIContentContainer", "pickerView"]
+- ["PSo18UIContentContainer", "sizeArray"]
+- ["PSo18UIContentContainer", "userDefaults"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "selectRow"]
+- !private ["PSo13UIDynamicItem", "selectRow"]
+- !private ["PSo18UIFocusEnvironment", "Float"]
+- ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "fontPickerView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "numberOfComponentsInPickerView"]
+- ["PSo18UIFocusEnvironment", "pickerView"]
+- !private ["PSo18UIFocusEnvironment", "selectRow"]
+- ["PSo18UIFocusEnvironment", "sizeArray"]
+- ["PSo18UIFocusEnvironment", "userDefaults"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo12UIPickerView", "selectRow"]
+- !private ["PSo22UIPickerViewDataSource", "Float"]
+- ["PSo22UIPickerViewDataSource", "NSUserDefaults"]
+- !private ["PSo22UIPickerViewDataSource", "String"]
+- !private ["PSo22UIPickerViewDataSource", "fontPickerView"]
+- ["PSo22UIPickerViewDataSource", "numberOfComponentsInPickerView"]
+- ["PSo22UIPickerViewDataSource", "pickerView"]
+- !private ["PSo22UIPickerViewDataSource", "sizeArray"]
+- !private ["PSo22UIPickerViewDataSource", "userDefaults"]
+- ["PSo22UIPickerViewDataSource", ""]
+- !private ["PSo20UIPickerViewDelegate", "Float"]
+- ["PSo20UIPickerViewDelegate", "NSUserDefaults"]
+- !private ["PSo20UIPickerViewDelegate", "String"]
+- !private ["PSo20UIPickerViewDelegate", "fontPickerView"]
+- ["PSo20UIPickerViewDelegate", "numberOfComponentsInPickerView"]
+- ["PSo20UIPickerViewDelegate", "pickerView"]
+- !private ["PSo20UIPickerViewDelegate", "sizeArray"]
+- !private ["PSo20UIPickerViewDelegate", "userDefaults"]
+- ["PSo20UIPickerViewDelegate", ""]
+- !private ["CSo11UIResponder", "Float"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSArray"]
+- !private ["CSo11UIResponder", "NSInteger"]
+- !private ["CSo11UIResponder", "NSNumber"]
+- ["CSo11UIResponder", "NSUserDefaults"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIPickerView"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "fontPickerView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfComponentsInPickerView"]
+- ["CSo11UIResponder", "pickerView"]
+- !private ["CSo11UIResponder", "selectRow"]
+- ["CSo11UIResponder", "sizeArray"]
+- ["CSo11UIResponder", "userDefaults"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "Float"]
+- ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "String"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "fontPickerView"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfComponentsInPickerView"]
+- ["PSo16UIStateRestoring", "pickerView"]
+- ["PSo16UIStateRestoring", "sizeArray"]
+- ["PSo16UIStateRestoring", "userDefaults"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo21UITableViewDataSource", "selectRow"]
+- !private ["PSo18UITraitEnvironment", "Float"]
+- ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "String"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "fontPickerView"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfComponentsInPickerView"]
+- ["PSo18UITraitEnvironment", "pickerView"]
+- !private ["PSo18UITraitEnvironment", "selectRow"]
+- ["PSo18UITraitEnvironment", "sizeArray"]
+- ["PSo18UITraitEnvironment", "userDefaults"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "selectRow"]
+- !private ["CSo16UIViewController", "Float"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSArray"]
+- !private ["CSo16UIViewController", "NSInteger"]
+- !private ["CSo16UIViewController", "NSNumber"]
+- ["CSo16UIViewController", "NSUserDefaults"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIPickerView"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "fontPickerView"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfComponentsInPickerView"]
+- ["CSo16UIViewController", "pickerView"]
+- ["CSo16UIViewController", "sizeArray"]
+- ["CSo16UIViewController", "userDefaults"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "count"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "selectRow"]
+- !private ["Ps12_Reflectable", "subscript"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps23ArrayLiteralConvertible"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- "C10SimpleTodo22FontSizeViewController"
+- "Ps8Hashable"
+- "Si"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps14MirrorPathType"
+- "CSo7NSArray"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "PSo17NSFastEnumeration"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo14NSUserDefaults"
+- !private "Ps16OutputStreamType"
+- "Ps12SequenceType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Streamable"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo12UIPickerView"
+- "PSo22UIPickerViewDataSource"
+- "PSo20UIPickerViewDelegate"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "PSo21UITableViewDataSource"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps31_BuiltinFloatLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "85ae0c7ff05c8bc6b26fbad57bc34400"

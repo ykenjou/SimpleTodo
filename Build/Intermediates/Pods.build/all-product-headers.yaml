@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Build/Products/Debug-iphoneos/Pods_SimpleTodo.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-SimpleTodo-umbrella.h",
+          'external-contents': "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Target Support Files/Pods-SimpleTodo/Pods-SimpleTodo-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_SimpleTodo-Swift.h",
+          'external-contents': "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Build/Products/Debug-iphoneos/Pods_SimpleTodo.framework/Headers/Pods_SimpleTodo-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Build/Products/Debug-iphoneos/Pods_SimpleTodo.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-SimpleTodo.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

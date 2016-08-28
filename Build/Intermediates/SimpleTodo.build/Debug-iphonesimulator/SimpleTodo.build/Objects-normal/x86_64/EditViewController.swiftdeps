@@ -1,0 +1,1119 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "EditViewController"
+provides-nominal:
+- "C10SimpleTodo18EditViewController"
+provides-member:
+- ["C10SimpleTodo18EditViewController", ""]
+provides-dynamic-lookup:
+- "pushSaveButton"
+- "appDelegate"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "textView"
+- "pushCancelButton"
+depends-top-level:
+- !private "String"
+- !private "UIBarButtonSystemItem"
+- !private "UIBarButtonItem"
+- !private "NSPredicate"
+- "UITextView"
+- "UIViewController"
+- !private "UIBarStyle"
+- !private "AddViewController"
+- "UIApplication"
+- !private "UIColor"
+- !private "UIToolbar"
+- !private "BooleanLiteralType"
+- !private "!="
+- !private "NSFetchRequest"
+- "EditViewController"
+- !private "print"
+- !private "NSInteger"
+- !private "StringLiteralType"
+- !private "CGRect"
+- !private "Item"
+- !private "NSCharacterSet"
+- !private "Array"
+- "AppDelegate"
+depends-member:
+- !private ["C10SimpleTodo17AddViewController", "pushCancelButton"]
+- !private ["C10SimpleTodo17AddViewController", "pushSaveButton"]
+- !private ["Ps9AnyObject", "AddViewController"]
+- !private ["Ps9AnyObject", "CGColor"]
+- !private ["Ps9AnyObject", "CGRect"]
+- !private ["Ps9AnyObject", "NSCharacterSet"]
+- !private ["Ps9AnyObject", "NSFetchRequest"]
+- !private ["Ps9AnyObject", "NSPredicate"]
+- ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIBarButtonSystemItem"]
+- !private ["Ps9AnyObject", "UIBarStyle"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIToolbar"]
+- ["Ps9AnyObject", "appDelegate"]
+- !private ["Ps9AnyObject", "barStyle"]
+- !private ["Ps9AnyObject", "becomeFirstResponder"]
+- !private ["Ps9AnyObject", "borderColor"]
+- !private ["Ps9AnyObject", "borderWidth"]
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "dismissViewControllerAnimated"]
+- !private ["Ps9AnyObject", "displayOrder"]
+- !private ["Ps9AnyObject", "executeFetchRequest"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "inputAccessoryView"]
+- !private ["Ps9AnyObject", "itemText"]
+- !private ["Ps9AnyObject", "items"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "lightGrayColor"]
+- !private ["Ps9AnyObject", "managedObjectContext"]
+- !private ["Ps9AnyObject", "newlineCharacterSet"]
+- !private ["Ps9AnyObject", "predicate"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "pushCancelButton"]
+- ["Ps9AnyObject", "pushSaveButton"]
+- !private ["Ps9AnyObject", "resignFirstResponder"]
+- !private ["Ps9AnyObject", "saveContext"]
+- ["Ps9AnyObject", "sharedApplication"]
+- !private ["Ps9AnyObject", "stringByTrimmingCharactersInSet"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "textView"]
+- !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["C10SimpleTodo11AppDelegate", "displayOrder"]
+- !private ["C10SimpleTodo11AppDelegate", "itemText"]
+- !private ["C10SimpleTodo11AppDelegate", "managedObjectContext"]
+- !private ["C10SimpleTodo11AppDelegate", "saveContext"]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "borderColor"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "borderColor"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "init"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps11CVarArgType", "AddViewController"]
+- !private ["Ps11CVarArgType", "CGColor"]
+- !private ["Ps11CVarArgType", "CGRect"]
+- !private ["Ps11CVarArgType", "NSCharacterSet"]
+- !private ["Ps11CVarArgType", "NSFetchRequest"]
+- !private ["Ps11CVarArgType", "NSPredicate"]
+- ["Ps11CVarArgType", "UIApplication"]
+- !private ["Ps11CVarArgType", "UIBarButtonItem"]
+- !private ["Ps11CVarArgType", "UIBarButtonSystemItem"]
+- !private ["Ps11CVarArgType", "UIBarStyle"]
+- !private ["Ps11CVarArgType", "UIColor"]
+- !private ["Ps11CVarArgType", "UIToolbar"]
+- ["Ps11CVarArgType", "appDelegate"]
+- !private ["Ps11CVarArgType", "barStyle"]
+- !private ["Ps11CVarArgType", "becomeFirstResponder"]
+- !private ["Ps11CVarArgType", "borderColor"]
+- !private ["Ps11CVarArgType", "borderWidth"]
+- !private ["Ps11CVarArgType", "bounds"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- ["Ps11CVarArgType", "delegate"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Ps11CVarArgType", "dismissViewControllerAnimated"]
+- !private ["Ps11CVarArgType", "displayOrder"]
+- !private ["Ps11CVarArgType", "executeFetchRequest"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "inputAccessoryView"]
+- !private ["Ps11CVarArgType", "itemText"]
+- !private ["Ps11CVarArgType", "items"]
+- !private ["Ps11CVarArgType", "layer"]
+- !private ["Ps11CVarArgType", "lightGrayColor"]
+- !private ["Ps11CVarArgType", "managedObjectContext"]
+- !private ["Ps11CVarArgType", "newlineCharacterSet"]
+- !private ["Ps11CVarArgType", "predicate"]
+- !private ["Ps11CVarArgType", "print"]
+- ["Ps11CVarArgType", "pushCancelButton"]
+- ["Ps11CVarArgType", "pushSaveButton"]
+- !private ["Ps11CVarArgType", "resignFirstResponder"]
+- !private ["Ps11CVarArgType", "saveContext"]
+- ["Ps11CVarArgType", "sharedApplication"]
+- !private ["Ps11CVarArgType", "stringByTrimmingCharactersInSet"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "textView"]
+- !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "subscript"]
+- !private ["Ps10Comparable", "stringByTrimmingCharactersInSet"]
+- !private ["Ps28CustomDebugStringConvertible", "AddViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "CGColor"]
+- !private ["Ps28CustomDebugStringConvertible", "CGRect"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSCharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
+- ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarButtonSystemItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIBarStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
+- ["Ps28CustomDebugStringConvertible", "appDelegate"]
+- !private ["Ps28CustomDebugStringConvertible", "barStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "becomeFirstResponder"]
+- !private ["Ps28CustomDebugStringConvertible", "borderColor"]
+- !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps28CustomDebugStringConvertible", "displayOrder"]
+- !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "inputAccessoryView"]
+- !private ["Ps28CustomDebugStringConvertible", "itemText"]
+- !private ["Ps28CustomDebugStringConvertible", "items"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "lightGrayColor"]
+- !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
+- !private ["Ps28CustomDebugStringConvertible", "newlineCharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "predicate"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "pushCancelButton"]
+- ["Ps28CustomDebugStringConvertible", "pushSaveButton"]
+- !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
+- !private ["Ps28CustomDebugStringConvertible", "saveContext"]
+- ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "textView"]
+- !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "AddViewController"]
+- !private ["Ps23CustomStringConvertible", "CGColor"]
+- !private ["Ps23CustomStringConvertible", "CGRect"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "NSCharacterSet"]
+- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
+- !private ["Ps23CustomStringConvertible", "NSPredicate"]
+- ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
+- !private ["Ps23CustomStringConvertible", "UIBarButtonSystemItem"]
+- !private ["Ps23CustomStringConvertible", "UIBarStyle"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIToolbar"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "appDelegate"]
+- !private ["Ps23CustomStringConvertible", "barStyle"]
+- !private ["Ps23CustomStringConvertible", "becomeFirstResponder"]
+- !private ["Ps23CustomStringConvertible", "borderColor"]
+- !private ["Ps23CustomStringConvertible", "borderWidth"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "dismissViewControllerAnimated"]
+- !private ["Ps23CustomStringConvertible", "displayOrder"]
+- !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "inputAccessoryView"]
+- !private ["Ps23CustomStringConvertible", "itemText"]
+- !private ["Ps23CustomStringConvertible", "items"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "lightGrayColor"]
+- !private ["Ps23CustomStringConvertible", "managedObjectContext"]
+- !private ["Ps23CustomStringConvertible", "newlineCharacterSet"]
+- !private ["Ps23CustomStringConvertible", "predicate"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "pushCancelButton"]
+- ["Ps23CustomStringConvertible", "pushSaveButton"]
+- !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
+- !private ["Ps23CustomStringConvertible", "saveContext"]
+- ["Ps23CustomStringConvertible", "sharedApplication"]
+- !private ["Ps23CustomStringConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "textView"]
+- !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C10SimpleTodo18EditViewController", "AddViewController"]
+- ["C10SimpleTodo18EditViewController", "AppDelegate"]
+- !private ["C10SimpleTodo18EditViewController", "CGRect"]
+- !private ["C10SimpleTodo18EditViewController", "Item"]
+- !private ["C10SimpleTodo18EditViewController", "NSCharacterSet"]
+- !private ["C10SimpleTodo18EditViewController", "NSFetchRequest"]
+- !private ["C10SimpleTodo18EditViewController", "NSInteger"]
+- !private ["C10SimpleTodo18EditViewController", "NSPredicate"]
+- !private ["C10SimpleTodo18EditViewController", "String"]
+- ["C10SimpleTodo18EditViewController", "UIApplication"]
+- !private ["C10SimpleTodo18EditViewController", "UIBarButtonItem"]
+- !private ["C10SimpleTodo18EditViewController", "UIBarButtonSystemItem"]
+- !private ["C10SimpleTodo18EditViewController", "UIBarStyle"]
+- !private ["C10SimpleTodo18EditViewController", "UIColor"]
+- ["C10SimpleTodo18EditViewController", "UITextView"]
+- !private ["C10SimpleTodo18EditViewController", "UIToolbar"]
+- ["C10SimpleTodo18EditViewController", "appDelegate"]
+- ["C10SimpleTodo18EditViewController", "deinit"]
+- ["C10SimpleTodo18EditViewController", "didReceiveMemoryWarning"]
+- !private ["C10SimpleTodo18EditViewController", "dismissViewControllerAnimated"]
+- ["C10SimpleTodo18EditViewController", "init"]
+- !private ["C10SimpleTodo18EditViewController", "print"]
+- ["C10SimpleTodo18EditViewController", "pushCancelButton"]
+- ["C10SimpleTodo18EditViewController", "pushSaveButton"]
+- ["C10SimpleTodo18EditViewController", "textView"]
+- !private ["C10SimpleTodo18EditViewController", "view"]
+- ["C10SimpleTodo18EditViewController", "viewDidLoad"]
+- !private ["Ps9Equatable", "AddViewController"]
+- !private ["Ps9Equatable", "CGColor"]
+- !private ["Ps9Equatable", "CGRect"]
+- !private ["Ps9Equatable", "Default"]
+- !private ["Ps9Equatable", "FlexibleSpace"]
+- !private ["Ps9Equatable", "NSCharacterSet"]
+- !private ["Ps9Equatable", "NSFetchRequest"]
+- !private ["Ps9Equatable", "NSPredicate"]
+- !private ["Ps9Equatable", "Save"]
+- !private ["Ps9Equatable", "Stop"]
+- ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "UIBarButtonItem"]
+- !private ["Ps9Equatable", "UIBarButtonSystemItem"]
+- !private ["Ps9Equatable", "UIBarStyle"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIToolbar"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "appDelegate"]
+- !private ["Ps9Equatable", "barStyle"]
+- !private ["Ps9Equatable", "becomeFirstResponder"]
+- !private ["Ps9Equatable", "borderColor"]
+- !private ["Ps9Equatable", "borderWidth"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "dismissViewControllerAnimated"]
+- !private ["Ps9Equatable", "displayOrder"]
+- !private ["Ps9Equatable", "executeFetchRequest"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "inputAccessoryView"]
+- !private ["Ps9Equatable", "itemText"]
+- !private ["Ps9Equatable", "items"]
+- !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "lightGrayColor"]
+- !private ["Ps9Equatable", "managedObjectContext"]
+- !private ["Ps9Equatable", "newlineCharacterSet"]
+- !private ["Ps9Equatable", "predicate"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "pushCancelButton"]
+- ["Ps9Equatable", "pushSaveButton"]
+- !private ["Ps9Equatable", "resignFirstResponder"]
+- !private ["Ps9Equatable", "saveContext"]
+- ["Ps9Equatable", "sharedApplication"]
+- !private ["Ps9Equatable", "stringByTrimmingCharactersInSet"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "textView"]
+- !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "width"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "AddViewController"]
+- !private ["Ps8Hashable", "CGColor"]
+- !private ["Ps8Hashable", "CGRect"]
+- !private ["Ps8Hashable", "Default"]
+- !private ["Ps8Hashable", "FlexibleSpace"]
+- !private ["Ps8Hashable", "NSCharacterSet"]
+- !private ["Ps8Hashable", "NSFetchRequest"]
+- !private ["Ps8Hashable", "NSPredicate"]
+- !private ["Ps8Hashable", "Save"]
+- !private ["Ps8Hashable", "Stop"]
+- ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "UIBarButtonItem"]
+- !private ["Ps8Hashable", "UIBarButtonSystemItem"]
+- !private ["Ps8Hashable", "UIBarStyle"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIToolbar"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "appDelegate"]
+- !private ["Ps8Hashable", "barStyle"]
+- !private ["Ps8Hashable", "becomeFirstResponder"]
+- !private ["Ps8Hashable", "borderColor"]
+- !private ["Ps8Hashable", "borderWidth"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "dismissViewControllerAnimated"]
+- !private ["Ps8Hashable", "displayOrder"]
+- !private ["Ps8Hashable", "executeFetchRequest"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "inputAccessoryView"]
+- !private ["Ps8Hashable", "itemText"]
+- !private ["Ps8Hashable", "items"]
+- !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "lightGrayColor"]
+- !private ["Ps8Hashable", "managedObjectContext"]
+- !private ["Ps8Hashable", "newlineCharacterSet"]
+- !private ["Ps8Hashable", "predicate"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "pushCancelButton"]
+- ["Ps8Hashable", "pushSaveButton"]
+- !private ["Ps8Hashable", "resignFirstResponder"]
+- !private ["Ps8Hashable", "saveContext"]
+- ["Ps8Hashable", "sharedApplication"]
+- !private ["Ps8Hashable", "stringByTrimmingCharactersInSet"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "textView"]
+- !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["C10SimpleTodo4Item", "text"]
+- !private ["Ps14MirrorPathType", "stringByTrimmingCharactersInSet"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "subscript"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "subscript"]
+- !private ["CSo14NSCharacterSet", "newlineCharacterSet"]
+- !private ["PSo8NSCoding", "AddViewController"]
+- !private ["PSo8NSCoding", "CGColor"]
+- !private ["PSo8NSCoding", "CGRect"]
+- !private ["PSo8NSCoding", "NSCharacterSet"]
+- !private ["PSo8NSCoding", "NSFetchRequest"]
+- !private ["PSo8NSCoding", "NSPredicate"]
+- ["PSo8NSCoding", "UIApplication"]
+- !private ["PSo8NSCoding", "UIBarButtonItem"]
+- !private ["PSo8NSCoding", "UIBarButtonSystemItem"]
+- !private ["PSo8NSCoding", "UIBarStyle"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIToolbar"]
+- ["PSo8NSCoding", "appDelegate"]
+- !private ["PSo8NSCoding", "barStyle"]
+- !private ["PSo8NSCoding", "becomeFirstResponder"]
+- !private ["PSo8NSCoding", "borderColor"]
+- !private ["PSo8NSCoding", "borderWidth"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- !private ["PSo8NSCoding", "executeFetchRequest"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "inputAccessoryView"]
+- !private ["PSo8NSCoding", "items"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "lightGrayColor"]
+- !private ["PSo8NSCoding", "newlineCharacterSet"]
+- !private ["PSo8NSCoding", "predicate"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "pushCancelButton"]
+- ["PSo8NSCoding", "pushSaveButton"]
+- !private ["PSo8NSCoding", "resignFirstResponder"]
+- !private ["PSo8NSCoding", "stringByTrimmingCharactersInSet"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "textView"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "lightGrayColor"]
+- !private ["PSo9NSCopying", "newlineCharacterSet"]
+- !private ["PSo9NSCopying", "predicate"]
+- !private ["PSo9NSCopying", "stringByTrimmingCharactersInSet"]
+- !private ["PSo26NSExtensionRequestHandling", "AddViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRect"]
+- !private ["PSo26NSExtensionRequestHandling", "NSCharacterSet"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
+- ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonItem"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarButtonSystemItem"]
+- !private ["PSo26NSExtensionRequestHandling", "UIBarStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIToolbar"]
+- ["PSo26NSExtensionRequestHandling", "appDelegate"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "pushCancelButton"]
+- ["PSo26NSExtensionRequestHandling", "pushSaveButton"]
+- ["PSo26NSExtensionRequestHandling", "textView"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo14NSFetchRequest", "init"]
+- !private ["CSo14NSFetchRequest", "predicate"]
+- !private ["PSo9NSLocking", "executeFetchRequest"]
+- !private ["CSo15NSManagedObject", "text"]
+- !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
+- !private ["PSo16NSMutableCopying", "newlineCharacterSet"]
+- !private ["PSo16NSMutableCopying", "stringByTrimmingCharactersInSet"]
+- !private ["CSo8NSNumber", "deinit"]
+- !private ["CSo8NSObject", "AddViewController"]
+- ["CSo8NSObject", "AppDelegate"]
+- !private ["CSo8NSObject", "CGColor"]
+- !private ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "NSCharacterSet"]
+- !private ["CSo8NSObject", "NSFetchRequest"]
+- !private ["CSo8NSObject", "NSInteger"]
+- !private ["CSo8NSObject", "NSPredicate"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "UIBarButtonSystemItem"]
+- !private ["CSo8NSObject", "UIBarStyle"]
+- !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UITextView"]
+- !private ["CSo8NSObject", "UIToolbar"]
+- ["CSo8NSObject", "appDelegate"]
+- !private ["CSo8NSObject", "barStyle"]
+- !private ["CSo8NSObject", "becomeFirstResponder"]
+- !private ["CSo8NSObject", "borderColor"]
+- !private ["CSo8NSObject", "borderWidth"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- !private ["CSo8NSObject", "displayOrder"]
+- !private ["CSo8NSObject", "executeFetchRequest"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "inputAccessoryView"]
+- !private ["CSo8NSObject", "itemText"]
+- !private ["CSo8NSObject", "items"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "lightGrayColor"]
+- !private ["CSo8NSObject", "managedObjectContext"]
+- !private ["CSo8NSObject", "newlineCharacterSet"]
+- !private ["CSo8NSObject", "predicate"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "pushCancelButton"]
+- ["CSo8NSObject", "pushSaveButton"]
+- !private ["CSo8NSObject", "resignFirstResponder"]
+- !private ["CSo8NSObject", "saveContext"]
+- ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "stringByTrimmingCharactersInSet"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "textView"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "AddViewController"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
+- !private ["PSo16NSObjectProtocol", "CGRect"]
+- !private ["PSo16NSObjectProtocol", "NSCharacterSet"]
+- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
+- !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "UIBarButtonSystemItem"]
+- !private ["PSo16NSObjectProtocol", "UIBarStyle"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIToolbar"]
+- ["PSo16NSObjectProtocol", "appDelegate"]
+- !private ["PSo16NSObjectProtocol", "barStyle"]
+- !private ["PSo16NSObjectProtocol", "becomeFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "borderColor"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- !private ["PSo16NSObjectProtocol", "displayOrder"]
+- !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "inputAccessoryView"]
+- !private ["PSo16NSObjectProtocol", "itemText"]
+- !private ["PSo16NSObjectProtocol", "items"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "lightGrayColor"]
+- !private ["PSo16NSObjectProtocol", "managedObjectContext"]
+- !private ["PSo16NSObjectProtocol", "newlineCharacterSet"]
+- !private ["PSo16NSObjectProtocol", "predicate"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "pushCancelButton"]
+- ["PSo16NSObjectProtocol", "pushSaveButton"]
+- !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "saveContext"]
+- ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "stringByTrimmingCharactersInSet"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "textView"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo24NSPersistentStoreRequest", "init"]
+- !private ["CSo24NSPersistentStoreRequest", "predicate"]
+- !private ["CSo11NSPredicate", "init"]
+- !private ["PSo14NSSecureCoding", "CGColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "lightGrayColor"]
+- !private ["PSo14NSSecureCoding", "stringByTrimmingCharactersInSet"]
+- !private ["CSo8NSString", "stringByTrimmingCharactersInSet"]
+- ["Sq", "deinit"]
+- !private ["Ps16OutputStreamType", "stringByTrimmingCharactersInSet"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
+- !private ["Ps16RawRepresentable", "Default"]
+- !private ["Ps16RawRepresentable", "FlexibleSpace"]
+- !private ["Ps16RawRepresentable", "Save"]
+- !private ["Ps16RawRepresentable", "Stop"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "subscript"]
+- !private ["Vs5Slice", "Generator"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Streamable", "stringByTrimmingCharactersInSet"]
+- !private ["SS", "deinit"]
+- !private ["SS", "stringByTrimmingCharactersInSet"]
+- !private ["Ps30StringInterpolationConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps24StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["PSo29UIAccessibilityIdentification", "barStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "becomeFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "inputAccessoryView"]
+- !private ["PSo29UIAccessibilityIdentification", "items"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "barStyle"]
+- !private ["PSo12UIAppearance", "becomeFirstResponder"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "inputAccessoryView"]
+- !private ["PSo12UIAppearance", "items"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "resignFirstResponder"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "AddViewController"]
+- !private ["PSo21UIAppearanceContainer", "CGRect"]
+- !private ["PSo21UIAppearanceContainer", "NSCharacterSet"]
+- !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
+- !private ["PSo21UIAppearanceContainer", "NSPredicate"]
+- ["PSo21UIAppearanceContainer", "UIApplication"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
+- !private ["PSo21UIAppearanceContainer", "UIBarButtonSystemItem"]
+- !private ["PSo21UIAppearanceContainer", "UIBarStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIToolbar"]
+- ["PSo21UIAppearanceContainer", "appDelegate"]
+- !private ["PSo21UIAppearanceContainer", "barStyle"]
+- !private ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "inputAccessoryView"]
+- !private ["PSo21UIAppearanceContainer", "items"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "pushCancelButton"]
+- ["PSo21UIAppearanceContainer", "pushSaveButton"]
+- !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "textView"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo13UIApplication", "delegate"]
+- ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo21UIApplicationDelegate", "displayOrder"]
+- !private ["PSo21UIApplicationDelegate", "itemText"]
+- !private ["PSo21UIApplicationDelegate", "managedObjectContext"]
+- !private ["PSo21UIApplicationDelegate", "saveContext"]
+- !private ["CSo15UIBarButtonItem", "init"]
+- !private ["OSC21UIBarButtonSystemItem", "FlexibleSpace"]
+- !private ["OSC21UIBarButtonSystemItem", "Save"]
+- !private ["OSC21UIBarButtonSystemItem", "Stop"]
+- !private ["CSo9UIBarItem", "init"]
+- !private ["PSo16UIBarPositioning", "barStyle"]
+- !private ["PSo16UIBarPositioning", "init"]
+- !private ["PSo16UIBarPositioning", "items"]
+- !private ["OSC10UIBarStyle", "Default"]
+- !private ["CSo7UIColor", "CGColor"]
+- !private ["CSo7UIColor", "lightGrayColor"]
+- !private ["PSo18UIContentContainer", "AddViewController"]
+- !private ["PSo18UIContentContainer", "CGRect"]
+- !private ["PSo18UIContentContainer", "NSCharacterSet"]
+- !private ["PSo18UIContentContainer", "NSFetchRequest"]
+- !private ["PSo18UIContentContainer", "NSPredicate"]
+- ["PSo18UIContentContainer", "UIApplication"]
+- !private ["PSo18UIContentContainer", "UIBarButtonItem"]
+- !private ["PSo18UIContentContainer", "UIBarButtonSystemItem"]
+- !private ["PSo18UIContentContainer", "UIBarStyle"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIToolbar"]
+- ["PSo18UIContentContainer", "appDelegate"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "pushCancelButton"]
+- ["PSo18UIContentContainer", "pushSaveButton"]
+- ["PSo18UIContentContainer", "textView"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "barStyle"]
+- !private ["PSo17UICoordinateSpace", "becomeFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "inputAccessoryView"]
+- !private ["PSo17UICoordinateSpace", "items"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "barStyle"]
+- !private ["PSo13UIDynamicItem", "becomeFirstResponder"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "inputAccessoryView"]
+- !private ["PSo13UIDynamicItem", "items"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "resignFirstResponder"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "AddViewController"]
+- !private ["PSo18UIFocusEnvironment", "CGRect"]
+- !private ["PSo18UIFocusEnvironment", "NSCharacterSet"]
+- !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSPredicate"]
+- ["PSo18UIFocusEnvironment", "UIApplication"]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UIFocusEnvironment", "UIBarButtonSystemItem"]
+- !private ["PSo18UIFocusEnvironment", "UIBarStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIToolbar"]
+- ["PSo18UIFocusEnvironment", "appDelegate"]
+- !private ["PSo18UIFocusEnvironment", "barStyle"]
+- !private ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "inputAccessoryView"]
+- !private ["PSo18UIFocusEnvironment", "items"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "pushCancelButton"]
+- ["PSo18UIFocusEnvironment", "pushSaveButton"]
+- !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "textView"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo10UIKeyInput", "becomeFirstResponder"]
+- !private ["PSo10UIKeyInput", "inputAccessoryView"]
+- !private ["PSo10UIKeyInput", "layer"]
+- !private ["PSo10UIKeyInput", "resignFirstResponder"]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo11UIResponder", "AddViewController"]
+- ["CSo11UIResponder", "AppDelegate"]
+- !private ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "Item"]
+- !private ["CSo11UIResponder", "NSCharacterSet"]
+- !private ["CSo11UIResponder", "NSFetchRequest"]
+- !private ["CSo11UIResponder", "NSInteger"]
+- !private ["CSo11UIResponder", "NSPredicate"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UIBarButtonSystemItem"]
+- !private ["CSo11UIResponder", "UIBarStyle"]
+- !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UITextView"]
+- !private ["CSo11UIResponder", "UIToolbar"]
+- ["CSo11UIResponder", "appDelegate"]
+- !private ["CSo11UIResponder", "barStyle"]
+- !private ["CSo11UIResponder", "becomeFirstResponder"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- !private ["CSo11UIResponder", "displayOrder"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "inputAccessoryView"]
+- !private ["CSo11UIResponder", "itemText"]
+- !private ["CSo11UIResponder", "items"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "managedObjectContext"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "pushCancelButton"]
+- ["CSo11UIResponder", "pushSaveButton"]
+- !private ["CSo11UIResponder", "resignFirstResponder"]
+- !private ["CSo11UIResponder", "saveContext"]
+- ["CSo11UIResponder", "sharedApplication"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "textView"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo12UIScrollView", "becomeFirstResponder"]
+- !private ["CSo12UIScrollView", "inputAccessoryView"]
+- !private ["CSo12UIScrollView", "layer"]
+- !private ["CSo12UIScrollView", "resignFirstResponder"]
+- !private ["CSo12UIScrollView", "text"]
+- !private ["PSo16UIStateRestoring", "AddViewController"]
+- !private ["PSo16UIStateRestoring", "CGRect"]
+- !private ["PSo16UIStateRestoring", "NSCharacterSet"]
+- !private ["PSo16UIStateRestoring", "NSFetchRequest"]
+- !private ["PSo16UIStateRestoring", "NSPredicate"]
+- ["PSo16UIStateRestoring", "UIApplication"]
+- !private ["PSo16UIStateRestoring", "UIBarButtonItem"]
+- !private ["PSo16UIStateRestoring", "UIBarButtonSystemItem"]
+- !private ["PSo16UIStateRestoring", "UIBarStyle"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIToolbar"]
+- ["PSo16UIStateRestoring", "appDelegate"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "pushCancelButton"]
+- ["PSo16UIStateRestoring", "pushSaveButton"]
+- ["PSo16UIStateRestoring", "textView"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo11UITextInput", "becomeFirstResponder"]
+- !private ["PSo11UITextInput", "inputAccessoryView"]
+- !private ["PSo11UITextInput", "layer"]
+- !private ["PSo11UITextInput", "resignFirstResponder"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "becomeFirstResponder"]
+- !private ["PSo17UITextInputTraits", "inputAccessoryView"]
+- !private ["PSo17UITextInputTraits", "layer"]
+- !private ["PSo17UITextInputTraits", "resignFirstResponder"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["CSo10UITextView", "becomeFirstResponder"]
+- !private ["CSo10UITextView", "inputAccessoryView"]
+- !private ["CSo10UITextView", "layer"]
+- !private ["CSo10UITextView", "resignFirstResponder"]
+- !private ["CSo10UITextView", "text"]
+- !private ["CSo9UIToolbar", "barStyle"]
+- !private ["CSo9UIToolbar", "init"]
+- !private ["CSo9UIToolbar", "items"]
+- !private ["PSo18UITraitEnvironment", "AddViewController"]
+- !private ["PSo18UITraitEnvironment", "CGRect"]
+- !private ["PSo18UITraitEnvironment", "NSCharacterSet"]
+- !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
+- !private ["PSo18UITraitEnvironment", "NSPredicate"]
+- ["PSo18UITraitEnvironment", "UIApplication"]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UITraitEnvironment", "UIBarButtonSystemItem"]
+- !private ["PSo18UITraitEnvironment", "UIBarStyle"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIToolbar"]
+- ["PSo18UITraitEnvironment", "appDelegate"]
+- !private ["PSo18UITraitEnvironment", "barStyle"]
+- !private ["PSo18UITraitEnvironment", "becomeFirstResponder"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "inputAccessoryView"]
+- !private ["PSo18UITraitEnvironment", "items"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "pushCancelButton"]
+- ["PSo18UITraitEnvironment", "pushSaveButton"]
+- !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "textView"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "barStyle"]
+- !private ["CSo6UIView", "becomeFirstResponder"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "inputAccessoryView"]
+- !private ["CSo6UIView", "items"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "resignFirstResponder"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AddViewController"]
+- ["CSo16UIViewController", "AppDelegate"]
+- !private ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "Item"]
+- !private ["CSo16UIViewController", "NSCharacterSet"]
+- !private ["CSo16UIViewController", "NSFetchRequest"]
+- !private ["CSo16UIViewController", "NSInteger"]
+- !private ["CSo16UIViewController", "NSPredicate"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UIApplication"]
+- !private ["CSo16UIViewController", "UIBarButtonItem"]
+- !private ["CSo16UIViewController", "UIBarButtonSystemItem"]
+- !private ["CSo16UIViewController", "UIBarStyle"]
+- !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UITextView"]
+- !private ["CSo16UIViewController", "UIToolbar"]
+- ["CSo16UIViewController", "appDelegate"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "pushCancelButton"]
+- ["CSo16UIViewController", "pushSaveButton"]
+- ["CSo16UIViewController", "textView"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "stringByTrimmingCharactersInSet"]
+- !private ["Ps24_ColorLiteralConvertible", "CGColor"]
+- !private ["Ps24_ColorLiteralConvertible", "lightGrayColor"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "stringByTrimmingCharactersInSet"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "barStyle"]
+- !private ["Ps12_Reflectable", "becomeFirstResponder"]
+- !private ["Ps12_Reflectable", "bounds"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "inputAccessoryView"]
+- !private ["Ps12_Reflectable", "items"]
+- !private ["Ps12_Reflectable", "layer"]
+- !private ["Ps12_Reflectable", "resignFirstResponder"]
+- !private ["Ps12_Reflectable", "stringByTrimmingCharactersInSet"]
+- !private ["Ps12_Reflectable", "subscript"]
+- !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "width"]
+depends-nominal:
+- !private "C10SimpleTodo17AddViewController"
+- "Ps9AnyObject"
+- !private "C10SimpleTodo11AppDelegate"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "C10SimpleTodo18EditViewController"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "C10SimpleTodo4Item"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "CSo14NSCharacterSet"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo14NSFetchRequest"
+- !private "PSo9NSLocking"
+- !private "CSo15NSManagedObject"
+- !private "CSo22NSManagedObjectContext"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo24NSPersistentStoreRequest"
+- !private "CSo11NSPredicate"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- !private "Ps16OutputStreamType"
+- !private "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
+- !private "Ps12SequenceType"
+- !private "Vs5Slice"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo13UIApplication"
+- !private "PSo21UIApplicationDelegate"
+- !private "CSo15UIBarButtonItem"
+- !private "OSC21UIBarButtonSystemItem"
+- !private "CSo9UIBarItem"
+- !private "PSo16UIBarPositioning"
+- !private "OSC10UIBarStyle"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo16UIStateRestoring"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- !private "CSo10UITextView"
+- !private "CSo9UIToolbar"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "eeb715c6545cb6d59646f36980d9f7fc"

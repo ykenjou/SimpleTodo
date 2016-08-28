@@ -165,6 +165,24 @@ SWIFT_CLASS("_TtC10SimpleTodo18EditViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSArray;
+@class UIPickerView;
+
+SWIFT_CLASS("_TtC10SimpleTodo22FontSizeViewController")
+@interface FontSizeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified fontPickerView;
+@property (nonatomic, readonly, strong) NSArray * _Nonnull sizeArray;
+@property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10SimpleTodo13GadController")
 @interface GadController : GADBannerView <GADBannerViewDelegate, GADAdDelegate>
@@ -195,15 +213,16 @@ SWIFT_CLASS("_TtC10SimpleTodo4Item")
 @class UITableView;
 @class NSIndexPath;
 @class UITableViewCell;
+@class UIView;
 @class UITableViewRowAction;
 @class UIToolbar;
-@class UIView;
 
 SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
-@interface MainViewController : UIViewController <GADAdDelegate, NSFetchedResultsControllerDelegate, GADBannerViewDelegate, UITableViewDelegate, UIScrollViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
+@interface MainViewController : UIViewController <GADAdDelegate, NSFetchedResultsControllerDelegate, GADBannerViewDelegate, UINavigationControllerDelegate, UITableViewDataSource, UIScrollViewDelegate, UITableViewDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIToolbar * _Null_unspecified btmToolBar;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified popMessageView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified firstView;
 @property (nonatomic, strong) AppDelegate * _Nonnull appDelegate;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
 @property (nonatomic, strong) NSFetchedResultsController * _Nonnull fetchedResultsController;
@@ -218,6 +237,8 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section;
+- (UIView * _Nullable)tableView:(UITableView * _Nonnull)tableView viewForHeaderInSection:(NSInteger)section;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didDeselectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)setCheckedValue:(NSNumber * _Nonnull)value indexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -230,15 +251,22 @@ SWIFT_CLASS("_TtC10SimpleTodo18MainViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboard;
+@class UILabel;
 
 SWIFT_CLASS("_TtC10SimpleTodo21SettingViewController")
 @interface SettingViewController : UITableViewController
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified soundSwitch;
 @property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified badgeSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch * _Null_unspecified adSwitch;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fontSizeSubLabel;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
+@property (nonatomic, strong) UIStoryboard * _Nullable settingStoryboard;
+@property (nonatomic, strong) UIViewController * _Nullable mainViewController;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (IBAction)adChange:(UISwitch * _Nonnull)sender;
 - (IBAction)soundChange:(UISwitch * _Nonnull)sender;
 - (IBAction)badgeChange:(UISwitch * _Nonnull)sender;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -246,11 +274,6 @@ SWIFT_CLASS("_TtC10SimpleTodo21SettingViewController")
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface UINavigationBar (SWIFT_EXTENSION(SimpleTodo))
-- (CGSize)sizeThatFits:(CGSize)size;
 @end
 
 

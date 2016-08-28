@@ -19,6 +19,8 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     
     @IBOutlet weak var popMessageView: UIView!
     
+    @IBOutlet weak var firstView: UIView!
+    
     var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     let userDefaults = NSUserDefaults.standardUserDefaults()
@@ -83,21 +85,14 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         //self.view.frame.size.height
         
-        
-        //self.navigationController?.navigationBar.sizeThatFits(CGSizeMake(UIScreen.mainScreen().bounds.width, 94))
-        
-        let gadController = GadController()
-        let bannerView : GADBannerView = gadController.gadBannerInit(self.view.frame.width, frameHeight: 50, viewController: self)
-        
-        if userDefaults.boolForKey("showAd") {
-            self.navigationController?.navigationBar.addSubview(bannerView)
-        } else {
-            bannerView.removeFromSuperview()
+        if userDefaults.boolForKey("firstLaunch") {
+            setFirstItemData("＋ボタンを押してデータを追加してください", checked: 0)
+            setFirstItemData("チェック済みの項目はゴミ箱ボタンで削除できます", checked: 1)
+            userDefaults.setBool(false, forKey: "firstLaunch")
         }
         
-        popMessageView.layer.cornerRadius = 10
         
-        self.navigationController?.navigationBar.sizeThatFits(CGSizeMake(UIScreen.mainScreen().bounds.width, 94))
+        popMessageView.layer.cornerRadius = 10
 
         
     }
@@ -116,7 +111,7 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     
     func controllerDidChangeContent(controller: NSFetchedResultsController)
     {
-        tableView.reloadData()
+        //tableView.reloadData()
         
         if userDefaults.boolForKey("badge") {
             UIApplication.sharedApplication().applicationIconBadgeNumber = setBadgeValue()
@@ -176,6 +171,9 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         if let sections = fetchedResultsController.sections{
+            
+            
+            //print(sections.count)
             return sections.count
         }
         
@@ -185,8 +183,15 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let sections = fetchedResultsController.sections {
-            
             let currentSection = sections[section]
+            /*
+            if currentSection.numberOfObjects == 0{
+                firstView.hidden = false
+                
+            } else {
+                firstView.hidden = true
+            }
+            */
             return currentSection.numberOfObjects
         }
         
@@ -216,6 +221,27 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         
         
         return cell
+    }
+    
+    //セクションヘッダー高さ
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if userDefaults.boolForKey("showAd") {
+            return 50
+        } else {
+            return 0
+        }
+    }
+    
+    //セクションヘッダーview
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if userDefaults.boolForKey("showAd") {
+            let gadController = GadController()
+            let bannerView:GADBannerView = gadController.gadBannerInit(self.view.frame.width, frameHeight: 50, viewController: self)
+            return bannerView
+        } else {
+            return UIView()
+        }
+        
     }
 
     //セル選択
@@ -404,6 +430,7 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
             }
             
             appDelegate.saveContext()
+            tableView.reloadData()
             
         }
 
@@ -426,10 +453,22 @@ class MainViewController:  UIViewController , UITableViewDataSource , UITableVie
         dispatch_async(dispatch_get_main_queue()) {
             self.presentViewController(addViewController as UIViewController, animated: true, completion: nil)
         }
-        
-        
-        
     }
+    
+    private func setFirstItemData(text:String,checked:NSNumber){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let fetchRequest = NSFetchRequest(entityName: "Item")
+        var error: NSError? = nil
+        let count = appDelegate.managedObjectContext.countForFetchRequest(fetchRequest, error: &error)
+        
+        let item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: appDelegate.managedObjectContext) as! Item
+        item.text = text
+        item.displayOrder = count
+        item.checked = checked
+        
+        appDelegate.saveContext()
+    }
+
     
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)

@@ -1,13 +1,13 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
-options: "a55aebb6d7c48d951138ef4ddd5eb3ce"
-build_time: [525192612, 50106000]
+options: "4f8b21fca387d9466c040bca81f136a8"
+build_time: [525624770, 287595000]
 inputs:
   "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/FontSizeViewController.swift": [525178337, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/MainViewController.swift": [525192608, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AppDelegate.swift": [525191963, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AddViewController.swift": [525032041, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/SettingViewController.swift": [525192431, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/MainViewController.swift": [525603668, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AppDelegate.swift": [525275098, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/AddViewController.swift": [525621795, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/SettingViewController.swift": [525203148, 0]
   "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/Item.swift": [524796698, 0]
   "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/Item+CoreDataProperties.swift": [524844604, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/EditViewController.swift": [525031841, 0]
-  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/GadController.swift": [525144659, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/EditViewController.swift": [525622262, 0]
+  "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/SimpleTodo/GadController.swift": [525624761, 0]

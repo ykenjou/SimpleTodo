@@ -22,10 +22,6 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        /*
-        
-        */
-        
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 44))
         kbToolBar.barStyle = UIBarStyle.Default
         //kbToolBar.sizeToFit()
@@ -56,8 +52,6 @@ class AddViewController: UIViewController {
         let fetchRequest = NSFetchRequest(entityName: "Item")
         var error: NSError? = nil
         let count = appDelegate.managedObjectContext.countForFetchRequest(fetchRequest, error: &error)
-        
-        
         
         if text.containsString("\n") && swtichBool == true {
             let textArray = text.componentsSeparatedByString("\n")

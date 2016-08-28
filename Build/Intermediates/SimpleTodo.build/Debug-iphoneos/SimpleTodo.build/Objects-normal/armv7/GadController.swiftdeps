@@ -8,18 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "gadBannerInit"
 depends-top-level:
-- "UIViewController"
-- "GadController"
-- !private "GADRequest"
 - !private "CGSizeMake"
-- !private "kGADAdSizeBanner"
-- !private "StringLiteralType"
 - "GADBannerViewDelegate"
-- !private "Array"
 - !private "-"
+- !private "CGPointMake"
+- !private "GADRequest"
+- "GadController"
 - "GADBannerView"
 - "CGFloat"
-- !private "CGPointMake"
+- !private "StringLiteralType"
+- !private "kGADAdSizeBanner"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "CGPointMake"]
 - !private ["Ps9AnyObject", "CGSizeMake"]
@@ -33,7 +32,6 @@ depends-member:
 - ["Ps9AnyObject", "adViewWillDismissScreen"]
 - ["Ps9AnyObject", "adViewWillLeaveApplication"]
 - ["Ps9AnyObject", "adViewWillPresentScreen"]
-- !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "gadBannerInit"]
@@ -41,10 +39,7 @@ depends-member:
 - !private ["Ps9AnyObject", "kGADAdSizeBanner"]
 - !private ["Ps9AnyObject", "loadRequest"]
 - !private ["Ps9AnyObject", "rootViewController"]
-- !private ["Ps9AnyObject", "testDevices"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- !private ["Ps23ArrayLiteralConvertible", "Element"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "height"]
 - !private ["VSC6CGRect", "origin"]
@@ -68,12 +63,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "kGADAdSizeBanner"]
 - !private ["Ps11CVarArgType", "loadRequest"]
 - !private ["Ps11CVarArgType", "rootViewController"]
-- !private ["Ps11CVarArgType", "testDevices"]
 - ["Ps11CVarArgType", ""]
-- !private ["Ps14CollectionType", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "CGPointMake"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSizeMake"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "GADBannerView"]
 - !private ["Ps28CustomDebugStringConvertible", "GADRequest"]
 - ["Ps28CustomDebugStringConvertible", "ad"]
@@ -91,11 +83,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "kGADAdSizeBanner"]
 - !private ["Ps28CustomDebugStringConvertible", "loadRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "testDevices"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGPointMake"]
 - !private ["Ps23CustomStringConvertible", "CGSizeMake"]
-- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "GADBannerView"]
 - !private ["Ps23CustomStringConvertible", "GADRequest"]
 - ["Ps23CustomStringConvertible", "ad"]
@@ -113,7 +103,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "kGADAdSizeBanner"]
 - !private ["Ps23CustomStringConvertible", "loadRequest"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
-- !private ["Ps23CustomStringConvertible", "testDevices"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGPointMake"]
 - !private ["Ps9Equatable", "CGSizeMake"]
@@ -137,7 +126,6 @@ depends-member:
 - !private ["Ps9Equatable", "origin"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "size"]
-- !private ["Ps9Equatable", "testDevices"]
 - ["Ps9Equatable", ""]
 - !private ["PSo13GADAdDelegate", "CGPointMake"]
 - !private ["PSo13GADAdDelegate", "CGSizeMake"]
@@ -188,7 +176,6 @@ depends-member:
 - !private ["PSo21GADBannerViewDelegate", "kGADAdSizeBanner"]
 - ["PSo21GADBannerViewDelegate", ""]
 - !private ["CSo10GADRequest", "init"]
-- !private ["CSo10GADRequest", "testDevices"]
 - ["C10SimpleTodo13GadController", "CGFloat"]
 - !private ["C10SimpleTodo13GadController", "CGPointMake"]
 - !private ["C10SimpleTodo13GadController", "CGSizeMake"]
@@ -225,12 +212,7 @@ depends-member:
 - !private ["Ps8Hashable", "kGADAdSizeBanner"]
 - !private ["Ps8Hashable", "loadRequest"]
 - !private ["Ps8Hashable", "rootViewController"]
-- !private ["Ps8Hashable", "testDevices"]
 - ["Ps8Hashable", ""]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps21MutableCollectionType", "Element"]
-- !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableSliceable", "Element"]
 - !private ["PSo8NSCoding", "CGPointMake"]
 - !private ["PSo8NSCoding", "CGSizeMake"]
 - !private ["PSo8NSCoding", "GADBannerView"]
@@ -252,7 +234,6 @@ depends-member:
 - !private ["PSo8NSCoding", "rootViewController"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "testDevices"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGPointMake"]
 - !private ["CSo8NSObject", "CGSizeMake"]
@@ -274,7 +255,6 @@ depends-member:
 - !private ["CSo8NSObject", "kGADAdSizeBanner"]
 - !private ["CSo8NSObject", "loadRequest"]
 - !private ["CSo8NSObject", "rootViewController"]
-- !private ["CSo8NSObject", "testDevices"]
 - !private ["PSo16NSObjectProtocol", "CGPointMake"]
 - !private ["PSo16NSObjectProtocol", "CGSizeMake"]
 - !private ["PSo16NSObjectProtocol", "GADBannerView"]
@@ -294,12 +274,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "kGADAdSizeBanner"]
 - !private ["PSo16NSObjectProtocol", "loadRequest"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
-- !private ["PSo16NSObjectProtocol", "testDevices"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["Sq", "deinit"]
-- !private ["Ps30RangeReplaceableCollectionType", "Element"]
-- !private ["Ps12SequenceType", "Element"]
-- !private ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "CGPointMake"]
 - !private ["PSo29UIAccessibilityIdentification", "CGSizeMake"]
 - !private ["PSo29UIAccessibilityIdentification", "GADBannerView"]
@@ -482,12 +458,8 @@ depends-member:
 - !private ["CSo6UIView", "kGADAdSizeBanner"]
 - !private ["CSo6UIView", "loadRequest"]
 - !private ["CSo6UIView", "rootViewController"]
-- !private ["Ps10_ArrayType", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps12_Reflectable", "CGPointMake"]
 - !private ["Ps12_Reflectable", "CGSizeMake"]
-- !private ["Ps12_Reflectable", "Element"]
 - !private ["Ps12_Reflectable", "GADBannerView"]
 - !private ["Ps12_Reflectable", "GADRequest"]
 - ["Ps12_Reflectable", "ad"]
@@ -511,12 +483,9 @@ depends-member:
 - ["Ps12_Reflectable", ""]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Sa"
-- !private "Ps23ArrayLiteralConvertible"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - "Ps11CVarArgType"
-- !private "Ps14CollectionType"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
@@ -526,18 +495,11 @@ depends-nominal:
 - !private "CSo10GADRequest"
 - "C10SimpleTodo13GadController"
 - "Ps8Hashable"
-- !private "Ps9Indexable"
-- !private "Ps21MutableCollectionType"
-- !private "Ps16MutableIndexable"
-- !private "Ps16MutableSliceable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Sq"
-- !private "Ps30RangeReplaceableCollectionType"
-- !private "Ps12SequenceType"
-- !private "SS"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -547,15 +509,13 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "Ps10_ArrayType"
-- !private "Ps24_DestructorSafeContainer"
-- !private "Ps21_ObjectiveCBridgeable"
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
@@ -626,4 +586,18 @@ depends-external:
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FIRInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseInstanceID/FirebaseInstanceID/FirebaseInstanceID.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIROptions.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRApp.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalyticsConfiguration.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRUserPropertyNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRParameterNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIREventNames.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FIRAnalytics+AppDelegate.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Headers/Public/FirebaseAnalytics/FirebaseAnalytics/FirebaseAnalytics.h"
+- "/Users/kenjou/Documents/SimpleToDo/SimpleTodo/Pods/Firebase/Analytics/Sources/Firebase.h"
 interface-hash: "f9f6c58eecd51480f25beaf6ae8eef39"

@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             "fontSize": 20
         ]
         userDefaults.registerDefaults(defaultsValues as! [String : AnyObject])
+        
+        FIRApp.configure()
         
         return true
     }

@@ -77,16 +77,8 @@ class SettingViewController: UITableViewController {
     @IBAction func adChange(sender: UISwitch) {
         if sender.on {
             userDefaults.setBool(true, forKey: "showAd")
-            loadView()
-            viewDidLoad()
-            mainViewController!.loadView()
-            mainViewController!.viewWillAppear(false)
         } else {
             userDefaults.setBool(false, forKey: "showAd")
-            loadView()
-            viewDidLoad()
-            mainViewController!.loadView()
-            mainViewController!.viewWillAppear(false)
         }
     }
     

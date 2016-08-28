@@ -194,6 +194,35 @@
                                     <constraint firstAttribute="bottom" secondItem="mwT-hB-chn" secondAttribute="bottom" constant="14" id="eVV-Gd-87n"/>
                                 </constraints>
                             </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-HC-li0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="491"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You push + button, and please add an item" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWd-JV-KVS">
+                                        <rect key="frame" x="20" y="351" width="560" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="u6r-04-mMY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMc-oV-fhK">
+                                        <rect key="frame" x="280" y="441" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="AAn-YI-R27"/>
+                                            <constraint firstAttribute="height" constant="40" id="JXN-yP-Cfw"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yWd-JV-KVS" secondAttribute="trailing" constant="20" id="3MJ-21-eGD"/>
+                                    <constraint firstAttribute="bottom" secondItem="yWd-JV-KVS" secondAttribute="bottom" constant="90" id="QWo-ut-aku"/>
+                                    <constraint firstItem="yWd-JV-KVS" firstAttribute="leading" secondItem="wGs-HC-li0" secondAttribute="leading" constant="20" id="gbr-Y3-cg0"/>
+                                    <constraint firstItem="JMc-oV-fhK" firstAttribute="centerX" secondItem="wGs-HC-li0" secondAttribute="centerX" id="jwQ-sb-aLh"/>
+                                    <constraint firstAttribute="bottom" secondItem="JMc-oV-fhK" secondAttribute="bottom" constant="10" id="n4E-Nb-AOh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -202,9 +231,13 @@
                             <constraint firstItem="9aU-yU-HTd" firstAttribute="top" secondItem="JUN-pS-Esn" secondAttribute="bottom" constant="1" id="IHO-lc-3rc"/>
                             <constraint firstItem="9aU-yU-HTd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iox-S1-KSC"/>
                             <constraint firstItem="JUN-pS-Esn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J1J-0C-Aas"/>
+                            <constraint firstAttribute="trailing" secondItem="wGs-HC-li0" secondAttribute="trailing" id="NF8-nU-JQu"/>
+                            <constraint firstItem="9aU-yU-HTd" firstAttribute="top" secondItem="wGs-HC-li0" secondAttribute="bottom" constant="1" id="QcW-hv-xX0"/>
                             <constraint firstItem="2JG-OU-aYC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="Qxq-zV-HbA"/>
+                            <constraint firstItem="wGs-HC-li0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RWZ-gB-jpM"/>
                             <constraint firstAttribute="trailing" secondItem="JUN-pS-Esn" secondAttribute="trailing" id="jmf-89-4rB"/>
                             <constraint firstAttribute="trailing" secondItem="9aU-yU-HTd" secondAttribute="trailing" id="ueP-3p-rDd"/>
+                            <constraint firstItem="wGs-HC-li0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wnH-HF-xZn"/>
                             <constraint firstAttribute="trailing" secondItem="2JG-OU-aYC" secondAttribute="trailing" constant="86" id="yJh-0z-CVS"/>
                             <constraint firstAttribute="bottom" secondItem="9aU-yU-HTd" secondAttribute="bottom" id="yyk-oX-E0o"/>
                         </constraints>
@@ -220,13 +253,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="btmToolBar" destination="9aU-yU-HTd" id="88I-Qt-qfV"/>
+                        <outlet property="firstView" destination="wGs-HC-li0" id="ESe-gc-JVE"/>
                         <outlet property="popMessageView" destination="2JG-OU-aYC" id="ey4-A1-4ad"/>
                         <outlet property="tableView" destination="JUN-pS-Esn" id="mFf-b2-e0j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="429"/>
+            <point key="canvasLocation" x="350" y="450"/>
         </scene>
         <!--Setting-->
         <scene sceneID="otj-YD-1B8">
@@ -448,5 +482,6 @@
     </scenes>
     <resources>
         <image name="SettingIcon" width="26" height="26"/>
+        <image name="arrow.png" width="200" height="200"/>
     </resources>
 </document>
